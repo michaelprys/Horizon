@@ -82,19 +82,21 @@ ul {
 
 /* INTRO */
 
-.intro {
+.intro-wrapper {
     text-align: center;
+    margin-bottom: 157px;
 }
 
 .intro-suptitle {
     font-family: "Kaushan Script";
     font-size: 72px;
     margin-bottom: 42px;
+    user-select: none;
 }
 
 .intro-title {
     font-size: 150px;
-    
+    user-select: none;
 }
 
 .intro-title::after {
@@ -119,6 +121,41 @@ ul {
     color: #333;
 }
 
+/* INTRO-SLIDER */
 
+.intro-slider {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 28px;
+}
 
+.intro-slider b {
+    font-size: 24px;
+}
+
+.intro-slider-item {
+    border-top: 2px solid #fff;
+    width: 280px;
+    padding-top: 15px;
+    position: relative;
+    opacity: 0.7;
+}
+
+.intro-slider-item.active {
+    opacity: 1;
+}
+
+.intro-slider-item.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 2px;
+    background-color: #f38181;
+}
 
