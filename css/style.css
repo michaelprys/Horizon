@@ -30,7 +30,7 @@ ul {
     margin: 0 auto;
 }
 
-/* header */
+/* HEADER */
 
 .header-wrapper {
     display: flex;
@@ -80,6 +80,8 @@ ul {
     opacity: 0;
 }
 
+/* INTRO */
+
 .intro {
     text-align: center;
 }
@@ -92,4 +94,31 @@ ul {
 
 .intro-title {
     font-size: 150px;
+    
 }
+
+.intro-title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 35px auto;
+}
+
+.intro-button {
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    padding: 9px 32px;
+    transition: all .2s linear;
+}
+
+.intro-button:hover {
+    background-color: #fce38a;
+    color: #333;
+}
+
+
+
+
