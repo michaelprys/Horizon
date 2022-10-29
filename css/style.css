@@ -1,10 +1,13 @@
 body {
-    height: 1000px;
-    background: #333 url("../img/bg.jpg") center no-repeat;
+    background-image: url("../img/bg.jpg");
+    background-color: rebeccapurple;
+    background-repeat: no-repeat;
     background-size: cover;
+    height: 1000px;
     font-size: 14px;
+    font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    color: #ffffff;
+    color: #333333;
     margin: 0;
     padding: 0;
 }
@@ -35,7 +38,6 @@ ul {
 .header-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 179px;
 }
 
 .logo {
@@ -84,19 +86,26 @@ ul {
 
 .intro-wrapper {
     text-align: center;
-    margin-bottom: 157px;
+    color: #ffffff;
+    width: 100%;
+    max-width: 840px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 135px;
 }
 
 .intro-suptitle {
     font-family: "Kaushan Script";
-    font-size: 72px;
+    font-size: 65px;
     margin-bottom: 42px;
     user-select: none;
 }
 
 .intro-title {
-    font-size: 150px;
+    font-size: 114px;
     user-select: none;
+    text-transform: uppercase;
+    line-height: 140px;
 }
 
 .intro-title::after {
@@ -109,6 +118,8 @@ ul {
 }
 
 .intro-button {
+    display: inline-block;
+    vertical-align: top;
     font-weight: 700;
     text-transform: uppercase;
     border: 3px solid #ffffff;
@@ -128,7 +139,9 @@ ul {
     display: flex;
     justify-content: space-between;
     font-size: 18px;
-    margin-bottom: 28px;
+    color: #ffffff;
+    
+    margin-top: 100px;
 }
 
 .intro-slider b {
@@ -138,9 +151,9 @@ ul {
 .intro-slider-item {
     border-top: 2px solid #fff;
     width: 280px;
-    padding-top: 15px;
     position: relative;
     opacity: 0.7;
+    padding: 20px 0;
 }
 
 .intro-slider-item.active {
@@ -159,3 +172,102 @@ ul {
     background-color: #f38181;
 }
 
+/* ABOUT US */
+
+.section {
+    background-color: #ffffff;
+    padding-top: 40px;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-suptitle {
+    margin-bottom: 10px;
+}
+
+.section-title {
+    text-transform: uppercase;
+}
+
+.section-header::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 35px auto;
+}
+
+.section-suptitle {
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.section-text {
+    margin: 0 auto;
+    width: 954px;
+    text-align: center;
+    color: #999999;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/* CARD */
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 101px;
+}
+
+.card-wrapper {
+    background-color: #95e1d3;
+    position: relative;
+}
+
+.card-img {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+    transition: transform .2s linear;
+}
+
+.card-wrapper .card-img:hover {
+    transform: translate3d(-10px, -10px, 0);
+}
+
+/* img opacity changing */
+
+.card-img img {
+    transition: opacity .2s linear;
+}
+
+.card-wrapper .card-img:hover img {
+    opacity: .1;
+}
+
+.card-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity .2s linear;
+}
+
+.card-wrapper:hover .card-text {
+    opacity: 1;
+}
