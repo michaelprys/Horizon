@@ -227,7 +227,7 @@ select {
     background-color: #f38181;
 }
 
-/* ABOUT US */
+/* ABOUT */
 
 .section {
     background-color: #ffffff;
@@ -361,7 +361,7 @@ select {
 /* SERVICES */
 
 .service {
-    padding: 66px 0 122px 0;
+    padding: 66px 0 72px 0;
 }
 
 .service-wrapper {
@@ -389,6 +389,7 @@ select {
 .service-text {
     font-family: Roboto;
     color: #999999;
+    line-height: 24px;
 }
 
 .service-icon {
@@ -399,5 +400,29 @@ select {
     z-index: 1;
     color: #95e1d3;
     padding-left: 30px;
-    line-height: 24px;
+}
+
+/* DEVICES */
+
+.section--device {
+    background: url("../img/devices/devices-bg.png") center no-repeat;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+}
+
+.device {
+    max-width: 636px;
+    margin: 0 auto;
+    position: relative;
+    top: 48px;
+    left: 55px;
+    z-index: 1;
+}
+
+.device-item--iphone {
+    position: absolute;
+    bottom: 41px;
+    right: 30px;
+    z-index: 1;
 }
