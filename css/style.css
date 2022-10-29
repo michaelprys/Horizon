@@ -327,6 +327,11 @@ select {
     transition: opacity .2s linear;
 }
 
+.card-social {
+    display: flex;
+    background-color: #fce38a;
+}
+
 /* STAT */
 
 .stat {
@@ -581,3 +586,21 @@ select {
     z-index: 1;
     color: #95e1d3;
 }
+
+/* TEAM */
+
+.social-item {
+    padding: 13px 15px;
+    color: #f38181;
+    border-right: 1px solid rgba(243, 129, 129, .5);
+}
+
+.social-item:hover {
+    background-color: #f38181;
+    color: #ffffff;
+}
+
+.social-item--borderless {
+    border-right: none;
+}
+
