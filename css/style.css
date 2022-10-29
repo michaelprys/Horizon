@@ -246,13 +246,13 @@ select {
     text-transform: uppercase;
 }
 
-.section-header::after {
+.section-title::after {
     content: "";
     display: block;
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 0 auto;
+    margin: 35px auto 0;
 }
 
 .section-suptitle {
@@ -264,11 +264,10 @@ select {
 .section-title {
     font-size: 30px;
     font-weight: 700;
-    margin-bottom: 35px;
 }
 
 .section-text {
-    margin: 47px auto 0;
+    margin: 45px auto 0;
     width: 954px;
     text-align: center;
     color: #999999;
@@ -341,13 +340,13 @@ select {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    border-right: 1px solid #ffffff;
+    border-right: 1px solid rgba(255, 255, 255, .3);
 }
 
 .stat-item {
     font-size: 65px;
     font-weight: 700;
-    border-left: 1px solid #ffffff;
+    border-left: 1px solid rgba(255, 255, 255, .3);
     padding: 80px 25px;
     flex: 1 1 0;
 }
@@ -361,7 +360,7 @@ select {
 /* SERVICES */
 
 .service {
-    padding: 66px 0 72px 0;
+    padding: 25px 0 72px 0;
 }
 
 .service-wrapper {
@@ -407,22 +406,67 @@ select {
 .section--device {
     background: url("../img/devices/devices-bg.png") center no-repeat;
     background-size: cover;
-    height: 850px;
-    position: relative;
+    max-height: 850px;
 }
 
 .device {
     max-width: 636px;
-    margin: 0 auto;
+    margin: 48px auto 0 337px;
     position: relative;
-    top: 48px;
-    left: 55px;
-    z-index: 1;
 }
 
 .device-item--iphone {
     position: absolute;
-    bottom: 41px;
-    right: 30px;
+    bottom: -90px;
+    right: 0;
     z-index: 1;
+}
+
+/* WEDO */
+
+.wedo-wrapper {
+    margin-top: 92px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wedo-img {
+    margin-right: 30px;
+}
+
+.accordion {
+    width: 600px;
+    height: 380px;
+}
+
+.accordion-wrapper {
+    height: 240px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.accordion-title {
+    padding: 15px 0 15px 61px;
+    height: 50px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.photography-icon {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    z-index: 1;
+    font-size: 32px;
+    color: #95e1d3;
+}
+
+.accordion-text {
+    padding: 21px 55px 28px 20px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    color: #999999;
+    border-top: 1px solid #e5e5e5;
 }
