@@ -331,7 +331,7 @@ select {
 
 .card-social {
     display: flex;
-    background-color: #fce38a;
+    background-color: transparent;
 }
 
 /* STAT */
@@ -411,7 +411,7 @@ select {
 /* DEVICES */
 
 .section--device {
-    background: url("../img/devices/devices-bg.png") center no-repeat;
+    background: url("../img/devices/devices-bg.jpg") center no-repeat;
     background-size: cover;
     max-height: 850px;
 }
@@ -497,6 +497,7 @@ select {
     z-index: 1;
     font-size: 32px;
     color: #95e1d3;
+    font-weight: 400;
 }
 
 .accordion-content {
@@ -592,9 +593,11 @@ select {
 /* TEAM */
 
 .social-item {
-    padding: 13px 15px;
+    padding: 11px 15px;
     color: #f38181;
-    border-right: 1px solid rgba(243, 129, 129, .5);
+    border-right: 1px solid rgba(243, 129, 129, 0.438);
+    background-color: #fce38a;
+    font-size: 24px;
 }
 
 .social-item:hover {
@@ -628,7 +631,7 @@ select {
 /* TEAM-FOOTER */
 
 .team-footer {
-    background-color: #f8f8f8;
+    background-color: #ffffff;
 }
 
 .team-footer-wrapper {
@@ -638,4 +641,22 @@ select {
     opacity: 0.8;
     align-items: center;
     padding: 50px 0;
+}
+
+/* WORK */
+
+.work {
+    margin-top: 102px;
+    display: flex;
+}
+.work-item {
+    background: linear-gradient(to bottom, #f38181, #fce38a);
+}
+
+.work-item img {
+    transition: opacity .2s linear;
+}
+
+.work-item:hover img {
+    opacity: .1;
 }
