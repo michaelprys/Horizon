@@ -45,6 +45,8 @@ html:focus-within {
 /* -- */
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* -- */
@@ -604,3 +606,36 @@ select {
     border-right: none;
 }
 
+.employee {
+    margin-top: 31px;
+    text-align: center;
+}
+
+.employee-name {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.employee-position {
+    font-size: 15px;
+    font-family: Roboto;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 24px;
+    color: #999999;
+}
+
+/* TEAM-FOOTER */
+
+.team-footer {
+    background-color: #f8f8f8;
+}
+
+.team-footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 117px;
+    opacity: 0.8;
+    align-items: center;
+    padding: 50px 0;
+}
