@@ -237,7 +237,7 @@ select {
 
 .section-header {
     text-align: center;
-    padding-top: 91px;
+    padding-top: 100px;
 }
 
 .section-suptitle {
@@ -432,7 +432,7 @@ select {
 /* WEDO */
 
 .wedo-wrapper {
-    margin: 92px 0;
+    margin: 92px 0 120px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -516,11 +516,10 @@ select {
 
 .feedback {
     background-color: #f8f8f8;
-    margin-top: 120px;
 }
 
 .feedback-wrapper {
-    padding: 80px 112px 80px 321px;
+    padding: 70px 112px 70px 321px;
     position: relative;
 }
 
@@ -530,7 +529,7 @@ select {
     width: 17px;
     height: 17px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 23px;
     z-index: 1;
     transform: rotate(45deg);
@@ -545,7 +544,7 @@ select {
     width: 17px;
     height: 17px;
     position: absolute;
-    top: 50%;
+    top: 47%;
     right: 23px;
     z-index: 1;
     transform: rotate(-135deg);
@@ -586,7 +585,7 @@ select {
     border: 3px solid #95e1d3;
     padding: 30px 44px;
     position: absolute;
-    top: 88px;
+    top: 70px;
     left: 110px;
     z-index: 1;
     color: #95e1d3;
@@ -595,7 +594,7 @@ select {
 .feedback-avatar img {
     border-radius: 50%;
     position: absolute;
-    top: 60px;
+    top: 45px;
     left: 74px;
     z-index: 1;
 }
@@ -647,7 +646,7 @@ select {
 .team-footer-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-top: 117px;
+    margin: 117px 0 10px 0;
     opacity: 0.8;
     align-items: center;
     padding: 50px 0;
@@ -656,7 +655,7 @@ select {
 /* WORK */
 
 .work {
-    margin: 102px 0 140px 0;
+    margin: 102px 0 100px 0;
     display: flex;
 }
 .work-item {
