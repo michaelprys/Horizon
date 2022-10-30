@@ -518,6 +518,10 @@ select {
     background-color: #f8f8f8;
 }
 
+.feedback-work {
+    margin-bottom: 60px;
+}
+
 .feedback-wrapper {
     padding: 70px 112px 70px 321px;
     position: relative;
@@ -646,7 +650,7 @@ select {
 .team-footer-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 117px 0 10px 0;
+    margin-top: 117px;
     opacity: 0.8;
     align-items: center;
     padding: 50px 0;
@@ -655,9 +659,10 @@ select {
 /* WORK */
 
 .work {
-    margin: 102px 0 100px 0;
+    margin: 102px 0 60px 0;
     display: flex;
 }
+
 .work-item {
     background: linear-gradient(to bottom, #f38181, #fce38a);
 }
