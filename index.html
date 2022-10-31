@@ -1,4 +1,5 @@
-<html lang="en">
+<!DOCTYPE html>
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -8,9 +9,8 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap"
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../Horizon/css/reset.css">
+    <link rel="stylesheet" href="../Horizon/css/normalize.css">
     <link rel="stylesheet" href="../Horizon/css/style.css">
     <title>Horizon</title>
 </head>
@@ -20,423 +20,460 @@
         <div class="container">
             <div class="header-wrapper">
                 <h1 class="logo"><a href="">Horizon</a></h1>
-                <nav>
-                    <ul class="nav-menu">
-                        <li class="nav-item active"><a href="#">about</a></li>
-                        <li class="nav-item"><a href="#">service</a></li>
-                        <li class="nav-item"><a href="#">work</a></li>
-                        <li class="nav-item"><a href="#">blog</a></li>
-                        <li class="nav-item"><a href="#">contact</a></li>
-                        <li class="nav-item nav-item--icons"><a href="#"><i class="ri-shopping-cart-line"></i></a></li>
-                        <li class="nav-item nav-item--icons"><a href="#"><i class="ri-search-line"></i></a></li>
+                <nav class="main-navigation">
+                    <ul class="site-navigation">
+                        <li class="navigation-item active"><a href="#">about</a></li>
+                        <li class="navigation-item"><a href="#">service</a></li>
+                        <li class="navigation-item"><a href="#">work</a></li>
+                        <li class="navigation-item"><a href="#">blog</a></li>
+                        <li class="navigation-item"><a href="#">contact</a></li>
                     </ul>
+                    <div class="cart">
+                        <div class="navigation-item navigation-item--icon">
+                            <a href="#"><i class="ri-shopping-cart-line"></i></a>
+                        </div>
+                        <div class="navigation-item navigation-item--icon">
+                            <a href="#"><i class="ri-search-line"></i></a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </div>
-    </header> <!-- /.HEADER -->
-    <div class="intro">
-        <div class="container">
-            <div class="intro-wrapper">
-                <h3 class="intro-suptitle">Creative Studio</h3>
-                <h2 class="intro-title">Welcome to Horizon</h2>
-                <a class="intro-button" href="#">learn more</a>
-            </div>
-
-            <ul class="intro-slider">
-                <li class="intro-slider-item active">
-                    <p><b>01</b>&nbsp;&nbsp;intro</p>
-                </li>
-                <li class="intro-slider-item">
-                    <p><b>02</b>&nbsp;&nbsp;work</p>
-                </li>
-                <li class="intro-slider-item">
-                    <p><b>03</b>&nbsp;&nbsp;about</p>
-                </li>
-                <li class="intro-slider-item">
-                    <p><b>04</b>&nbsp;&nbsp;contacts</p>
-                </li>
-            </ul>
-        </div>
-    </div> <!-- /.INTRO -->
-
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-suptitle">What we do</h3>
-                <h2 class="section-title">Story about us</h2>
-                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat.</p>
-            </div>
-
-
-
-            <ul class="card">
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/about/about-1.jpg" alt="about card 1">
-                        </div>
-                        <div class="card-text">super team</div>
-                    </div>
-                </li>
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/about/about-2.jpg" alt="about card 2">
-                        </div>
-                        <div class="card-text">super team</div>
-                    </div>
-                </li>
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/about/about-3.jpg" alt="about card 3">
-                        </div>
-                        <div class="card-text">super team</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div class="stat">
+    </header> <!-- /.header -->
+    <main>
+        <div class="intro">
             <div class="container">
-                <ul class="stat-wrapper">
-                    <li class="stat-item">
-                        <p class="stat-number">42</p>
-                        <p class="stat-text">web design projects</p>
+                <div class="intro-wrapper">
+                    <h3 class="intro-suptitle">Creative Studio</h3>
+                    <h2 class="intro-title">Welcome to Horizon</h2>
+                    <a class="intro-button" href="#">learn more</a>
+                </div>
+
+                <ul class="intro-slider">
+                    <li class="intro-slider-item active">
+                        <p><b>01</b>&nbsp;&nbsp;intro</p>
                     </li>
-                    <li class="stat-item">
-                        <p class="stat-number">123</p>
-                        <p class="stat-text">happy client</p>
+                    <li class="intro-slider-item">
+                        <p><b>02</b>&nbsp;&nbsp;work</p>
                     </li>
-                    <li class="stat-item">
-                        <p class="stat-number">15</p>
-                        <p class="stat-text">award winner</p>
+                    <li class="intro-slider-item">
+                        <p><b>03</b>&nbsp;&nbsp;about</p>
                     </li>
-                    <li class="stat-item">
-                        <p class="stat-number">99</p>
-                        <p class="stat-text">cup of coffee</p>
-                    </li>
-                    <li class="stat-item">
-                        <p class="stat-number">24</p>
-                        <p class="stat-text">members</p>
+                    <li class="intro-slider-item">
+                        <p><b>04</b>&nbsp;&nbsp;contacts</p>
                     </li>
                 </ul>
             </div>
-    </section>
+        </div> <!-- /.intro -->
 
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-suptitle">We work with</h3>
-                <h2 class="section-title">Amazing Services</h2>
-            </div>
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">What we do</h3>
+                    <h2 class="section-title">Story about us</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
+                        commodo consequat.</p>
+                </header>
 
-            <div class="service">
-                <ul class="service-wrapper">
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-camera-line"></i></div>
-                        <h2 class="service-title">Photography</h2>
-                        <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor.</p>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-brush-fill"></i></div>
-                        <h2 class="service-title">Web Design</h2>
-                        <p class="service-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor.</p>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-lightbulb-flash-line"></i></div>
-                        <h2 class="service-title">Creativity</h2>
-                        <p class="service-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </li>
-                </ul>
-                <ul class="service-wrapper service-wrapper--borderless">
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-search-line"></i></div>
-                        <h2 class="service-title">seo</h2>
-                        <p class="service-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-css3-line"></i></div>
-                        <h2 class="service-title">Css/Html</h2>
-                        <p class="service-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.</p>
-                    </li>
-                    <li class="service-item">
-                        <div class="service-icon"><i class="ri-computer-line"></i></div>
-                        <h2 class="service-title">Digital</h2>
-                        <p class="service-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section--device">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-suptitle">For all devices</h3>
-                <h2 class="section-title">Unique design</h2>
-            </div>
-            <div class="device">
-                <img class="device-item" src="../Horizon/img/devices/ipad.png" alt="ipad image">
-                <img class="device-item device-item--iphone" src="../Horizon/img/devices/iphone.png" alt="iphone image">
-            </div>
-        </div>
-    </section>
-
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-suptitle">Service</h3>
-                <h2 class="section-title">what we do</h2>
-                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                    ea
-                    commodo consequat.</p>
-            </div>
-            <div class="wedo">
-                <div class="wedo-wrapper">
-                    <img class="wedo-img" src="../Horizon/img/wedo/wedo-img.jpg" alt="wedo image">
-                    <ul class="accordion">
-                        <li class="accordion-item active">
-                            <div class="accordion-header">
-                                <div class="accordion-icon">
-                                    <i class="ri-polaroid-line"></i>
-                                </div>
-                                photography
+                <ul class="card">
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/about/about-1.jpg" alt="about card 1">
                             </div>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.</p>
+                            <div class="card-text">super team</div>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/about/about-2.jpg" alt="about card 2">
+                            </div>
+                            <div class="card-text">super team</div>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/about/about-3.jpg" alt="about card 3">
+                            </div>
+                            <div class="card-text">super team</div>
+                        </div>
+                    </li>
+                </ul> <!-- /.card -->
+            </div> <!-- /.container -->
 
+            <div class="statistics">
+                <div class="container">
+                    <ul class="statistics-wrapper">
+                        <li class="statistics-item">
+                            <p class="statistics-number">42</p>
+                            <p class="statistics-text">web design projects</p>
                         </li>
-                        <li class="accordion-item">
-                            <div class="accordion-header">
-                                <div class="accordion-icon">
-                                    <i class="ri-lightbulb-flash-line"></i>
-                                </div>
-                                creativity
-                            </div>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed
-                                do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.</p>
+                        <li class="statistics-item">
+                            <p class="statistics-number">123</p>
+                            <p class="statistics-text">happy client</p>
                         </li>
-
-                        <li class="accordion-item">
-                            <div class="accordion-header">
-                                <div class="accordion-icon">
-                                    <i class="ri-paint-brush-line"></i>
-                                </div>
-                                web design
-                            </div>
-                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed
-                                do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla
-                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                deserunt mollit anim id est laborum.</p>
+                        <li class="statistics-item">
+                            <p class="statistics-number">15</p>
+                            <p class="statistics-text">award winner</p>
+                        </li>
+                        <li class="statistics-item">
+                            <p class="statistics-number">99</p>
+                            <p class="statistics-text">cup of coffee</p>
+                        </li>
+                        <li class="statistics-item">
+                            <p class="statistics-number">24</p>
+                            <p class="statistics-text">members</p>
                         </li>
                     </ul>
                 </div>
-            </div>
-        </div>
-
-        <section class="feedback">
-            <div class="container">
-                <div class="feedback-wrapper">
-                    <div class="feedback-icon">
-                        <i class="ri-feedback-line"></i>
-                    </div>
-                    <p class="feedback-text">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    </p>
-                    <p class="feedback-author">Steve Benner</p>
-                </div>
-            </div>
+            </div> <!-- /.statistics -->
         </section>
 
-    </section>
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">We work with</h3>
+                    <h2 class="section-title">Amazing Services</h2>
+                </header>
 
-    <section class="section">
-        <div class="container">
-            <div class="section-header">
-                <h3 class="section-suptitle">Who we are</h3>
-                <h2 class="section-title">Meet our team</h2>
+                <div class="service">
+                    <ul class="service-wrapper">
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-camera-line"></i></div>
+                            <h2 class="service-title">Photography</h2>
+                            <p class="service-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod
+                                tempor.</p>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-brush-fill"></i></div>
+                            <h2 class="service-title">Web Design</h2>
+                            <p class="service-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor.</p>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-lightbulb-flash-line"></i></div>
+                            <h2 class="service-title">Creativity</h2>
+                            <p class="service-text">Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="service-wrapper service-wrapper--borderless">
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-search-line"></i></div>
+                            <h2 class="service-title">seo</h2>
+                            <p class="service-text">Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+                            </p>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-css3-line"></i></div>
+                            <h2 class="service-title">Css/Html</h2>
+                            <p class="service-text">Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+                            </p>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon"><i class="ri-computer-line"></i></div>
+                            <h2 class="service-title">Digital</h2>
+                            <p class="service-text">Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                        </li>
+                    </ul>
+                </div> <!-- /.service -->
+            </div> <!-- /.container -->
+        </section> <!-- /.section -->
+
+        <section class="section section--device">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">For all devices</h3>
+                    <h2 class="section-title">Unique design</h2>
+                </header>
+                <div class="device">
+                    <img class="device-item" src="../Horizon/img/devices/ipad.png" alt="ipad image">
+                    <img class="device-item device-item--iphone" src="../Horizon/img/devices/iphone.png"
+                        alt="iphone image">
+                </div>
+            </div>
+        </section> <!-- /.device -->
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">Service</h3>
+                    <h2 class="section-title">what we do</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
+                        commodo consequat.</p>
+                </header>
+                <div class="wedo">
+                    <div class="wedo-wrapper">
+                        <img class="wedo-img" src="../Horizon/img/wedo/wedo-img.jpg" alt="wedo image">
+                        <ul class="accordion">
+                            <li class="accordion-item active">
+                                <div class="accordion-header">
+                                    <div class="accordion-icon">
+                                        <i class="ri-polaroid-line"></i>
+                                    </div>
+                                    photography
+                                </div>
+                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+
+                            </li>
+                            <li class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="accordion-icon">
+                                        <i class="ri-lightbulb-flash-line"></i>
+                                    </div>
+                                    creativity
+                                </div>
+                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </li>
+
+                            <li class="accordion-item">
+                                <div class="accordion-header">
+                                    <div class="accordion-icon">
+                                        <i class="ri-paint-brush-line"></i>
+                                    </div>
+                                    web design
+                                </div>
+                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed
+                                    do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    Duis
+                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                    nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim id est laborum.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- /.wedo -->
+            </div> <!-- /.container -->
+
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback-wrapper">
+                        <div class="feedback-icon">
+                            <i class="ri-feedback-line"></i>
+                        </div>
+                        <p class="feedback-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                        </p>
+                        <p class="feedback-author">Steve Benner</p>
+                    </div>
+                </div>
+            </section> <!-- /.feedback -->
+
+        </section> <!-- /.section -->
+
+        <section class="section">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">Who we are</h3>
+                    <h2 class="section-title">Meet our team</h2>
+                    <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        ex
+                        ea
+                        commodo consequat.</p>
+                </header>
+
+                <ul class="card">
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/whoweare/employee-1.jpg" alt="employee 1">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-social">
+                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
+                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
+                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
+                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee">
+                            <p class="employee-name">Emily Wang</p>
+                            <p class="employee-position">Graphic Design</p>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/whoweare/employee-2.jpg" alt="employee 2">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-social">
+                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
+                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
+                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
+                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee">
+                            <p class="employee-name">John Watson</p>
+                            <p class="employee-position">Developer</p>
+                        </div>
+                    </li>
+                    <li class="card-item">
+                        <div class="card-wrapper">
+                            <div class="card-img">
+                                <img src="../Horizon/img/card/whoweare/employee-3.jpg" alt="employee 2">
+                            </div>
+                            <div class="card-text">
+                                <div class="card-social">
+                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
+                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
+                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
+                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="employee">
+                            <p class="employee-name">Chris Parker</p>
+                            <p class="employee-position">Branding/UX design</p>
+                        </div>
+                    </li>
+                </ul> <!-- /.card -->
+            </div> <!-- /.container -->
+
+            <section class="team-footer">
+                <div class="container">
+                    <ul class="team-footer-wrapper">
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-1.png" alt="sponsor 1" width="137" height="149">
+                        </li>
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-2.png" alt="sponsor 2" width="112" height="120">
+                        </li>
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-3.png" alt="sponsor 3" width="157" height="149">
+                        </li>
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-4.png" alt="sponsor 4" width="154" height="149">
+                        </li>
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-5.png" alt="sponsor 5" width="153" height="149">
+                        </li>
+                        <li class="sponsor-item">
+                            <img src="../Horizon/img/sponsor/sponsor-6.png" alt="sponsor 6" width="144" height="149">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+        </section> <!-- /.section -->
+
+        <section class="section">
+            <header class="section-header">
+                <h3 class="section-suptitle">What we do</h3>
+                <h2 class="section-title">some of our work</h2>
                 <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore
                     magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
                     ea
                     commodo consequat.</p>
-            </div>
+            </header>
 
-            <ul class="card">
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/whoweare/employee-1.jpg" alt="employee 1">
-                        </div>
-                        <div class="card-text">
-                            <div class="card-social">
-                                <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i></div>
-                            </div>
-                        </div>
+            <ul class="work">
+                <li class="work-column work-column">
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-1.jpg" alt="work 1">
                     </div>
-                    <div class="employee">
-                        <p class="employee-name">Emily Wang</p>
-                        <p class="employee-position">Graphic Design</p>
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-2.jpg" alt="work 2">
                     </div>
                 </li>
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/whoweare/employee-2.jpg" alt="employee 2">
-                        </div>
-                        <div class="card-text">
-                            <div class="card-social">
-                                <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i></div>
-                            </div>
-                        </div>
+                <li class="work-column">
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-3.jpg" alt="work 3">
                     </div>
-                    <div class="employee">
-                        <p class="employee-name">John Watson</p>
-                        <p class="employee-position">Developer</p>
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-4.jpg" alt="work 4">
                     </div>
                 </li>
-                <li class="card-item">
-                    <div class="card-wrapper">
-                        <div class="card-img">
-                            <img src="../Horizon/img/card/whoweare/employee-3.jpg" alt="employee 2">
-                        </div>
-                        <div class="card-text">
-                            <div class="card-social">
-                                <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="employee">
-                        <p class="employee-name">Chris Parker</p>
-                        <p class="employee-position">Branding/UX design</p>
+                <li class="work-column">
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-5.jpg" alt="work 5">
                     </div>
                 </li>
-            </ul>
-        </div>
+                <li class="work-column">
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-6.jpg" alt="work 6">
+                    </div>
+                    <div class="work-item">
+                        <img src="../Horizon/img/work/work-7.jpg" alt="work 7">
+                    </div>
+                </li>
+            </ul> <!-- /.work -->
 
-        <section class="team-footer">
-            <div class="container">
-                <div class="team-footer-wrapper">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-1.png" alt="sponsor 1" width="137"
-                        height="149">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-2.png" alt="sponsor 2" width="112"
-                        height="120">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-3.png" alt="sponsor 3" width="157"
-                        height="149">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-4.png" alt="sponsor 4" width="154"
-                        height="149">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-5.png" alt="sponsor 5" width="153"
-                        height="149">
-                    <img class="sponsor-item" src="../Horizon/img/sponsor/sponsor-6.png" alt="sponsor 6" width="144"
-                        height="149">
+            <section class="feedback feedback-work">
+                <div class="container">
+                    <div class="feedback-wrapper">
+                        <div class="feedback-avatar">
+                            <img src="../Horizon/img/work/author-avatar.png" alt="feedback avatar">
+                        </div>
+                        <p class="feedback-text">
+                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                        </p>
+                        <p class="feedback-author">Felix Cooper</p>
+                    </div>
                 </div>
+            </section>
+
+        </section> <!-- /.section -->
+
+        <section class="section section--clients">
+            <div class="container">
+                <header class="section-header">
+                    <h3 class="section-suptitle">Happy Clients</h3>
+                    <h2 class="section-title">What people say</h2>
+                </header>
             </div>
         </section>
 
-    </section>
-
-    <section class="section">
-        <div class="section-header">
-            <h3 class="section-suptitle">What we do</h3>
-            <h2 class="section-title">some of our work</h2>
-            <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore
-                magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                ea
-                commodo consequat.</p>
-        </div>
-
-        <ul class="work">
-            <li class="work-column work-column">
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-1.jpg" alt="work 1">
-                </div>
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-2.jpg" alt="work 2">
-                </div>
-            </li>
-            <li class="work-column">
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-3.jpg" alt="work 3">
-                </div>
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-4.jpg" alt="work 4">
-                </div>
-            </li>
-            <li class="work-column">
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-5.jpg" alt="work 5">
-                </div>
-            </li>
-            <li class="work-column">
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-6.jpg" alt="work 6">
-                </div>
-                <div class="work-item">
-                    <img src="../Horizon/img/work/work-7.jpg" alt="work 7">
-                </div>
-            </li>
-        </ul>
-
-        <section class="feedback feedback-work">
-            <div class="container">
-                <div class="feedback-wrapper">
-                    <div class="feedback-avatar">
-                        <img src="../Horizon/img/work/author-avatar.png" alt="feedback avatar">
-                    </div>
-                    <p class="feedback-text">
-                        “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                    </p>
-                    <p class="feedback-author">Felix Cooper</p>
-                </div>
-            </div>
-        </section>
-
-    </section>
-
+    </main>
 </body>
 
 </html>
