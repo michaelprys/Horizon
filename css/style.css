@@ -693,7 +693,6 @@ body {
 .client-name {
     text-transform: uppercase;
     font-weight: 700;
-    margin-bottom: 15px;
 }
 
 .client-position {
@@ -702,9 +701,10 @@ body {
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
+    margin: 15px 0 17px 0;
 }
 
-.client-position::after {
+.client-feedback::before {
     content: "";
     display: block;
     width: 60px;
