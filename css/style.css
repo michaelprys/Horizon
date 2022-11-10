@@ -672,11 +672,27 @@ body {
 
 .client-item {
     width: 514px;
-    height: 161px;
+    display: flex;
+    margin: 87px 30px 72px 0;
+}
+
+.client-item img {
+    margin-right: 30px;
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+.client-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 20px 129px 0;
 }
 
 .client-name {
     text-transform: uppercase;
+    font-weight: 700;
     margin-bottom: 15px;
 }
 
@@ -686,6 +702,15 @@ body {
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
+}
+
+.client-position::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin-bottom: 24px;
 }
 
 .client-feedback {
