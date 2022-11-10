@@ -16,26 +16,26 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="container">
-            <div class="header-wrapper">
-                <h1 class="logo"><a href="">Horizon</a></h1>
+            <div class="main-header-wrapper">
+                <h1 class="main-header-logo"><a href="">Horizon</a></h1>
                 <nav class="main-navigation">
-                    <ul class="site-navigation">
+                    <ul class="navigation-links">
                         <li class="navigation-item active"><a href="#">about</a></li>
                         <li class="navigation-item"><a href="#">service</a></li>
                         <li class="navigation-item"><a href="#">work</a></li>
                         <li class="navigation-item"><a href="#">blog</a></li>
                         <li class="navigation-item"><a href="#">contact</a></li>
                     </ul>
-                    <div class="cart">
-                        <div class="navigation-item navigation-item--icon">
+                    <ul class="navigation-buttons">
+                        <li class="navigation-cart-button">
                             <a href="#"><i class="ri-shopping-cart-line"></i></a>
-                        </div>
-                        <div class="navigation-item navigation-item--icon">
+                        </li>
+                        <li class="navigation-search-button">
                             <a href="#"><i class="ri-search-line"></i></a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -280,7 +280,7 @@
                 </div> <!-- /.wedo -->
             </div> <!-- /.container -->
 
-            <section class="feedback">
+            <article class="feedback">
                 <div class="container">
                     <div class="feedback-wrapper">
                         <div class="feedback-icon">
@@ -294,7 +294,7 @@
                         <p class="feedback-author">Steve Benner</p>
                     </div>
                 </div>
-            </section> <!-- /.feedback -->
+            </article> <!-- /.feedback -->
 
         </section> <!-- /.section -->
 
@@ -306,7 +306,8 @@
                     <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor
                         incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                        aliquip
                         ex
                         ea
                         commodo consequat.</p>
@@ -319,13 +320,13 @@
                                 <img src="../Horizon/img/card/whoweare/employee-1.jpg" alt="employee 1">
                             </div>
                             <div class="card-text">
-                                <div class="card-social">
-                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
-                                    </div>
-                                </div>
+                                <ul class="card-social">
+                                    <li><a class="social-item" href="#"><i class="ri-facebook-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-twitter-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-pinterest-fill"></i></a></li>
+                                    <li><a class="social-item social-item--borderless" href="#"><i
+                                                class="ri-instagram-line"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="employee">
@@ -339,13 +340,13 @@
                                 <img src="../Horizon/img/card/whoweare/employee-2.jpg" alt="employee 2">
                             </div>
                             <div class="card-text">
-                                <div class="card-social">
-                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
-                                    </div>
-                                </div>
+                                <ul class="card-social">
+                                    <li><a class="social-item" href="#"><i class="ri-facebook-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-twitter-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-pinterest-fill"></i></a></li>
+                                    <li><a class="social-item social-item--borderless" href="#"><i
+                                                class="ri-instagram-line"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="employee">
@@ -359,13 +360,13 @@
                                 <img src="../Horizon/img/card/whoweare/employee-3.jpg" alt="employee 2">
                             </div>
                             <div class="card-text">
-                                <div class="card-social">
-                                    <div class="social-item"><i class="ri-facebook-fill"></i></div>
-                                    <div class="social-item"><i class="ri-twitter-fill"></i></div>
-                                    <div class="social-item"><i class="ri-pinterest-fill"></i></div>
-                                    <div class="social-item social-item--borderless"><i class="ri-instagram-line"></i>
-                                    </div>
-                                </div>
+                                <ul class="card-social">
+                                    <li><a class="social-item" href="#"><i class="ri-facebook-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-twitter-fill"></i></a></li>
+                                    <li><a class="social-item" href="#"><i class="ri-pinterest-fill"></i></a></li>
+                                    <li><a class="social-item social-item--borderless" href="#"><i
+                                                class="ri-instagram-line"></i></a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="employee">
@@ -407,46 +408,84 @@
             <header class="section-header">
                 <h3 class="section-suptitle">What we do</h3>
                 <h2 class="section-title">some of our work</h2>
-                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor
                     incididunt ut labore et dolore
-                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex
                     ea
                     commodo consequat.</p>
             </header>
 
             <ul class="work">
-                <li class="work-column work-column">
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-1.jpg" alt="work 1">
-                    </div>
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-2.jpg" alt="work 2">
-                    </div>
+                <li class="work-column">
+                    <ul>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-1.jpg" alt="work 1">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-2.jpg" alt="work 2">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="work-column">
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-3.jpg" alt="work 3">
-                    </div>
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-4.jpg" alt="work 4">
-                    </div>
+                    <ul>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-3.jpg" alt="work 3">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-4.jpg" alt="work 4">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="work-column">
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-5.jpg" alt="work 5">
-                    </div>
+                    <ul>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-5.jpg" alt="work 5">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
                 <li class="work-column">
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-6.jpg" alt="work 6">
-                    </div>
-                    <div class="work-item">
-                        <img src="../Horizon/img/work/work-7.jpg" alt="work 7">
-                    </div>
+                    <ul>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-6.jpg" alt="work 6">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                        <li class="work-item">
+                            <img class="work-photo" src="../Horizon/img/work/work-7.jpg" alt="work 7">
+                            <div class="work-info">
+                                <div class="work-title">creatively designed</div>
+                                <div class="work-text">Lorem ipsum dolor sit</div>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
             </ul> <!-- /.work -->
 
-            <section class="feedback feedback-work">
+            <article class="feedback feedback-work">
                 <div class="container">
                     <div class="feedback-wrapper">
                         <div class="feedback-avatar">
@@ -460,7 +499,7 @@
                         <p class="feedback-author">Felix Cooper</p>
                     </div>
                 </div>
-            </section>
+            </article>
 
         </section> <!-- /.section -->
 
@@ -470,6 +509,16 @@
                     <h3 class="section-suptitle">Happy Clients</h3>
                     <h2 class="section-title">What people say</h2>
                 </header>
+
+                <div class="client-item">
+                    <img src="../Horizon/img/clients/client-1.jpg" alt="client 1">
+                    <div class="client-info">
+                        <span class="client-name">Matthew Dix<br></span>
+                        <span class="client-position">Graphic Design</span>
+                        <p class="client-feedback">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
