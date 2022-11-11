@@ -31,7 +31,7 @@ ul {
 
 a {
     text-decoration: auto;
-    color: #333333;
+    color: #ffffff;
 }
 
 img {
@@ -56,4 +56,19 @@ select {
         transition-duration: 0.01ms !important;
         scroll-behavior: auto !important;
     }
+}
+
+/**
+ * Makes an element hidden, but still accessible to web crawlers.
+ */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
