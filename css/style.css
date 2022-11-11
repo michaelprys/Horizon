@@ -2,9 +2,7 @@
 -------------------------------------*/
 
 body {
-    background-image: url("../img/bg.jpg");
-    background-color: #ffffff;
-    background-repeat: no-repeat;
+    background: #ffffff url("../img/bg.jpg") center no-repeat;
     background-size: cover;
     font-size: 14px;
     font-weight: 400;
@@ -143,7 +141,6 @@ body {
     justify-content: space-between;
     font-size: 18px;
     color: #ffffff;
-
     margin-top: 100px;
 }
 
@@ -169,7 +166,6 @@ body {
     position: absolute;
     top: -2px;
     left: 0;
-    z-index: 1;
     width: 60px;
     height: 2px;
     background-color: #f38181;
@@ -265,7 +261,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    z-index: 1;
     transform: translate3d(-50%, -50%, 0);
     color: #ffffff;
     text-transform: uppercase;
@@ -351,7 +346,6 @@ body {
     font-size: 32px;
     top: -5px;
     left: 0;
-    z-index: 1;
     color: #95e1d3;
     padding-left: 30px;
 }
@@ -360,14 +354,14 @@ body {
 -------------------------------------*/
 
 .section--device {
-    background: url("../img/devices/devices-bg.jpg") center no-repeat;
+    background: #cccccc url("../img/devices/devices-bg.jpg") center no-repeat;
     background-size: cover;
     max-height: 850px;
 }
 
 .device {
     max-width: 636px;
-    margin: 48px auto 0 337px;
+    margin: 39px auto 0 337px;
     position: relative;
 }
 
@@ -375,7 +369,6 @@ body {
     position: absolute;
     bottom: -90px;
     right: 0;
-    z-index: 1;
 }
 
 /* Wedo
@@ -388,6 +381,9 @@ body {
 }
 
 .wedo-img {
+    background-image: url("../img/wedo/wedo-img.jpg");
+    width: 570px;
+    height: 380px;
     margin-right: 30px;
 }
 
@@ -416,7 +412,6 @@ body {
     font-weight: 700;
     position: relative;
     border: 1px solid #e5e5e5;
-
 }
 
 .accordion-header::after {
@@ -427,7 +422,6 @@ body {
     position: absolute;
     top: 40%;
     right: 20px;
-    z-index: 1;
     transform: rotate(135deg);
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
@@ -438,11 +432,10 @@ body {
     position: absolute;
     /* top: 0;
     left: 16px;
-    z-index: 1; */
+     */
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
-    z-index: 1;
     font-size: 32px;
     color: #95e1d3;
     font-weight: 400;
@@ -485,7 +478,7 @@ body {
     position: absolute;
     top: 47%;
     left: 23px;
-    z-index: 1;
+
     transform: rotate(45deg);
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
@@ -500,7 +493,6 @@ body {
     position: absolute;
     top: 47%;
     right: 23px;
-    z-index: 1;
     transform: rotate(-135deg);
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
@@ -528,7 +520,7 @@ body {
     position: absolute;
     top: 72%;
     left: 0;
-    z-index: 1;
+
     width: 60px;
     height: 3px;
     background-color: #f38181;
@@ -541,7 +533,6 @@ body {
     position: absolute;
     top: 70px;
     left: 110px;
-    z-index: 1;
     color: #95e1d3;
 }
 
@@ -550,13 +541,12 @@ body {
     position: absolute;
     top: 45px;
     left: 74px;
-    z-index: 1;
 }
 
 /* Team
 -------------------------------------*/
 
-.social-item { 
+.social-item {
     display: block;
     padding: 10px 15px;
     color: #f38181;
@@ -642,7 +632,6 @@ body {
     text-align: center;
     top: 50%;
     left: 50%;
-    z-index: 1;
     transform: translate3d(-50%, -50%, 0);
     color: #ffffff;
     opacity: 0;
@@ -689,7 +678,6 @@ body {
     position: absolute;
     top: 0;
     left: 40px;
-    z-index: 1;
 }
 
 .client-name {
@@ -727,11 +715,91 @@ body {
 /* Blog
 -------------------------------------*/
 
-.blog-img {
-    background: url("../img/blog/Blog-1.jpg"),
-    url("../img/blog/Blog-2.jpg"),
-    url("../img/blog/Blog-3.jpg");
-    
+.blog {
+    display: flex;
+    justify-content: space-between;
+    padding: 47px 0 116px 0;
+}
+
+.blog-item {
+    width: 380px;
+}
+
+.blog-img1 {
+    background: url("../img/blog/Blog-1.jpg");
     width: 380px;
     height: 240px;
+    position: relative;
+}
+
+.blog-img2 {
+    background: url("../img/blog/Blog-2.jpg");
+    width: 380px;
+    height: 240px;
+    position: relative;
+}
+
+.blog-img3 {
+    background: url("../img/blog/Blog-3.jpg");
+    width: 380px;
+    height: 240px;
+    position: relative;
+}
+
+.blog-date {
+    position: absolute;
+    display: block;
+    background-color: #95e1d3;
+    padding: 15px 15px 10px 15px;
+    bottom: 10px;
+    left: -10px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    line-height: 24px;
+}
+
+.blog-date-month {
+    font-family: Roboto;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    opacity: 80%;
+}
+
+.blog-title {
+    padding-top: 20px;
+    text-transform: uppercase;
+}
+
+.blog-content {
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.blog-statistics {
+    display: flex;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #999;
+}
+
+.blog-statistics i {
+    font-size: 18px;
+    margin-right: 6px;
+    color: #95e1d3;
+}
+
+.blog-views {
+    display: flex;
+    margin-right: 18px;
+    align-items: center;
+}
+
+.blog-comments {
+    display: flex;
+    align-items: center;
 }
