@@ -13,6 +13,17 @@ body {
     line-height: 1.5;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Container
 -------------------------------------*/
 
@@ -478,7 +489,6 @@ body {
     position: absolute;
     top: 47%;
     left: 23px;
-
     transform: rotate(45deg);
     border-left: 3px solid #cccccc;
     border-bottom: 3px solid #cccccc;
@@ -725,21 +735,21 @@ body {
     width: 380px;
 }
 
-.blog-img1 {
+.blog-img-1 {
     background: url("../img/blog/Blog-1.jpg");
     width: 380px;
     height: 240px;
     position: relative;
 }
 
-.blog-img2 {
+.blog-img-2 {
     background: url("../img/blog/Blog-2.jpg");
     width: 380px;
     height: 240px;
     position: relative;
 }
 
-.blog-img3 {
+.blog-img-3 {
     background: url("../img/blog/Blog-3.jpg");
     width: 380px;
     height: 240px;
@@ -771,6 +781,11 @@ body {
 .blog-title {
     padding-top: 20px;
     text-transform: uppercase;
+}
+
+.blog-title a:hover {
+    text-decoration: underline;
+    user-select: cursor;
 }
 
 .blog-content {
