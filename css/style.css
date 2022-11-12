@@ -13,6 +13,10 @@ body {
     line-height: 1.5;
 }
 
+::placeholder {
+    color: #cccccc;
+}
+
 /* Container
 -------------------------------------*/
 
@@ -849,4 +853,139 @@ body {
     height: 3px;
     background-color: #f38181;
     margin: 21px auto 0 auto;
+}
+
+/* Footer information
+-------------------------------------*/
+
+.main-footer-wrapper {
+    padding-top: 74px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column--first {
+    width: 480px;
+}
+
+.footer-title {
+    color: #cccccc;
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.footer-text {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    padding: 42px 0 49px 0;
+}
+
+.footer-followers {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
+}
+
+.footer-followers span {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.footer-socials {
+    padding: 18px 0 39px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 306px;
+    font-size: 19px;
+    color: #95e1d3;
+    align-items: center;
+}
+
+.footer-socials a {
+    color: #95e1d3;
+}
+
+.footer-socials ul {
+    display: flex;
+    justify-content: space-between;
+    width: 219px;
+}
+
+.footer-socials p {
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.subscribe {
+    display: flex;
+}
+
+.subscribe-input {
+    padding: 15px 142px 15px 13px;
+    border: 1px solid #e7e7e7;
+    font-style: italic;
+    font-size: 15px;
+    font-family: Roboto;
+    color: #333333;
+    width: 230px;
+}
+
+.subscribe-input:focus {
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+.subscribe-button {
+    width: 150px;
+    padding: 15px 34px;
+    background-color: #95e1d3;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+/* Footer blogs
+-------------------------------------*/
+
+.footer-column--second {
+    width: 336px;
+}
+
+.footer-blog-item {
+    display: flex;
+    margin-bottom: 31px;
+    align-items: center;
+}
+
+.footer-blog-content {
+    padding-left: 20px; 
+}
+
+.footer-blogs-title {
+    margin-bottom: 40px;
+}
+
+.footer-blog-title {
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.footer-blog-date {
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 24px;
 }
