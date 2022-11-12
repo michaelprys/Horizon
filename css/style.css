@@ -855,13 +855,15 @@ body {
     margin: 21px auto 0 auto;
 }
 
-/* Footer information
+/* Footer Information
 -------------------------------------*/
 
 .main-footer-wrapper {
     padding-top: 74px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-bottom: 69px;
 }
 
 .footer-column--first {
@@ -953,7 +955,7 @@ body {
     border: none;
 }
 
-/* Footer blogs
+/* Footer Blogs
 -------------------------------------*/
 
 .footer-column--second {
@@ -967,14 +969,15 @@ body {
 }
 
 .footer-blog-content {
-    padding-left: 20px; 
+    padding-left: 20px;
 }
 
 .footer-blogs-title {
     margin-bottom: 40px;
 }
 
-.footer-blog-title {
+.footer-blog-title,
+.footer-gallery-title {
     color: #333333;
     font-size: 12px;
     line-height: 18px;
@@ -988,4 +991,24 @@ body {
     font-style: italic;
     font-size: 13px;
     line-height: 24px;
+}
+
+/* Footer Gallery
+-------------------------------------*/
+
+.footer-gallery {
+    width: 268px;
+    height: 268px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Copyright
+-------------------------------------*/
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+    padding: 22px 0;
 }
