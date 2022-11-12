@@ -10,6 +10,9 @@ body {
     color: #333333;
     height: 1000px;
     text-rendering: optimizeSpeed;
+}
+
+p {
     line-height: 1.5;
 }
 
@@ -386,14 +389,11 @@ body {
 
 .wedo-img {
     background: #333333 url("../img/wedo/wedo-img.jpg");
-    width: 570px;
-    height: 380px;
     margin-right: 30px;
 }
 
 .accordion {
     width: 600px;
-    height: 380px;
 }
 
 .accordion-item {
@@ -434,9 +434,6 @@ body {
 
 .accordion-icon {
     position: absolute;
-    /* top: 0;
-    left: 16px;
-     */
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
@@ -728,10 +725,7 @@ body {
     width: 380px;
 }
 
-.blog-img-1 {
-    background: #333333 url("../img/blog/Blog-1.jpg");
-    width: 380px;
-    height: 240px;
+.blog-wrapper {
     position: relative;
 }
 
@@ -855,18 +849,36 @@ body {
     margin: 21px auto 0 auto;
 }
 
+/* Main Footer
+-------------------------------------*/
+
+.main-footer {
+    padding-top: 74px;
+}
+
+.main-footer-wrapper {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+
+.footer-title {
+    color: #333333;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    padding-bottom: 40px;
+}
+
 /* Footer Column First
 -------------------------------------*/
 
-.main-footer-wrapper {
-    padding-top: 74px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 69px;
-}
-
 .footer-column--first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 480px;
 }
 
@@ -874,22 +886,24 @@ body {
     color: #cccccc;
     font-size: 46px;
     font-weight: 700;
+    transform: translate3d(-3px, 0, 0);
 }
 
 .footer-text {
-    color: #999999;
     font-family: Roboto;
     font-size: 15px;
     font-weight: 400;
     font-style: normal;
     letter-spacing: normal;
     line-height: 24px;
-    padding: 42px 0 49px 0;
+    text-align: left;
+    color: #999999;
+    padding: 22px 18px 32px 0;
 }
 
 .footer-followers {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 18px;
+    padding-bottom: 7px;
 }
 
 .footer-followers span {
@@ -898,10 +912,9 @@ body {
 }
 
 .footer-socials {
-    padding: 18px 0 39px 0;
+    padding: 3px 174px 28px 0;
     display: flex;
     justify-content: space-between;
-    width: 306px;
     font-size: 19px;
     color: #95e1d3;
     align-items: center;
@@ -923,20 +936,22 @@ body {
     font-style: italic;
     font-size: 15px;
     font-weight: 400;
+    width: 33%;
 }
 
 .subscribe {
     display: flex;
+    padding-right: 101px;
 }
 
 .subscribe-input {
-    padding: 15px 142px 15px 13px;
+    width: 60%;
+    padding: 12px;
     border: 1px solid #e7e7e7;
     font-style: italic;
     font-size: 15px;
     font-family: Roboto;
     color: #333333;
-    width: 230px;
 }
 
 .subscribe-input:focus {
@@ -945,8 +960,8 @@ body {
 }
 
 .subscribe-button {
-    width: 150px;
-    padding: 15px 34px;
+    width: 40%;
+    padding: 12px 28px;
     background-color: #95e1d3;
     font-weight: 700;
     color: #ffffff;
@@ -958,18 +973,22 @@ body {
 /* Footer Column Second
 -------------------------------------*/
 
-.footer-column--second {
+.footer-blog-wrapper {
     width: 336px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 38px;
 }
 
 .footer-blog-item {
     display: flex;
-    margin-bottom: 31px;
     align-items: center;
 }
 
 .footer-blog-content {
     padding-left: 20px;
+    width: 64%;
 }
 
 .footer-blog-title {
@@ -988,40 +1007,30 @@ body {
     font-family: Roboto;
     font-style: italic;
     font-size: 13px;
-    line-height: 24px;
 }
 
 /* Footer Column Third
 -------------------------------------*/
 
-.footer-gallery {
-    width: 268px;
+.footer-gallery-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    margin: 40px 0 20px 0;
+    gap: 23px;
 }
 
-.footer-gallery-item {
-    width: 33%;
-    border-bottom: 2px solid #fff;
-}
-
-.footer-title {
-    color: #333333;
-    font-size: 14px;
-    line-height: 18px;
-    text-align: left;
-    text-transform: uppercase;
-    margin-bottom: 40px;
+.footer-gallery {
+    display: grid;
+    grid-template-columns: 88px 88px 88px;
+    grid-auto-rows: minmax(88px,auto);
+    grid-gap: 2px;
 }
 
 .view-more {
     font-family: Roboto;
     font-style: italic;
-    font-size: 13px;
-    line-height: 24px;
     color: #333333;
+    font-size: 14px;
 }
 
 .view-more:hover {

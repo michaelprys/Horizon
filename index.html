@@ -232,7 +232,7 @@
                 </header>
                 <div class="wedo">
                     <div class="wedo-wrapper">
-                        <div class="wedo-img"></div>
+                        <img class="wedo-img" src="../Horizon/img/wedo/wedo-img.jpg" alt="wedo image" width="570px" height="380px">
                         <ul class="accordion">
                             <li class="accordion-item active">
                                 <div class="accordion-header">
@@ -589,7 +589,8 @@
                 </header>
                 <div class="blog">
                     <article class="blog-item">
-                        <div class="blog-img-1">
+                        <div class="blog-wrapper">
+                            <a href="#"><img src="../Horizon/img/blog/Blog-1.jpg" alt="Blog image 1"></a>
                             <div class="blog-date">
                                 15
                                 <div class="blog-date-month">Jan</div>
@@ -609,7 +610,8 @@
                         </div>
                     </article>
                     <article class="blog-item">
-                        <div class="blog-img-2">
+                        <div class="blog-wrapper">
+                            <a href="#"><img src="../Horizon/img/blog/Blog-2.jpg" alt="Blog image 2"></a>
                             <div class="blog-date">
                                 14
                                 <div class="blog-date-month">Jan</div>
@@ -629,7 +631,8 @@
                         </div>
                     </article>
                     <article class="blog-item">
-                        <div class="blog-img-3">
+                        <div class="blog-wrapper">
+                            <a href="#"><img src="../Horizon/img/blog/Blog-3.jpg" alt="Blog image 3"></a>
                             <div class="blog-date">
                                 12
                                 <div class="blog-date-month">Jan</div>
@@ -664,17 +667,12 @@
 
         <footer class="main-footer">
             <div class="container">
-                <ul class="main-footer-wrapper">
-                    <li class="footer-column footer-column--first">
+                <div class="main-footer-wrapper">
+                    <div class="footer-column footer-column--first">
                         <h2 class="footer-logo">Horizon</h2>
                         <p class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                            pariatur. </p>
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                         <p class="footer-followers"><span>15k</span> followers</p>
                         <div class="footer-socials">
                             <p>Follow Us:</p>
@@ -691,82 +689,86 @@
                             <input class="subscribe-input" type="email" name="name" placeholder="Your Email...">
                             <button class="subscribe-button" type="submit">Subscribe</button>
                         </form>
-                    </li>
+                    </div>
+                    <!-- ===== /.Footer-Column-First ===== -->
 
-                    <li class="footer-column footer-column--second">
+                    <div class="footer-column footer-column--second">
                         <h2 class="footer-title">Blogs</h2>
-                        <article class="footer-blog-item">
-                            <img src="../Horizon/img/footer/footer-blog-1.jpg" alt="footer blog 1" width="120px"
-                                height="79px">
-                            <div class="footer-blog-content">
-                                <h3><a class="footer-blog-title" href="#">Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing</a></h3>
-                                <p class="footer-blog-date">Jan 9, 2016</p>
-                            </div>
-                        </article>
-                        <article class="footer-blog-item">
-                            <img src="../Horizon/img/footer/footer-blog-2.jpg" alt="footer blog 2" width="120px"
-                                height="79px">
-                            <div class="footer-blog-content">
-                                <h3><a class="footer-blog-title" href="#">Consectetur adipiscing elit,
-                                        sed do eiusmod tempor</a></h3>
-                                <p class="footer-blog-date">Jan 9, 2016</p>
-                            </div>
-                        </article>
-                        <article class="footer-blog-item">
-                            <img src="../Horizon/img/footer/footer-blog-3.jpg" alt="footer blog 3" width="120px"
-                                height="79px">
-                            <div class="footer-blog-content">
-                                <h3><a class="footer-blog-title" href="#">sed do eiusmod tempor
-                                        incididunt ut labore</a></h3>
-                                <p class="footer-blog-date">Jan 9, 2016</p>
-                            </div>
-                        </article>
-                    </li>
+                        <div class="footer-blog-wrapper">
+                            <article class="footer-blog-item">
+                                <a href="#"><img src="../Horizon/img/footer/footer-blog-1.png" alt="footer blog 1"></a>
+                                <div class="footer-blog-content">
+                                    <h3><a class="footer-blog-title" href="#">Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing</a></h3>
+                                    <p class="footer-blog-date">Jan 9, 2016</p>
+                                </div>
+                            </article>
+                            <article class="footer-blog-item">
+                                <a href="#"><img src="../Horizon/img/footer/footer-blog-2.png" alt="footer blog 2"></a>
+                                <div class="footer-blog-content">
+                                    <h3><a class="footer-blog-title" href="#">Consectetur adipiscing elit,
+                                            sed do eiusmod tempor</a></h3>
+                                    <p class="footer-blog-date">Jan 9, 2016</p>
+                                </div>
+                            </article>
+                            <article class="footer-blog-item">
+                                <a href="#"><img src="../Horizon/img/footer/footer-blog-3.png" alt="footer blog 3"></a>
+                                <div class="footer-blog-content">
+                                    <h3><a class="footer-blog-title" href="#">sed do eiusmod tempor
+                                            incididunt ut labore</a></h3>
+                                    <p class="footer-blog-date">Jan 9, 2016</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <!-- ===== /.Footer-Column-Second ===== -->
 
-                    <li class="footer-column footer-column--third">
+                    <div class="footer-column footer-column--third">
                         <h2 class="footer-title">Instagram</h2>
-                        <ul class="footer-gallery">
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-1.png"
-                                        alt="instagram photo 1"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-2.png"
-                                        alt="instagram photo 2"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-3.png"
-                                        alt="instagram photo 3"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-4.png"
-                                        alt="instagram photo 4"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-5.png"
-                                        alt="instagram photo 5"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-6.png"
-                                        alt="instagram photo 6"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-7.png"
-                                        alt="instagram photo 7"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-8.png"
-                                        alt="instagram photo 8"></a>
-                            </li>
-                            <li class="footer-gallery-item"><a href="#" target="_blank"><img
-                                        src="../Horizon/img/instagram-gallery/insta-photo-9.png"
-                                        alt="instagram photo 9"></a>
-                            </li>
-                        </ul>
-                        <a class="view-more" href="#" target="_blank">View more photos</a>
-                    </li>
-                </ul>
+                        <div class="footer-gallery-wrapper">
+                            <ul class="footer-gallery">
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-1.png"
+                                            alt="instagram photo 1"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-2.png"
+                                            alt="instagram photo 2"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-3.png"
+                                            alt="instagram photo 3"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-4.png"
+                                            alt="instagram photo 4"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-5.png"
+                                            alt="instagram photo 5"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-6.png"
+                                            alt="instagram photo 6"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-7.png"
+                                            alt="instagram photo 7"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-8.png"
+                                            alt="instagram photo 8"></a>
+                                </li>
+                                <li class="footer-gallery-item"><a href="#" target="_blank"><img
+                                            src="../Horizon/img/instagram-gallery/insta-photo-9.png"
+                                            alt="instagram photo 9"></a>
+                                </li>
+                            </ul>
+                            <a class="view-more" href="#" target="_blank">View more photos</a>
+                        </div>
+                    </div>
+                    <!-- ===== /.Footer-Column-Third ===== -->
+                </div>
                 <!-- ===== /.Main-Footer-Wrapper ===== -->
                 <p class="copyright">© 2022 Horizon</p>
             </div>
