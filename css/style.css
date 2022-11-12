@@ -855,7 +855,7 @@ body {
     margin: 21px auto 0 auto;
 }
 
-/* Footer Information
+/* Footer Column First
 -------------------------------------*/
 
 .main-footer-wrapper {
@@ -870,7 +870,7 @@ body {
     width: 480px;
 }
 
-.footer-title {
+.footer-logo {
     color: #cccccc;
     font-size: 46px;
     font-weight: 700;
@@ -955,7 +955,7 @@ body {
     border: none;
 }
 
-/* Footer Blogs
+/* Footer Column Second
 -------------------------------------*/
 
 .footer-column--second {
@@ -972,17 +972,15 @@ body {
     padding-left: 20px;
 }
 
-.footer-blogs-title {
-    margin-bottom: 40px;
-}
-
-.footer-blog-title,
-.footer-gallery-title {
+.footer-blog-title {
     color: #333333;
     font-size: 12px;
     line-height: 18px;
-    text-align: left;
     text-transform: uppercase;
+}
+
+.footer-blog-title:hover {
+    text-decoration: underline;
 }
 
 .footer-blog-date {
@@ -993,15 +991,41 @@ body {
     line-height: 24px;
 }
 
-/* Footer Gallery
+/* Footer Column Third
 -------------------------------------*/
 
 .footer-gallery {
     width: 268px;
-    height: 268px;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 40px;
+    justify-content: space-between;
+    margin: 40px 0 20px 0;
+}
+
+.footer-gallery-item {
+    width: 33%;
+    border-bottom: 2px solid #fff;
+}
+
+.footer-title {
+    color: #333333;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.view-more {
+    font-family: Roboto;
+    font-style: italic;
+    font-size: 13px;
+    line-height: 24px;
+    color: #333333;
+}
+
+.view-more:hover {
+    text-decoration: underline;
 }
 
 /* Copyright
