@@ -3,12 +3,14 @@
 
 body {
     background: #ffffff url("../img/bg.jpg") center no-repeat;
+    -webkit-background-size: cover;
     background-size: cover;
     font-size: 14px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
-    height: 1000px;
+    width: 100%;
+    height: 100vh;
     text-rendering: optimizeSpeed;
 }
 
@@ -24,8 +26,10 @@ p {
 -------------------------------------*/
 
 .container {
-    width: 1208px;
+    width: 100%;
+    max-width: 1230px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header
@@ -41,7 +45,7 @@ p {
 }
 
 .main-navigation {
-    width: 620px;
+    width: 51.66%;
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
@@ -112,7 +116,6 @@ p {
     font-size: 114px;
     user-select: none;
     text-transform: uppercase;
-    line-height: 140px;
 }
 
 .intro-title::after {
@@ -157,7 +160,7 @@ p {
 
 .intro-slider-item {
     border-top: 2px solid #fff;
-    width: 280px;
+    width: 23.33%;
     position: relative;
     opacity: 0.7;
     padding: 20px 0;
@@ -191,10 +194,15 @@ p {
 }
 
 .section-suptitle {
+    font-family: "Kaushan Script";
+    font-size: 24px;
+    font-weight: 400;
     margin-bottom: 10px;
 }
 
 .section-title {
+    font-size: 30px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 
@@ -204,23 +212,12 @@ p {
     width: 60px;
     height: 3px;
     background-color: #f38181;
-    margin: 35px auto 0;
-}
-
-.section-suptitle {
-    font-family: "Kaushan Script";
-    font-size: 24px;
-    font-weight: 400;
-}
-
-.section-title {
-    font-size: 30px;
-    font-weight: 700;
+    margin: 35px auto;
 }
 
 .section-text {
     margin: 45px auto 0;
-    width: 954px;
+    width: 79.5%;
     text-align: center;
     color: #999999;
     font-family: Roboto;
@@ -234,8 +231,9 @@ p {
 
 .card {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 101px;
+    margin: 100px -15px 0;
 }
 
 .card-wrapper {
@@ -251,6 +249,11 @@ p {
     transform: translate3d(-10px, -10px, 0);
 }
 
+.card-item {
+    width: 33.33%;
+    padding: 0 15px;
+}
+
 .card-img {
     background: linear-gradient(to bottom, #f38181, #fce38a);
     transition: transform .2s linear;
@@ -262,6 +265,8 @@ p {
 
 .card-img img {
     transition: opacity .2s linear;
+    max-width: 100%;
+    height: auto;
 }
 
 .card-text {
@@ -331,7 +336,7 @@ p {
 }
 
 .service-item {
-    padding-left: 90px;
+    padding-left: 7.5%;
     position: relative;
     flex: 1 1 0;
 }
@@ -390,10 +395,11 @@ p {
 .wedo-img {
     background: #333333 url("../img/wedo/wedo-img.jpg");
     margin-right: 30px;
+    width: 50%;
 }
 
 .accordion {
-    width: 600px;
+    width: 50%;
 }
 
 .accordion-item {
@@ -858,7 +864,7 @@ p {
 
 .main-footer-wrapper {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 65px;
 }
@@ -879,7 +885,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 480px;
+    width: 39%;
 }
 
 .footer-logo {
@@ -903,7 +909,7 @@ p {
 
 .footer-followers {
     border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 7px;
+    padding-bottom: 12px;
 }
 
 .footer-followers span {
@@ -912,7 +918,7 @@ p {
 }
 
 .footer-socials {
-    padding: 3px 174px 28px 0;
+    padding: 10px 174px 28px 0;
     display: flex;
     justify-content: space-between;
     font-size: 19px;
@@ -1013,7 +1019,7 @@ p {
 .footer-gallery {
     display: grid;
     grid-template-columns: 88px 88px 88px;
-    grid-auto-rows: minmax(88px,auto);
+    grid-auto-rows: minmax(88px, auto);
     grid-gap: 2px;
     margin-bottom: 15px;
 }
@@ -1037,4 +1043,135 @@ p {
     text-align: center;
     border-top: 1px solid #e5e5e5;
     padding: 22px 0;
+}
+
+/* @Media
+-------------------------------------*/
+
+/* Extra large devices (large desktops, 1230px and below)
+@media (max-width: 1200px)
+-------------------------------------*/
+
+@media all and (max-width: 1230px) {
+
+    /* ===== /.Intro ===== */
+    .intro-suptitle {
+        font-size: 55px;
+    }
+
+    .intro-title {
+        font-size: 99px;
+    }
+}
+
+/* Large devices (desktops, 992px and below)
+@media (max-width: 992px)
+-------------------------------------*/
+
+@media all and (max-width: 992px) {
+
+    /* ===== /.Intro ===== */
+    .intro-suptitle {
+        font-size: 45px;
+    }
+
+    .intro-title {
+        font-size: 79px;
+    }
+
+    /* ===== /.Card ===== */
+    .card-text {
+        font-size: 16px;
+    }
+}
+
+/* Medium devices (tablets, 768px and below)
+@media (max-width: 768px)
+-------------------------------------*/
+
+@media all and (max-width: 768px) {
+
+    /* ===== /.Intro ===== */
+    .intro-suptitle {
+        font-size: 35px;
+    }
+
+    .intro-title {
+        font-size: 59px;
+    }
+
+    /* ===== /.Main-navigation ===== */
+    .main-navigation {
+        display: none;
+    }
+
+    /* ===== /.Intro-Slider ===== */
+    .intro-slider span {
+        display: none;
+    }
+
+    .intro-slider-item.active::before {
+        width: 50%;
+    }
+
+    /* ===== /.Card ===== */
+    .card {
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .card-item {
+        width: 100%;
+        max-width: 410px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and below)
+@media (max-width: 576px)
+-------------------------------------*/
+
+@media all and (max-width: 576px) {
+
+    /* ===== /.Intro ===== */
+    .intro-suptitle {
+        font-size: 25px;
+    }
+
+    .intro-title {
+        font-size: 49px;
+    }
+
+    /* ===== /.Section-header ===== */
+    .section-header {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .section-suptitle {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title::after {
+        margin: 20px auto;
+    }
+
+    /* ===== /.Section-header ===== */
+    .card {
+        margin-top: 50px;
+    }
+
+    /* ===== /.Card ===== */
+    .card-text {
+        font-size: 16px;
+    }
 }
