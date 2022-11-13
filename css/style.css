@@ -977,14 +977,13 @@ p {
     width: 336px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 31px;
 }
 
 .footer-blog-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 31px;
 }
 
 .footer-blog-content {
@@ -1016,7 +1015,7 @@ p {
     grid-template-columns: 88px 88px 88px;
     grid-auto-rows: minmax(88px,auto);
     grid-gap: 2px;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
 }
 
 .view-more {
