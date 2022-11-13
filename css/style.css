@@ -328,23 +328,20 @@ hr {
     font-weight: 400;
 }
 
-/* Services
+/* Service
 -------------------------------------*/
 
 .service {
+    display: flex;
+    flex-wrap: wrap;
     padding: 35px 0 52px 0;
 }
 
-.service-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .service-item {
-    padding: 0 40px 0 85px;
+    padding: 0 40px 40px 85px;
+    margin-bottom: 40px;
     position: relative;
     width: 33.33%;
-    margin-bottom: 40px;
 }
 
 .service-item--border {
@@ -1166,24 +1163,12 @@ hr {
         margin-top: 65px;
     }
 
-    /* ===== /.Services ===== */
-
-    .service-wrapper {
-    }
-
+    /* ===== /.Service ===== */
     .service-item {
-        width: 100%;
+        width: 50%;
         border: none;
-        padding-left: 55px;
-    }
-
-    .service-icon {
-        position: absolute;
-        font-size: 32px;
-        top: -5px;
-        left: 0;
-        color: #95e1d3;
-        padding-left: 0;
+        padding-left: 85px;
+        padding-bottom: 0;
     }
 }
 
@@ -1193,7 +1178,7 @@ hr {
 
 @media all and (max-width: 576px) {
 
-     /* ===== /.Header ===== */
+    /* ===== /.Header ===== */
 
     .main-header-logo {
         font-size: 1.8em;
@@ -1247,5 +1232,22 @@ hr {
 
     .statistics-text {
         font-size: 14px;
+    }
+
+    /* ===== /.Service ===== */
+    .service {
+        justify-content: center;
+    }
+
+    .service-item {
+        width: 100%;
+        max-width: 400px;
+        border: none;
+        padding-left: 55px;
+        padding-right: 0;
+    }
+
+    .service-icon {
+        left: 0;
     }
 }
