@@ -51,21 +51,11 @@ hr {
 }
 
 .main-navigation {
-    width: 51.66%;
+    width: 620px;
     margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
 }
 
-.navigation-links {
-    width: 490px;
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-}
-
-.navigation-buttons {
-    width: 72px;
+.main-navigation-wrapper {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
@@ -187,7 +177,7 @@ hr {
     background-color: #f38181;
 }
 
-/* About
+/* Section Header
 -------------------------------------*/
 
 .section {
@@ -368,7 +358,7 @@ hr {
     color: #95e1d3;
 }
 
-/* Devices
+/* Device
 -------------------------------------*/
 
 .section--device {
@@ -377,31 +367,35 @@ hr {
     max-height: 850px;
 }
 
+.section--device .section-title::after {
+    margin-bottom: 45px;
+}
+
 .device {
-    max-width: 636px;
-    margin: 39px auto 0 337px;
+    width: 100%;
+    max-width: 536px;
+    margin: 0 auto;
     position: relative;
 }
 
 .device-item--iphone {
     position: absolute;
     bottom: -90px;
-    right: 0;
+    right: -100px;
 }
 
 /* Wedo
 -------------------------------------*/
 
-.wedo-wrapper {
+.wedo {
     margin: 92px 0 120px 0;
     display: flex;
     justify-content: space-between;
 }
 
-.wedo-img {
-    background: #333333 url("../img/wedo/wedo-img.jpg");
-    margin-right: 30px;
-    width: 50%;
+.wedo-item {
+    background: #333333 url("../img/wedo/wedo-img.jpg") center / no-repeat;
+    padding-right: 30px;
 }
 
 .accordion {
@@ -410,6 +404,10 @@ hr {
 
 .accordion-item {
     margin-bottom: 10px;
+}
+
+.accordion-item:last-child {
+    margin-bottom: 0;
 }
 
 .accordion-item.active .accordion-header::after {
@@ -1076,6 +1074,11 @@ hr {
 
 @media all and (max-width: 992px) {
 
+    /* ===== /.Header ===== */
+    .main-navigation {
+        width: 520px;
+    }
+
     /* ===== /.Intro ===== */
     .intro-suptitle {
         font-size: 45px;
@@ -1123,9 +1126,16 @@ hr {
     }
 
     /* ===== /.Section-header ===== */
-    .section-header {
-        text-align: center;
-        padding-top: 70px;
+    .section-suptitle {
+        font-size: 20px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title::after {
+        margin: 20px auto;
     }
 
     /* ===== /.Main-navigation ===== */
@@ -1170,6 +1180,23 @@ hr {
         padding-left: 85px;
         padding-bottom: 0;
     }
+
+    /* ===== /.Wedo ===== */
+    .wedo {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    .wedo-item {
+        padding-right: 0;
+        margin-bottom: 50px;
+        width: 70%;
+    }
+
+    .accordion {
+        width: 80%;
+    }
 }
 
 /* Small devices (landscape phones, 576px and below)
@@ -1193,22 +1220,19 @@ hr {
         font-size: 49px;
     }
 
-    /* ===== /.Section-header ===== */
+    /* ===== /.Section Header ===== */
+
     .section-header {
         text-align: center;
-        padding-top: 40px;
+        padding-top: 70px;
     }
 
     .section-suptitle {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .section-title {
-        font-size: 24px;
-    }
-
-    .section-title::after {
-        margin: 20px auto;
+        font-size: 22px;
     }
 
     /* ===== /.Card ===== */
@@ -1250,4 +1274,15 @@ hr {
     .service-icon {
         left: 0;
     }
+
+    /* ===== /.Device ===== */
+    .device {
+        max-width: 315px;
+    }
+
+    .device-item--iphone {
+        width: 180px;
+        bottom: -60px;
+    }
+
 }

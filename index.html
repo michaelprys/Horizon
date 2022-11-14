@@ -22,20 +22,17 @@
             <div class="main-header-wrapper">
                 <h1 class="main-header-logo"><a href="">Horizon</a></h1>
                 <nav class="main-navigation">
-                    <ul class="navigation-links">
+                    <ul class="main-navigation-wrapper">
                         <li class="navigation-item active"><a href="#">about</a></li>
                         <li class="navigation-item"><a href="#">service</a></li>
                         <li class="navigation-item"><a href="#">work</a></li>
                         <li class="navigation-item"><a href="#">blog</a></li>
                         <li class="navigation-item"><a href="#">contact</a></li>
-                    </ul>
-                    <ul class="navigation-buttons">
-                        <li class="navigation-cart-button">
+                        <li class="navigation-item--cart-button">
                             <a href="#"><i class="ri-shopping-cart-line"></i></a>
                         </li>
-                        <li class="navigation-search-button">
+                        <li class="navigation-item--search-button">
                             <a href="#"><i class="ri-search-line"></i></a>
-                        </li>
                     </ul>
                 </nav>
             </div>
@@ -213,7 +210,7 @@
         </section>
         <!-- ===== /.Section Device ===== -->
 
-        <section class="section">
+        <section class="section section--service">
             <div class="container">
                 <header class="section-header">
                     <p class="section-suptitle">Service</p>
@@ -227,68 +224,67 @@
                         commodo consequat.</p>
                 </header>
                 <div class="wedo">
-                    <div class="wedo-wrapper">
-                        <img class="wedo-img" src="../Horizon/img/wedo/wedo-img.jpg" alt="wedo image" width="570"
-                            height="380">
-                        <ul class="accordion">
-                            <li class="accordion-item active">
-                                <div class="accordion-header">
-                                    <div class="accordion-icon">
-                                        <i class="ri-polaroid-line"></i>
-                                    </div>
-                                    photography
-                                </div>
-                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed
-                                    do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.</p>
-
-                            </li>
-                            <li class="accordion-item">
-                                <div class="accordion-header">
-                                    <div class="accordion-icon">
-                                        <i class="ri-lightbulb-flash-line"></i>
-                                    </div>
-                                    creativity
-                                </div>
-                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed
-                                    do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.</p>
-                            </li>
-
-                            <li class="accordion-item">
-                                <div class="accordion-header">
-                                    <div class="accordion-icon">
-                                        <i class="ri-paint-brush-line"></i>
-                                    </div>
-                                    web design
-                                </div>
-                                <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                    sed
-                                    do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                    Duis
-                                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla
-                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                                    deserunt mollit anim id est laborum.</p>
-                            </li>
-                        </ul>
+                    <div class="wedo-item">
+                        <img src="../Horizon/img/wedo/wedo-img.jpg" alt="wedo image">
                     </div>
+                    <ul class="accordion">
+                        <li class="accordion-item active">
+                            <div class="accordion-header">
+                                <div class="accordion-icon">
+                                    <i class="ri-polaroid-line"></i>
+                                </div>
+                                photography
+                            </div>
+                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.</p>
+
+                        </li>
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="accordion-icon">
+                                    <i class="ri-lightbulb-flash-line"></i>
+                                </div>
+                                creativity
+                            </div>
+                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.</p>
+                        </li>
+
+                        <li class="accordion-item">
+                            <div class="accordion-header">
+                                <div class="accordion-icon">
+                                    <i class="ri-paint-brush-line"></i>
+                                </div>
+                                web design
+                            </div>
+                            <p class="accordion-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt mollit anim id est laborum.</p>
+                        </li>
+                    </ul>
                 </div>
                 <!-- ===== /.Wedo ===== -->
             </div>
