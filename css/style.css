@@ -530,7 +530,6 @@ hr {
     position: absolute;
     top: 72%;
     left: 0;
-
     width: 60px;
     height: 3px;
     background-color: #f38181;
@@ -539,14 +538,14 @@ hr {
 .feedback-icon {
     font-size: 63px;
     border: 3px solid #95e1d3;
-    padding: 30px 44px;
     position: absolute;
-    top: 70px;
+    padding: 30px 40px;
+    top: 25%;
     left: 110px;
     color: #95e1d3;
 }
 
-.feedback-avatar img {
+.feedback-avatar {
     border-radius: 50%;
     position: absolute;
     top: 45px;
@@ -1066,6 +1065,12 @@ hr {
     .intro-title {
         font-size: 99px;
     }
+
+    /* ===== /.Feedback ===== */
+    .feedback-text {
+        font-size: 20px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and below)
@@ -1107,6 +1112,27 @@ hr {
 
     .statistics-item:last-child {
         border: none;
+    }
+
+    /* ===== /.Feedback ===== */
+    .feedback-wrapper {
+        padding: 70px 70px 70px 261px;
+    }
+
+    .feedback-text {
+        font-size: 20px;
+    }
+
+    .feedback-icon {
+        padding: 20px 30px;
+        left: 74px;
+        top: 30%;
+    }
+
+    .feedback-avatar {
+        width: 155px;
+        height: 155px;
+        top: 25%;
     }
 }
 
@@ -1196,6 +1222,40 @@ hr {
 
     .accordion {
         width: 80%;
+    }
+
+    /* ===== /.Feedback ===== */
+    .feedback-wrapper {
+        padding: 50px 90px;
+        text-align: center;
+    }
+
+    .feedback-text {
+        margin-top: 35px;
+    }
+
+    .feedback-author {
+        display: block;
+        padding: 0;
+    }
+
+    .feedback-author::before {
+        position: static;
+        margin: 20px auto;
+    }
+
+    .feedback-icon {
+        position: static;
+        margin: 0 auto;
+        max-width: 110px;
+        font-size: 45px;
+    }
+
+    .feedback-avatar {
+        position: static;
+        margin: 0 auto;
+        top: 0;
+        left: 0;
     }
 }
 
