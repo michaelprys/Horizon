@@ -1154,6 +1154,26 @@ hr {
         font-size: 13px;
     }
 
+    /* ===== /.Clients ===== */
+    .client-item img {
+        position: static;
+        margin: 0 auto 25px;
+    }
+
+    .client-item {
+        padding: 0;
+        text-align: center;
+    }
+
+    .client-feedback::before {
+        margin: 25px auto;
+    }
+
+    .client-feedback {
+        text-align: left;
+        padding: 0 40px;
+    }
+
 }
 
 /* Medium devices (tablets, 768px and below)
@@ -1311,6 +1331,32 @@ hr {
         font-size: 15px;
     }
 
+    /* ===== /.Clients ===== */
+
+    .client-item {
+        position: relative;
+        width: 600px;
+        padding-left: 145px;
+        text-align: left;
+        margin: 0 auto 69px;
+    }
+
+    .client-item img {
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .client-feedback {
+        padding: 0;
+    }
+
+    .client-feedback::before {
+        margin: 15px 0;
+    }
+
+    .client-info {
+        padding: 0 40px;
+    }
 }
 
 /* Small devices (landscape phones, 576px and below)
@@ -1411,5 +1457,28 @@ hr {
         font-size: 14px;
     }
 
+    /* ===== /.Clients ===== */
+    .client-item img {
+        position: static;
+        margin: 0 auto 25px;
+    }
+
+    .client-item {
+        padding: 0;
+        text-align: center;
+    }
+
+    .client-feedback::before {
+        margin: 25px auto;
+    }
+
+    .client-feedback {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .client-item:last-child {
+        margin-bottom: 0;
+    }
 
 }
