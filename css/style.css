@@ -601,16 +601,17 @@ body {
 
 .social-item {
   display: block;
-  padding: 10px 15px;
-  color: #f38181;
+  padding: 15px 15px;
   border-right: 1px solid rgba(243, 129, 129, 0.438);
   background-color: #fce38a;
-  font-size: 24px;
 }
 
 .social-item:hover {
   background-color: #f38181;
-  color: #ffffff;
+}
+
+.social-item:hover .social-item-path {
+  fill: #ffffff;
 }
 
 .social-item--borderless {
@@ -858,7 +859,7 @@ body {
   color: #999;
 }
 
-.blog-statistics i {
+.blog-statistics img {
   font-size: 18px;
   margin-right: 6px;
   color: #95e1d3;
@@ -980,6 +981,7 @@ body {
   padding: 10px 174px 28px 0;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 19px;
   color: #95e1d3;
 }
@@ -1532,10 +1534,6 @@ body {
     border: none;
     padding-left: 55px;
     padding-right: 0;
-  }
-
-  .service-icon {
-    left: 0;
   }
 
   /* ===== /.Device ===== */
