@@ -3,36 +3,46 @@
 
 body {
   background: #ffffff url("../img/bg.jpg") center no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   font-size: 14px;
   font-weight: 400;
-  font-family: "Montserrat", sans-serif;
   color: #333333;
   width: 100%;
   height: 100vh;
   text-rendering: optimizeSpeed;
+  line-height: 1.1;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* Font Faces
+-------------------------------------*/
 
-::placeholder {
-  color: #cccccc;
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/montserrat-v25-latin-regular.woff2);
 }
 
-p {
-  line-height: 1.5;
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/montserrat-v25-latin-300italic.woff2);
 }
 
-hr {
-  height: 1px;
-  background-color: #e5e5e5;
-  border: none;
+@font-face {
+  font-family: Montserrat;
+  src: url(../fonts/Montserrat/montserrat-v25-latin-700.woff2);
 }
 
-/* Main-page
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/roboto-v30-latin-regular.woff2);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/Roboto/roboto-v30-latin-300italic.woff2);
+}
+
+/* Main-Page
 -------------------------------------*/
 
 .main-page {
@@ -59,6 +69,9 @@ hr {
 
 .main-header-logo {
   margin-top: 28px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
 }
 
 .main-navigation {
@@ -83,15 +96,18 @@ hr {
   transition: opacity 0.2s linear;
 }
 
-.navigation-item a,
-.navigation-item--cart-button a,
-.navigation-item--search-button a {
+.navigation-item a {
   transition: color 0.2s linear;
 }
 
-.navigation-item:hover a,
-.navigation-item--cart-button:hover a,
-.navigation-item--search-button:hover a {
+.navigation-icon-path {
+  transition: fill 0.2s linear;
+}
+.navigation-icon:hover .navigation-icon-path {
+  fill: #fce38a;
+}
+
+.navigation-item:hover a {
   color: #fce38a;
 }
 
@@ -116,11 +132,15 @@ hr {
   font-family: "Kaushan Script";
   font-size: 65px;
   margin-bottom: 42px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
 }
 
 .intro-title {
   font-size: 114px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
   user-select: none;
   text-transform: uppercase;
 }
@@ -149,7 +169,7 @@ hr {
   color: #333;
 }
 
-/* Intro-slider
+/* Intro-Slider
 -------------------------------------*/
 
 .intro-slider {
@@ -188,7 +208,7 @@ hr {
   background-color: #f38181;
 }
 
-/* Section Header
+/* Section-Header
 -------------------------------------*/
 
 .section {
@@ -351,7 +371,6 @@ hr {
 .service-title {
   text-transform: uppercase;
   margin-bottom: 14px;
-  font-weight: 400;
 }
 
 .service-text {
@@ -447,7 +466,6 @@ hr {
 .accordion-header {
   padding: 25px 0 25px 61px;
   height: 70px;
-  position: relative;
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
@@ -814,6 +832,7 @@ hr {
 .blog-title {
   padding-top: 20px;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .blog-title a {
@@ -895,7 +914,7 @@ hr {
   margin: 21px auto 0 auto;
 }
 
-/* Main Footer
+/* Main-Footer
 -------------------------------------*/
 
 .main-footer {
@@ -918,7 +937,7 @@ hr {
   padding-bottom: 40px;
 }
 
-/* Footer Column First
+/* Footer-Column-First
 -------------------------------------*/
 
 .footer-column--first {
@@ -1011,7 +1030,7 @@ hr {
   border: none;
 }
 
-/* Footer Column Second
+/* Footer-Column-Second
 -------------------------------------*/
 
 .footer-blog-wrapper {
@@ -1049,7 +1068,7 @@ hr {
   font-size: 13px;
 }
 
-/* Footer Column Third
+/* Footer-Column-Third
 -------------------------------------*/
 
 .footer-gallery-wrapper {
@@ -1086,7 +1105,7 @@ hr {
   padding: 22px 0;
 }
 
-/* @Media
+/* Media Queries
 -------------------------------------*/
 
 /* Extra large devices (large desktops, 1230px and below)
@@ -1095,6 +1114,7 @@ hr {
 
 @media all and (max-width: 1230px) {
   /* ===== /.Intro ===== */
+
   .intro-suptitle {
     font-size: 55px;
   }
@@ -1104,11 +1124,13 @@ hr {
   }
 
   /* ===== /.Feedback ===== */
+
   .feedback-text {
     font-size: 20px;
   }
 
-  /* ===== /.Main-footer ===== */
+  /* ===== /.Main-Footer ===== */
+
   .footer-column--first {
     width: 100%;
     margin-bottom: 50px;
@@ -1129,11 +1151,13 @@ hr {
 
 @media all and (max-width: 992px) {
   /* ===== /.Header ===== */
+
   .main-navigation {
     width: 520px;
   }
 
   /* ===== /.Intro ===== */
+
   .intro-suptitle {
     font-size: 45px;
   }
@@ -1143,11 +1167,13 @@ hr {
   }
 
   /* ===== /.Card ===== */
+
   .card-text {
     font-size: 16px;
   }
 
   /* ===== /.Statistics ===== */
+
   .statistics-wrapper {
     justify-content: center;
   }
@@ -1164,6 +1190,7 @@ hr {
   }
 
   /* ===== /.Feedback ===== */
+
   .feedback-wrapper {
     padding: 70px 70px 70px 261px;
   }
@@ -1179,6 +1206,7 @@ hr {
   }
 
   /* ===== /.Work ===== */
+
   .work-title {
     font-size: 12px;
   }
@@ -1188,6 +1216,7 @@ hr {
   }
 
   /* ===== /.Clients ===== */
+
   .client-item img {
     position: static;
     margin: 0 auto 25px;
@@ -1213,7 +1242,13 @@ hr {
 -------------------------------------*/
 
 @media all and (max-width: 768px) {
+  /* ===== /.Header ===== */
+  .main-header-logo {
+    font-size: 27px;
+  }
+
   /* ===== /.Intro ===== */
+
   .intro-suptitle {
     font-size: 35px;
   }
@@ -1222,7 +1257,8 @@ hr {
     font-size: 59px;
   }
 
-  /* ===== /.Section-header ===== */
+  /* ===== /.Section-Header ===== */
+
   .section-suptitle {
     font-size: 20px;
   }
@@ -1235,12 +1271,14 @@ hr {
     margin: 20px auto;
   }
 
-  /* ===== /.Main-navigation ===== */
+  /* ===== /.Main-Navigation ===== */
+
   .main-navigation {
     display: none;
   }
 
   /* ===== /.Intro-Slider ===== */
+
   .intro-slider span {
     display: none;
   }
@@ -1250,6 +1288,7 @@ hr {
   }
 
   /* ===== /.Card ===== */
+
   .card {
     justify-content: center;
     gap: 30px;
@@ -1266,11 +1305,13 @@ hr {
   }
 
   /* ===== /.Statistics ===== */
+
   .statistics {
     margin-top: 65px;
   }
 
   /* ===== /.Service ===== */
+
   .service-item {
     width: 50%;
     border: none;
@@ -1279,6 +1320,7 @@ hr {
   }
 
   /* ===== /.Wedo ===== */
+
   .wedo {
     flex-wrap: wrap;
     justify-content: center;
@@ -1296,6 +1338,7 @@ hr {
   }
 
   /* ===== /.Feedback ===== */
+
   .feedback-wrapper {
     padding: 50px 90px;
     text-align: center;
@@ -1329,7 +1372,8 @@ hr {
     left: 0;
   }
 
-  /* ===== /.Team Footer ===== */
+  /* ===== /.Team-Footer ===== */
+
   .team-footer-wrapper {
     flex: none;
     display: grid;
@@ -1339,6 +1383,7 @@ hr {
   }
 
   /* ===== /.Work ===== */
+
   .work {
     margin: 102px 0 60px 0;
     display: grid;
@@ -1363,6 +1408,7 @@ hr {
   }
 
   /* ===== /.Clients ===== */
+
   .client-item {
     position: relative;
     width: 600px;
@@ -1389,6 +1435,7 @@ hr {
   }
 
   /* ===== /.Blog ===== */
+
   .blog {
     max-width: 58%;
     margin: 0 auto;
@@ -1401,7 +1448,8 @@ hr {
     padding: 0;
   }
 
-  /* ===== /.Main-footer ===== */
+  /* ===== /.Main-Footer ===== */
+
   .footer-column--first {
     width: 100%;
     margin-bottom: 50px;
@@ -1423,11 +1471,13 @@ hr {
 
 @media all and (max-width: 576px) {
   /* ===== /.Header ===== */
+
   .main-header-logo {
-    font-size: 1.8em;
+    font-size: 24px;
   }
 
   /* ===== /.Intro ===== */
+
   .intro-suptitle {
     font-size: 25px;
   }
@@ -1436,7 +1486,8 @@ hr {
     font-size: 49px;
   }
 
-  /* ===== /.Section Header ===== */
+  /* ===== /.Section-Header ===== */
+
   .section-header {
     text-align: center;
     padding-top: 70px;
@@ -1451,6 +1502,7 @@ hr {
   }
 
   /* ===== /.Statistics ===== */
+
   .statistics-item {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -1469,6 +1521,7 @@ hr {
   }
 
   /* ===== /.Service ===== */
+
   .service {
     justify-content: center;
   }
@@ -1486,6 +1539,7 @@ hr {
   }
 
   /* ===== /.Device ===== */
+
   .device {
     max-width: 315px;
   }
@@ -1496,11 +1550,13 @@ hr {
   }
 
   /* ===== /.Team Footer ===== */
+
   .team-footer-wrapper {
     grid-template-columns: 200px 200px;
   }
 
   /* ===== /.Work ===== */
+
   .work-title {
     font-size: 13px;
   }
@@ -1510,6 +1566,7 @@ hr {
   }
 
   /* ===== /.Clients ===== */
+
   .client-item img {
     position: static;
     margin: 0 auto 25px;
@@ -1534,6 +1591,7 @@ hr {
   }
 
   /* ===== /.Blog ===== */
+
   .blog {
     max-width: 70%;
   }

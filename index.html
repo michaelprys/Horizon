@@ -7,12 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon</title>
   <!-- ===== CSS Files ===== -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&family=Roboto:ital,wght@0,400;1,300&display=swap"
-    rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="/css/normalize.css" />
-  <link rel="stylesheet" href="/dist/output.css" />
+  <link rel="stylesheet" href="/css/style.css" />
   <!-- <link rel="stylesheet" href="/css/style.css" /> -->
 </head>
 
@@ -29,10 +26,22 @@
             <li class="navigation-item"><a href="#">blog</a></li>
             <li class="navigation-item"><a href="#">contact</a></li>
             <li class="navigation-item--cart-button">
-              <a href="#"><i class="ri-shopping-cart-line"></i></a>
+              <a href="#" aria-label="shopping cart"><svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path class="navigation-icon-path"
+                    d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                    fill="rgba(255,255,255,1)" />
+                </svg></a>
             </li>
             <li class="navigation-item--search-button">
-              <a href="#"><i class="ri-search-line"></i></a>
+              <a href="#" aria-label="search"><svg class="navigation-icon" xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24" width="16" height="16">
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path class="navigation-icon-path"
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                    fill="rgba(255,255,255,1)" />
+                </svg></a>
             </li>
           </ul>
         </nav>
