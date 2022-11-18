@@ -11,35 +11,36 @@ body {
   height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.1;
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
 
 /* Font Faces
 -------------------------------------*/
 
+/* montserrat-regular - latin */
 @font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/montserrat-v25-latin-regular.woff2);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.woff2") format("woff2");
+  src: url("../fonts/montserrat-v25-latin-regular.woff") format("woff");
 }
 
+/* montserrat-700 - latin */
 @font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/montserrat-v25-latin-300italic.woff2);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v25-latin-700.woff2") format("woff2");
+  src: url("../fonts/montserrat-v25-latin-700.woff") format("woff");
 }
 
+/* montserrat-300italic - latin */
 @font-face {
-  font-family: Montserrat;
-  src: url(../fonts/Montserrat/montserrat-v25-latin-700.woff2);
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/roboto-v30-latin-regular.woff2);
-}
-
-@font-face {
-  font-family: Roboto;
-  src: url(../fonts/Roboto/roboto-v30-latin-300italic.woff2);
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 300;
+  src: url("../fonts/montserrat-v25-latin-300italic.woff2") format("woff2");
+  src: url("../fonts/montserrat-v25-latin-300italic.woff") format("woff");
 }
 
 /* Main-Page
@@ -391,25 +392,9 @@ body {
 -------------------------------------*/
 
 .section--device {
-  background-image: url("../img/devices/devices-bg.jpg") center no-repeat;
-  background: linear-gradient(-45deg, #2196f3, #f44336);
-  animation: gradient 10s ease infinite;
+  background: url("../img/devices/devices-bg.jpg") center no-repeat;
+  background-size: cover;
   max-height: 850px;
-  background-size: 400% 400%;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0 50%;
-  }
 }
 
 .section--device .section-title::after {
@@ -673,7 +658,7 @@ body {
 
 .work-item {
   position: relative;
-  background: linear-gradient(to bottom, #f38181, #fce38a);
+  background: linear-gradient(to bottom, #2bc0e4, #eaecc6);
 }
 
 .work-photo {
@@ -717,7 +702,7 @@ body {
 -------------------------------------*/
 
 .section--clients {
-  background: #333333 url("../img/clients/clients-bg.png") center no-repeat;
+  background: #333333 url("../img/clients/clients-bg.jpg") center no-repeat;
   background-size: cover;
   padding-bottom: 60px;
 }
