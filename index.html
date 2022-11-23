@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Horizon</title>
   <link rel="icon" type="image/x-icon" href="../img/horizon-favicon.ico" sizes="32x32" />
+  <!-- ===== JS Files ===== -->
+  <link rel="stylesheet" href="/js/main.js">
   <!-- ===== CSS Files ===== -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" />
   <link rel="stylesheet" href="/css/normalize.css" />
@@ -15,7 +17,7 @@
 </head>
 
 <body>
-  <header>
+  <header class="main-header main-header--fixed">
     <div class="container">
       <div class="main-header-wrapper">
         <h1 class="main-header-logo"><a href="">Horizon</a></h1>
@@ -46,6 +48,9 @@
             </li>
           </ul>
         </nav>
+        <div class="navigation-toggle">
+          <span class="navigation-toggle-item"></span>
+        </div>
       </div>
     </div>
     <!-- ===== /.Container ===== -->
@@ -164,7 +169,12 @@
           </header>
           <ul class="service">
             <li class="service-item service-item--border">
-              <img class="service-icon" src="/svg/services-icons/camera-line.svg" alt="photography icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">Photography</h2>
               <p class="service-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -172,7 +182,12 @@
               </p>
             </li>
             <li class="service-item service-item--border">
-              <img class="service-icon" src="/svg/services-icons/brush-line.svg" alt="camera icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M15.456 9.678l-.142-.142a5.475 5.475 0 0 0-2.39-1.349c-2.907-.778-5.699.869-6.492 3.83-.043.16-.066.34-.104.791-.154 1.87-.594 3.265-1.8 4.68 2.26.888 4.938 1.514 6.974 1.514a5.505 5.505 0 0 0 5.31-4.078 5.497 5.497 0 0 0-1.356-5.246zM13.29 6.216l4.939-3.841a1 1 0 0 1 1.32.082l2.995 2.994a1 1 0 0 1 .082 1.321l-3.84 4.938a7.505 7.505 0 0 1-7.283 9.292C8 21.002 3.5 19.5 1 18c3.98-3 3.047-4.81 3.5-6.5 1.058-3.95 4.842-6.257 8.789-5.284zm3.413 1.879c.065.063.13.128.193.194l1.135 1.134 2.475-3.182-1.746-1.746-3.182 2.475 1.125 1.125z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">Web Design</h2>
               <p class="service-text">
                 Ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -180,7 +195,12 @@
               </p>
             </li>
             <li class="service-item service-item--border">
-              <img class="service-icon" src="/svg/services-icons/lightbulb-flash-line.svg" alt="creativity icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">Creativity</h2>
               <p class="service-text">
                 Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -188,7 +208,12 @@
               </p>
             </li>
             <li class="service-item">
-              <img class="service-icon" src="/svg/services-icons/search-line.svg" alt="SEO icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">seo</h2>
               <p class="service-text">
                 Ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -196,7 +221,12 @@
               </p>
             </li>
             <li class="service-item">
-              <img class="service-icon" src="/svg/services-icons/css3-line.svg" alt="CSS icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">Css/Html</h2>
               <p class="service-text">
                 Lorem dolor sit amet, consectetur adipiscing elit, sed do
@@ -204,7 +234,12 @@
               </p>
             </li>
             <li class="service-item">
-              <img class="service-icon" src="/svg/services-icons/camera-line.svg" alt="digital icon">
+              <svg class="service-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
+                <path fill="none" d="M0 0h24v24H0z" />
+                <path
+                  d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                  fill="rgba(149,225,211,1)" />
+              </svg>
               <h2 class="service-title">Digital</h2>
               <p class="service-text">
                 Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
@@ -251,7 +286,13 @@
             <ul class="accordion">
               <li class="accordion-item active">
                 <div class="accordion-header">
-                  <img class="accordion-icon" src="/svg/services-icons/polaroid-line.svg" alt="photography icon">
+                  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                    height="32">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M21 6h-2V5H5v14h14v-1h2v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2zM6 6h2v3H6V6zm9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   photography
                 </div>
                 <p class="accordion-content">
@@ -267,7 +308,13 @@
               </li>
               <li class="accordion-item">
                 <div class="accordion-header">
-                  <img class="accordion-icon" src="/svg/services-icons/lightbulb-flash-line.svg" alt="creativity icon">
+                  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                    height="32">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   creativity
                 </div>
                 <p class="accordion-content">
@@ -284,7 +331,13 @@
 
               <li class="accordion-item">
                 <div class="accordion-header">
-                  <img class="accordion-icon" src="/svg/services-icons/paint-brush-line.svg" alt="web design icon">
+                  <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32"
+                    height="32">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   web design
                 </div>
                 <p class="accordion-content">
@@ -691,11 +744,21 @@
               </p>
               <div class="blog-statistics">
                 <div class="blog-views">
-                  <img src="/svg/blog-icons/eye-fill.svg" alt="views count">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>361</span>
                 </div>
                 <div class="blog-comments">
-                  <img src="/svg/blog-icons/message-3-fill.svg" alt="comments">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>76</span>
                 </div>
               </div>
@@ -717,11 +780,21 @@
               </p>
               <div class="blog-statistics">
                 <div class="blog-views">
-                  <img src="/svg/blog-icons/eye-fill.svg" alt="views count">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>678</span>
                 </div>
                 <div class="blog-comments">
-                  <img src="/svg/blog-icons/message-3-fill.svg" alt="comments">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>25</span>
                 </div>
               </div>
@@ -743,11 +816,21 @@
               </p>
               <div class="blog-statistics">
                 <div class="blog-views">
-                  <img src="/svg/blog-icons/eye-fill.svg" alt="views count">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>542</span>
                 </div>
                 <div class="blog-comments">
-                  <img src="/svg/blog-icons/message-3-fill.svg" alt="comments">
+                  <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path
+                      d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                      fill="rgba(149,225,211,1)" />
+                  </svg>
                   <span>61</span>
                 </div>
               </div>
@@ -784,22 +867,58 @@
                 <p>Follow Us:</p>
                 <ul>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/facebook-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="facebook icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/twitter-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="twitter icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/instagram-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="instagram icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/pinterest-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="pinterest icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/youtube-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="youtube icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                   <li>
-                    <a href="#" target="_blank"><img src="/svg/socials-icons/tumblr-fill.svg" alt="facebook"></a>
+                    <a href="#" aria-label="tumblr icon" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24" width="18" height="18">
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path
+                          d="M6.27 7.63A5.76 5.76 0 0 0 10.815 2h3.03v5.152h3.637v3.636h-3.636v5.454c0 .515.197 1.207.909 1.667.474.307 1.484.458 3.03.455V22h-4.242a4.545 4.545 0 0 1-4.546-4.545v-6.667H6.27V7.63z"
+                          fill="rgba(149,225,211,1)" />
+                      </svg></a>
                   </li>
                 </ul>
               </div>
@@ -887,8 +1006,8 @@
                         alt="instagram photo 9" /></a>
                   </li>
                 </ul>
-                <div class="view-more-wrapper">
-                  <a class="view-more" href="#" target="_blank">View more photos</a>
+                <div class="view-more">
+                  <a href="#" target="_blank">View more photos</a>
                 </div>
               </div>
             </div>
@@ -903,6 +1022,7 @@
     </div>
     <!-- ===== /.Page ===== -->
   </main>
+  <script src="main.js"></script>
 </body>
 
 </html>
