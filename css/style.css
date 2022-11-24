@@ -8,8 +8,8 @@ body {
   background-color: #00eeff;
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
-  /* background-position: center; */
-  /* background-size: cover; */
+  background-position: center;
+  background-size: cover;
   font-size: 14px;
   font-weight: 400;
   color: #333333;
@@ -159,7 +159,8 @@ p {
   width: 60px;
   height: 3px;
   background-color: #ffffff;
-  margin: 2.1875rem auto;
+  margin-block: 2.1875rem;
+  margin-inline: auto;
 }
 
 .intro-button {
@@ -168,7 +169,8 @@ p {
   font-weight: 700;
   text-transform: uppercase;
   border: 3px solid #ffffff;
-  padding: 0.5625rem 2rem;
+  padding-block: 0.5625rem;
+  padding-inline: 2rem;
   transition: all 0.2s linear;
 }
 
@@ -198,7 +200,7 @@ p {
   width: 23.33%;
   position: relative;
   opacity: 0.7;
-  padding: 20px 0;
+  padding-block: 1.25rem;
 }
 
 .intro-slider-item.active {
@@ -225,7 +227,7 @@ p {
 
 .section-header {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 6.25rem;
 }
 
 .section-suptitle {
@@ -247,11 +249,13 @@ p {
   width: 60px;
   height: 3px;
   background-color: #f38181;
-  margin: 2.1875rem auto;
+  margin-block: 2.1875rem;
+  margin-inline: auto;
 }
 
 .section-text {
-  margin: 2.8125rem auto 0;
+  margin-top: 2.8125rem;
+  margin-inline: auto;
   width: 79.5%;
   text-align: center;
   color: #999999;
@@ -268,7 +272,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 6.25rem -0.9375rem 0;
+  margin-top: 6.25rem;
+  margin-inline: -0.9375rem;
 }
 
 .card-wrapper {
@@ -286,7 +291,7 @@ p {
 
 .card-item {
   width: 33.33%;
-  padding: 0 15px;
+  padding-inline: 0.9375rem;
 }
 
 .card-img {
@@ -342,7 +347,8 @@ p {
   font-size: 4.0625rem;
   font-weight: 700;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
-  padding: 80px 25px;
+  padding-block: 5rem;
+  padding-inline: 1.5625rem;
   flex: 1 1 0;
 }
 
@@ -362,11 +368,12 @@ p {
 .service {
   display: flex;
   flex-wrap: wrap;
-  padding: 35px 0 52px 0;
+  padding-block: 2.1875rem 3.25rem;
 }
 
 .service-item {
-  padding: 0 40px 40px 85px;
+  padding-bottom: 2.5rem;
+  padding-inline: 5.3125rem 2.5rem;
   margin-bottom: 2.5rem;
   position: relative;
   width: 33.33%;
@@ -409,7 +416,7 @@ p {
 .device {
   width: 100%;
   max-width: 536px;
-  margin: 0 auto;
+  margin-inline: auto;
   position: relative;
 }
 
@@ -423,14 +430,14 @@ p {
 -------------------------------------*/
 
 .wedo {
-  margin: 5.75rem 0 7.5rem 0;
+  margin-block: 5.75rem 7.5rem;
   display: flex;
   justify-content: space-between;
 }
 
 .wedo-item {
   background: #333333 url("../img/wedo/wedo-img.jpg") center / no-repeat;
-  padding-right: 30px;
+  padding-right: 1.875rem;
 }
 
 .accordion {
@@ -454,7 +461,8 @@ p {
 }
 
 .accordion-header {
-  padding: 25px 0 25px 61px;
+  padding-block: 1.5625rem;
+  padding-left: 3.8125rem;
   min-height: 70px;
   text-transform: uppercase;
   font-weight: 700;
@@ -487,7 +495,8 @@ p {
 }
 
 .accordion-content {
-  padding: 21px 55px 28px 20px;
+  padding-block: 1.3125rem 1.75rem;
+  padding-inline: 1.25rem 3.4375rem;
   font-family: "Roboto";
   font-style: italic;
   font-weight: 300;
@@ -511,17 +520,18 @@ p {
 }
 
 .feedback-wrapper {
-  padding: 70px 112px 70px 321px;
+  padding-block: 4.375rem;
+  padding-inline: 20.0625rem 7rem;
   position: relative;
 }
 
 .feedback-wrapper::before {
   content: "";
   display: block;
-  width: 1.0625rem;
-  height: 1.0625rem;
+  width: 17px;
+  height: 17px;
   position: absolute;
-  top: 47%;
+  top: 50%;
   left: 1.4375rem;
   transform: rotate(45deg);
   border-left: 3px solid #cccccc;
@@ -535,7 +545,7 @@ p {
   width: 17px;
   height: 17px;
   position: absolute;
-  top: 47%;
+  top: 50%;
   right: 1.4375rem;
   transform: rotate(-135deg);
   border-left: 3px solid #cccccc;
@@ -552,7 +562,8 @@ p {
 }
 
 .feedback-author {
-  padding: 23px 0 0 69px;
+  padding-top: 1.4375rem;
+  padding-left: 4.3125rem;
   position: relative;
   font-family: "Kaushan Script";
   font-size: 1.5rem;
@@ -574,7 +585,7 @@ p {
   max-width: 155px;
   border-radius: 50%;
   position: absolute;
-  top: 4.4rem;
+  top: 4.7rem;
   left: 4.625rem;
 }
 
@@ -583,7 +594,7 @@ p {
 
 .social-item {
   display: block;
-  padding: 15px 15px;
+  padding: 0.9375rem;
   border-right: 1px solid rgba(243, 129, 129, 0.438);
   background-color: #fce38a;
 }
@@ -629,19 +640,20 @@ p {
   margin-top: 6.25rem;
   opacity: 0.8;
   align-items: center;
-  padding: 50px 0;
+  padding-block: 50px;
 }
 
 .sponsor-item {
   width: 75%;
-  margin: 0 auto;
+  margin-inline: auto;
 }
 
 /* Work
 -------------------------------------*/
 
 .work {
-  margin: 6.375rem auto 3.75rem;
+  margin-block: 6.375rem 3.75rem;
+  margin-inline: auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
@@ -701,7 +713,7 @@ p {
 .section--clients {
   background: #333333 url("../img/clients/clients-bg.jpg") center no-repeat;
   background-size: cover;
-  padding-bottom: 60px;
+  padding-bottom: 3.75rem;
 }
 
 .client {
@@ -715,7 +727,7 @@ p {
   position: relative;
   margin-bottom: 4.3125rem;
   width: 50%;
-  padding: 0 45px 0 180px;
+  padding-inline: 11.25rem 2.8125rem;
 }
 
 .client-item img {
@@ -744,7 +756,7 @@ p {
 .client-feedback::before {
   content: "";
   display: block;
-  margin: 0.9375rem 0;
+  margin-block: 0.9375rem;
   width: 60px;
   height: 3px;
   background-color: #f38181;
@@ -764,12 +776,12 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 47px 0 116px 0;
+  padding-block: 2.9375rem 7.25rem;
 }
 
 .blog-item {
   width: 31.66%;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 
 .blog-wrapper {
@@ -794,7 +806,8 @@ p {
   position: absolute;
   display: block;
   background-color: #95e1d3;
-  padding: 15px 15px 10px 15px;
+  padding-block: 15px 10px;
+  padding-inline: 15px;
   bottom: 0.625rem;
   left: -0.625rem;
   font-size: 1.875rem;
@@ -813,7 +826,7 @@ p {
 }
 
 .blog-title {
-  padding-top: 20px;
+  padding-top: 1.25rem;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -828,13 +841,13 @@ p {
 }
 
 .blog-content {
-  padding: 20px 0;
+  padding-block: 20px;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .blog-statistics {
   display: flex;
-  padding-top: 20px;
+  padding-top: 1.25rem;
   font-size: 0.9375rem;
   font-weight: 300;
   font-style: italic;
@@ -862,7 +875,7 @@ p {
 .section--map {
   background: #333333 url("../img/bg-map.png") center no-repeat;
   background-size: cover;
-  padding: 57px 0;
+  padding-block: 3.5625rem;
   text-align: center;
 }
 
@@ -892,7 +905,8 @@ p {
   width: 60px;
   height: 3px;
   background-color: #f38181;
-  margin: 1.3125rem auto 0 auto;
+  margin-top: 1.3125rem;
+  margin-inline: auto;
 }
 
 /* Main-Footer
@@ -900,7 +914,7 @@ p {
 
 .main-footer {
   background-color: #ffffff;
-  padding-top: 74px;
+  padding-top: 4.625rem;
 }
 
 .main-footer-wrapper {
@@ -916,7 +930,7 @@ p {
   line-height: 18px;
   text-align: left;
   text-transform: uppercase;
-  padding-bottom: 40px;
+  padding-bottom: 2.5rem;
 }
 
 /* Footer-Column-First
@@ -944,12 +958,13 @@ p {
   letter-spacing: normal;
   line-height: 1.5rem;
   color: #999999;
-  padding: 22px 18px 32px 0;
+  padding-block: 1.375rem 2rem;
+  padding-right: 1.125rem;
 }
 
 .footer-followers {
   border-bottom: 1px solid #e5e5e5;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
 }
 
 .footer-followers span {
@@ -958,7 +973,7 @@ p {
 }
 
 .footer-socials {
-  padding: 10px 0 28px 0;
+  padding-block: 0.625rem 1.75rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -981,7 +996,7 @@ p {
   color: #999999;
   font-family: "Roboto";
   font-style: italic;
-  font-size: 15px;
+  font-size: 0.9375rem;
   font-weight: 400;
 }
 
@@ -990,7 +1005,7 @@ p {
 }
 
 .subscribe-input {
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid #e7e7e7;
   font-style: italic;
   font-size: 0.9375rem;
@@ -1004,7 +1019,8 @@ p {
 }
 
 .subscribe-button {
-  padding: 12px 28px;
+  padding-block: 0.75rem;
+  padding-inline: 1.75rem;
   background-color: #95e1d3;
   font-weight: 700;
   color: #ffffff;
@@ -1030,7 +1046,7 @@ p {
 
 .footer-blog-content {
   width: 196px;
-  padding-left: 20px;
+  padding-left: 1.25rem;
 }
 
 .footer-blog-title {
@@ -1088,7 +1104,7 @@ p {
 .copyright {
   text-align: center;
   border-top: 1px solid #e5e5e5;
-  padding: 22px 0;
+  padding-block: 22px;
 }
 
 /* Imports
@@ -1172,7 +1188,7 @@ p {
     flex: none;
     width: 33.33%;
     border: none;
-    padding: 30px 0;
+    padding-block: 30px;
   }
 
   .statistics-item:last-child {
@@ -1182,7 +1198,8 @@ p {
   /* ===== /.Feedback ===== */
 
   .feedback-wrapper {
-    padding: 70px 70px 70px 261px;
+    padding-block: 70px;
+    padding-inline: 261px 70px;
   }
 
   .feedback-text {
@@ -1207,7 +1224,8 @@ p {
 
   .client-item img {
     position: static;
-    margin: 0 auto 1.5625rem;
+    margin-bottom: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-item {
@@ -1216,12 +1234,13 @@ p {
   }
 
   .client-feedback::before {
-    margin: 1.5625rem auto;
+    margin-block: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-feedback {
     text-align: left;
-    padding: 0 40px;
+    padding-inline: 40px;
   }
 }
 
@@ -1258,22 +1277,11 @@ p {
     justify-content: center;
   }
 
-  .statistics-item {
-    flex: none;
-    width: 33.33%;
-    border: none;
-    padding: 30px 0;
-  }
-
   .statistics-item:last-child {
     border: none;
   }
 
   /* ===== /.Feedback ===== */
-
-  .feedback-wrapper {
-    padding: 70px 70px 70px 261px;
-  }
 
   .feedback-text {
     font-size: 1.25rem;
@@ -1297,7 +1305,8 @@ p {
 
   .client-item img {
     position: static;
-    margin: 0 auto 1.5625rem;
+    margin-bottom: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-item {
@@ -1306,12 +1315,13 @@ p {
   }
 
   .client-feedback::before {
-    margin: 1.5625rem auto;
+    margin-block: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-feedback {
     text-align: left;
-    padding: 0 40px;
+    padding-inline: 40px;
   }
 }
 
@@ -1347,7 +1357,8 @@ p {
   }
 
   .section-title::after {
-    margin: 1.25rem auto;
+    margin-block: 1.25rem;
+    margin-inline: auto;
   }
 
   /* ===== /.Main-Navigation ===== */
@@ -1480,7 +1491,7 @@ p {
   /* ===== /.Feedback ===== */
 
   .feedback-wrapper {
-    padding: 50px 90px;
+    padding-block: 50px;
     text-align: center;
   }
 
@@ -1495,19 +1506,20 @@ p {
 
   .feedback-author::before {
     position: static;
-    margin: 1.25rem auto;
+    margin-block: 1.25rem;
+    margin-inline: auto;
   }
 
   .feedback-icon {
     position: static;
-    margin: 0 auto;
+    margin-inline: auto;
     max-width: 110px;
     font-size: 2.8125rem;
   }
 
   .feedback-avatar {
     position: static;
-    margin: 0 auto;
+    margin-inline: auto;
     top: 0;
     left: 0;
   }
@@ -1525,8 +1537,6 @@ p {
   /* ===== /.Work ===== */
 
   .work {
-    margin: 6.375rem 0 3.75rem 0;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas:
       "work-item--1 work-item--2"
@@ -1552,9 +1562,10 @@ p {
   .client-item {
     position: relative;
     width: 600px;
-    padding-left: 145px;
+    padding-left: 9.0625rem;
     text-align: left;
-    margin: 0 auto 4.0625rem;
+    margin-bottom: 4.0625rem;
+    margin-inline: auto;
   }
 
   .client-item img {
@@ -1567,20 +1578,20 @@ p {
   }
 
   .client-feedback::before {
-    margin: 15px 0;
+    margin-block: 15px;
   }
 
   .client-info {
-    padding: 0 40px;
+    padding-inline: 40px;
   }
 
   /* ===== /.Blog ===== */
 
   .blog {
     max-width: 58%;
-    margin: 0 auto;
+    margin-inline: auto;
     gap: 3.125rem;
-    padding-bottom: 80px;
+    padding-bottom: 5rem;
   }
 
   .blog-item {
@@ -1630,7 +1641,7 @@ p {
 
   .section-header {
     text-align: center;
-    padding-top: 70px;
+    padding-top: 4.375rem;
   }
 
   .section-suptitle {
@@ -1705,7 +1716,8 @@ p {
 
   .client-item img {
     position: static;
-    margin: 0 auto 1.5625rem;
+    margin-bottom: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-item {
@@ -1714,11 +1726,12 @@ p {
   }
 
   .client-feedback::before {
-    margin: 1.5625rem auto;
+    margin-block: 1.5625rem;
+    margin-inline: auto;
   }
 
   .client-feedback {
-    padding: 0 20px;
+    padding-inline: 1.25rem;
     text-align: center;
   }
 
