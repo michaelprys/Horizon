@@ -50,7 +50,7 @@ p {
 -------------------------------------*/
 
 .container {
-  max-width: 76.875rem;
+  width: min(100%, 1230px);
   padding-inline: 0.9375rem;
   margin-inline: auto;
 }
@@ -65,7 +65,7 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  padding: 10px 0;
+  padding-block: 0.625rem;
 } */
 
 .main-header-wrapper {
@@ -211,7 +211,7 @@ p {
   content: "";
   display: block;
   position: absolute;
-  top: -2px;
+  top: -0.125rem;
   left: 0;
   width: 60px;
   height: 2px;
@@ -521,7 +521,7 @@ p {
 
 .feedback-wrapper {
   padding-block: 4.375rem;
-  padding-inline: 20.0625rem 7rem;
+  padding-inline: 16.3125rem 4.375rem;
   position: relative;
 }
 
@@ -640,7 +640,7 @@ p {
   margin-top: 6.25rem;
   opacity: 0.8;
   align-items: center;
-  padding-block: 50px;
+  padding-block: 3.125rem;
 }
 
 .sponsor-item {
@@ -746,7 +746,7 @@ p {
 }
 
 .client-position {
-  font-size: 15px;
+  font-size: 0.9375rem;
   color: #333;
   font-style: italic;
   font-family: "Roboto";
@@ -806,8 +806,8 @@ p {
   position: absolute;
   display: block;
   background-color: #95e1d3;
-  padding-block: 15px 10px;
-  padding-inline: 15px;
+  padding-block: 0.9375rem 0.625rem;
+  padding-inline: 0.9375rem;
   bottom: 0.625rem;
   left: -0.625rem;
   font-size: 1.875rem;
@@ -841,7 +841,7 @@ p {
 }
 
 .blog-content {
-  padding-block: 20px;
+  padding-block: 1.25rem;
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -926,8 +926,7 @@ p {
 
 .footer-title {
   color: #333333;
-  font-size: 14px;
-  line-height: 18px;
+  line-height: 1.125rem;
   text-align: left;
   text-transform: uppercase;
   padding-bottom: 2.5rem;
@@ -1104,7 +1103,7 @@ p {
 .copyright {
   text-align: center;
   border-top: 1px solid #e5e5e5;
-  padding-block: 22px;
+  padding-block: 1.375rem;
 }
 
 /* Imports
@@ -1120,7 +1119,7 @@ p {
 -------------------------------------*/
 
 @media all and (max-width: 1230px) {
-  /* ===== /.Intro ===== */
+  /* ===== Intro ===== */
 
   .intro-suptitle {
     font-size: 3.4375rem;
@@ -1130,13 +1129,13 @@ p {
     font-size: 6.1875rem;
   }
 
-  /* ===== /.Feedback ===== */
+  /* ===== Feedback ===== */
 
   .feedback-text {
     font-size: 1.25rem;
   }
 
-  /* ===== /.Main-Footer ===== */
+  /* ===== Main-Footer ===== */
 
   .footer-column--first {
     width: 100%;
@@ -1156,13 +1155,13 @@ p {
   -------------------------------------*/
 
 @media all and (max-width: 992px) {
-  /* ===== /.Header ===== */
+  /* ===== Header ===== */
 
   .main-navigation {
     width: 520px;
   }
 
-  /* ===== /.Intro ===== */
+  /* ===== Intro ===== */
 
   .intro-suptitle {
     font-size: 3rem;
@@ -1172,13 +1171,13 @@ p {
     font-size: 4.9375rem;
   }
 
-  /* ===== /.Card ===== */
+  /* ===== Card ===== */
 
   .card-text {
     font-size: 1rem;
   }
 
-  /* ===== /.Statistics ===== */
+  /* ===== Statistics ===== */
 
   .statistics-wrapper {
     justify-content: center;
@@ -1188,19 +1187,14 @@ p {
     flex: none;
     width: 33.33%;
     border: none;
-    padding-block: 30px;
+    padding-block: 1.875rem;
   }
 
   .statistics-item:last-child {
     border: none;
   }
 
-  /* ===== /.Feedback ===== */
-
-  .feedback-wrapper {
-    padding-block: 70px;
-    padding-inline: 261px 70px;
-  }
+  /* ===== Feedback ===== */
 
   .feedback-text {
     font-size: 1.25rem;
@@ -1210,7 +1204,7 @@ p {
     top: 25%;
   }
 
-  /* ===== /.Work ===== */
+  /* ===== Work ===== */
 
   .work-title {
     font-size: 0.75rem;
@@ -1220,7 +1214,7 @@ p {
     font-size: 0.8125rem;
   }
 
-  /* ===== /.Clients ===== */
+  /* ===== Clients ===== */
 
   .client-item img {
     position: static;
@@ -1249,13 +1243,13 @@ p {
   -------------------------------------*/
 
 @media all and (max-width: 992px) {
-  /* ===== /.Header ===== */
+  /* ===== Header ===== */
 
   .main-navigation {
     width: 520px;
   }
 
-  /* ===== /.Intro ===== */
+  /* ===== Intro ===== */
 
   .intro-suptitle {
     font-size: 3rem;
@@ -1265,13 +1259,13 @@ p {
     font-size: 4.9375rem;
   }
 
-  /* ===== /.Card ===== */
+  /* ===== Card ===== */
 
   .card-text {
     font-size: 1rem;
   }
 
-  /* ===== /.Statistics ===== */
+  /* ===== Statistics ===== */
 
   .statistics-wrapper {
     justify-content: center;
@@ -1281,7 +1275,7 @@ p {
     border: none;
   }
 
-  /* ===== /.Feedback ===== */
+  /* ===== Feedback ===== */
 
   .feedback-text {
     font-size: 1.25rem;
@@ -1291,7 +1285,7 @@ p {
     top: 25%;
   }
 
-  /* ===== /.Work ===== */
+  /* ===== Work ===== */
 
   .work-title {
     font-size: 0.75rem;
@@ -1301,7 +1295,7 @@ p {
     font-size: 0.8125rem;
   }
 
-  /* ===== /.Clients ===== */
+  /* ===== Clients ===== */
 
   .client-item img {
     position: static;
@@ -1321,7 +1315,7 @@ p {
 
   .client-feedback {
     text-align: left;
-    padding-inline: 40px;
+    padding-inline: 2.5rem;
   }
 }
 
@@ -1330,13 +1324,13 @@ p {
   -------------------------------------*/
 
 @media all and (max-width: 768px) {
-  /* ===== /.Header ===== */
+  /* ===== Header ===== */
 
   .main-header-logo {
     font-size: 1.6875rem;
   }
 
-  /* ===== /.Intro ===== */
+  /* ===== Intro ===== */
 
   .intro-suptitle {
     font-size: 2.5rem;
@@ -1346,7 +1340,7 @@ p {
     font-size: 3.6875rem;
   }
 
-  /* ===== /.Section-Header ===== */
+  /* ===== Section-Header ===== */
 
   .section-suptitle {
     font-size: 1.25rem;
@@ -1361,14 +1355,13 @@ p {
     margin-inline: auto;
   }
 
-  /* ===== /.Main-Navigation ===== */
+  /* ===== Main Navigation ===== */
 
   .main-navigation {
     display: none;
   }
 
-  /* Navigation Toggle
-    -------------------------------------*/
+  /* ===== Navigation-toggle ===== */
 
   .navigation-toggle {
     position: relative;
@@ -1429,7 +1422,7 @@ p {
         top: 8px;
       } */
 
-  /* ===== /.Intro-Slider ===== */
+  /* ===== Intro-Slider ===== */
 
   .intro-slider span {
     display: none;
@@ -1439,7 +1432,7 @@ p {
     width: 50%;
   }
 
-  /* ===== /.Card ===== */
+  /* ===== Card ===== */
 
   .card {
     justify-content: center;
@@ -1456,13 +1449,13 @@ p {
     font-size: 1.125rem;
   }
 
-  /* ===== /.Statistics ===== */
+  /* ===== Statistics ===== */
 
   .statistics {
     margin-top: 4.0625rem;
   }
 
-  /* ===== /.Service ===== */
+  /* ===== Service ===== */
 
   .service-item {
     width: 50%;
@@ -1470,7 +1463,7 @@ p {
     padding-bottom: 0;
   }
 
-  /* ===== /.Wedo ===== */
+  /* ===== Wedo ===== */
 
   .wedo {
     flex-wrap: wrap;
@@ -1488,10 +1481,11 @@ p {
     width: 80%;
   }
 
-  /* ===== /.Feedback ===== */
+  /* ===== Feedback ===== */
 
   .feedback-wrapper {
-    padding-block: 50px;
+    padding-block: 4.375rem;
+    padding-inline: 4.375rem;
     text-align: center;
   }
 
@@ -1524,7 +1518,7 @@ p {
     left: 0;
   }
 
-  /* ===== /.Team-Footer ===== */
+  /* ===== Team-Footer ===== */
 
   .team-footer-wrapper {
     flex: none;
@@ -1534,7 +1528,7 @@ p {
     margin-top: 5rem;
   }
 
-  /* ===== /.Work ===== */
+  /* ===== Work ===== */
 
   .work {
     grid-template-columns: repeat(2, 1fr);
@@ -1557,7 +1551,7 @@ p {
     font-size: 0.9375rem;
   }
 
-  /* ===== /.Clients ===== */
+  /* ===== Clients ===== */
 
   .client-item {
     position: relative;
@@ -1578,14 +1572,14 @@ p {
   }
 
   .client-feedback::before {
-    margin-block: 15px;
+    margin-block: 0.9375rem;
   }
 
   .client-info {
-    padding-inline: 40px;
+    padding-inline: 2.5rem;
   }
 
-  /* ===== /.Blog ===== */
+  /* ===== Blog ===== */
 
   .blog {
     max-width: 58%;
@@ -1599,7 +1593,7 @@ p {
     padding: 0;
   }
 
-  /* ===== /.Main-Footer ===== */
+  /* ===== Main-Footer ===== */
 
   .footer-column--first {
     width: 100%;
@@ -1621,13 +1615,13 @@ p {
   -------------------------------------*/
 
 @media all and (max-width: 576px) {
-  /* ===== /.Header ===== */
+  /* ===== Header ===== */
 
   .main-header-logo {
     font-size: 1.5rem;
   }
 
-  /* ===== /.Intro ===== */
+  /* ===== Intro ===== */
 
   .intro-suptitle {
     font-size: 2rem;
@@ -1637,7 +1631,7 @@ p {
     font-size: 3.0625rem;
   }
 
-  /* ===== /.Section-Header ===== */
+  /* ===== Section-Header ===== */
 
   .section-header {
     text-align: center;
@@ -1652,7 +1646,7 @@ p {
     font-size: 1.375rem;
   }
 
-  /* ===== /.Statistics ===== */
+  /* ===== Statistics ===== */
 
   .statistics-item {
     width: 100%;
@@ -1671,7 +1665,7 @@ p {
     font-size: 0.875rem;
   }
 
-  /* ===== /.Service ===== */
+  /* ===== Service ===== */
 
   .service {
     justify-content: center;
@@ -1683,7 +1677,7 @@ p {
     padding-right: 0;
   }
 
-  /* ===== /.Device ===== */
+  /* ===== Device ===== */
 
   .device {
     max-width: 315px;
@@ -1694,7 +1688,7 @@ p {
     bottom: -3.75rem;
   }
 
-  /* ===== /.Team Footer ===== */
+  /* ===== Team Footer ===== */
 
   .team-footer-wrapper {
     grid-template-columns: 45% 45%;
@@ -1702,7 +1696,7 @@ p {
     margin-top: 4.0625rem;
   }
 
-  /* ===== /.Work ===== */
+  /* ===== Work ===== */
 
   .work-title {
     font-size: 0.8125rem;
@@ -1712,7 +1706,7 @@ p {
     font-size: 0.875rem;
   }
 
-  /* ===== /.Clients ===== */
+  /* ===== Clients ===== */
 
   .client-item img {
     position: static;
@@ -1739,13 +1733,13 @@ p {
     margin-bottom: 0;
   }
 
-  /* ===== /.Blog ===== */
+  /* ===== Blog ===== */
 
   .blog {
     max-width: 70%;
   }
 
-  /* ===== /.Main-footer ===== */
+  /* ===== Main-footer ===== */
 
   .subscribe {
     flex-wrap: wrap;
@@ -1766,8 +1760,8 @@ p {
 }
 
 /* Very small devices (landscape phones, 340px and below)
-      @media (max-width: 340px)
-      -------------------------------------*/
+  @media (max-width: 340px)
+  -------------------------------------*/
 
 @media all and (max-width: 340px) {
   /* Footer-Column-Third
@@ -1793,5 +1787,14 @@ p {
     width: 70%;
     margin-top: 0.625rem;
     margin-left: 0;
+  }
+
+  /* ===== Feedback ===== */
+
+  .feedback-avatar {
+    max-width: 100%;
+    max-height: 100%;
+    width: 155px;
+    width: 155px;
   }
 }
