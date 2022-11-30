@@ -290,7 +290,7 @@
                       d="M21 6h-2V5H5v14h14v-1h2v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2zM6 6h2v3H6V6zm9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
                       fill="rgba(149,225,211,1)" />
                   </svg>
-                  photography
+                  <span>photography</span>
                 </div>
                 <p class="accordion-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -312,7 +312,7 @@
                       d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"
                       fill="rgba(149,225,211,1)" />
                   </svg>
-                  creativity
+                  <span>creativity</span>
                 </div>
                 <p class="accordion-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -335,7 +335,7 @@
                       d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z"
                       fill="rgba(149,225,211,1)" />
                   </svg>
-                  web design
+                  <span>web design</span>
                 </div>
                 <p class="accordion-content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -358,16 +358,18 @@
           <h2 class="visually-hidden">Feedback</h2>
           <div class="container">
             <div class="feedback-wrapper">
-              <img class="feedback-avatar" src="/img/feedback/author-avatar-1.jpg" alt="feedback avatar" />
-              <p class="feedback-text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.”
-              </p>
-              <p class="feedback-author">Brian Stanford</p>
+              <img class="feedback-item feedback-item--avatar" src="/img/feedback/author-avatar-1.jpg"
+                alt="feedback avatar" />
+              <div class="feedback-item">
+                <p class="feedback-text">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.”
+                </p>
+                <p class="feedback-author">Brian Stanford</p>
+              </div>
             </div>
-          </div>
-          <!-- ===== /.Container ===== -->
+            <!-- ===== /.Container ===== -->
         </article>
         <!-- ===== /.Feedback ===== -->
       </section>
@@ -642,13 +644,17 @@
           <h2 class="visually-hidden">Feedback</h2>
           <div class="container">
             <div class="feedback-wrapper">
-              <img class="feedback-avatar" src="/img/feedback/author-avatar-2.jpg" alt="feedback avatar" />
-              <p class="feedback-text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation.”
-              </p>
-              <p class="feedback-author">Felix Cooper</p>
+              <img class="feedback-item feedback-item--avatar" src="/img/feedback/author-avatar-2.jpg"
+                alt="feedback avatar" />
+              <div class="feedback-item">
+                <p class="feedback-text">
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation.”
+                </p>
+                <p class="feedback-author">Felix Cooper</p>
+              </div>
+
             </div>
           </div>
         </article>
@@ -748,6 +754,7 @@
                       fill="rgba(149,225,211,1)" />
                   </svg>
                   <span>361</span>
+
                 </div>
                 <div class="blog-comments">
                   <svg class="blog-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
@@ -1017,7 +1024,7 @@
       </footer>
       <!-- ===== /.Footer ===== -->
     </div>
-    <!-- ===== /.Page ===== -->
+    <!-- ===== /.Main Page ===== -->
   </main>
   <script src="main.js"></script>
 </body>
