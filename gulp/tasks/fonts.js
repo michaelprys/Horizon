@@ -68,15 +68,17 @@ export const fontsStyle = () => {
               fontWeight = 200;
             } else if (fontWeight.toLowerCase() === "light") {
               fontWeight = 300;
+            } else if (fontWeight.toLowerCase() === "lightitalic") {
+              fontWeight = 300;
             } else if (fontWeight.toLowerCase() === "medium") {
-              fontWeight = 400;
+              fontWeight = 500;
             } else if (fontWeight.toLowerCase() === "semibold") {
               fontWeight = 600;
             } else if (fontWeight.toLowerCase() === "bold") {
               fontWeight = 700;
             } else if (
               fontWeight.toLowerCase() === "extrabold" ||
-              fontWeight.toLowerCase
+              fontWeight.toLowerCase() === "heavy"
             ) {
               fontWeight = 800;
             } else if (fontWeight.toLowerCase() === "black") {

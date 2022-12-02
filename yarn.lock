@@ -3145,7 +3145,7 @@ gulp-plumber@latest:
     plugin-error "^0.1.2"
     through2 "^2.0.3"
 
-gulp-remove-empty-lines@latest:
+gulp-remove-empty-lines@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/gulp-remove-empty-lines/-/gulp-remove-empty-lines-0.1.0.tgz#9c89703d5ccc25f7ac6c89f78552f5b190ef9514"
   integrity sha512-EDam+babeJbX1nCFDIjl6CKJjh7ls3KvzBsFYMT0SZ2cdaj10/ADM8HwNP9xJpOWKqFf35xpMYK/eABskruWkQ==

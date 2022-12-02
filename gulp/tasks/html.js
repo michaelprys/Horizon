@@ -1,7 +1,7 @@
 import fileInclude from "gulp-file-include"; // Concatenates html parts
 import webpHtmlNosvg from "gulp-webp-html-nosvg"; // Converts images to webp
 import versionNumber from "gulp-version-number"; // Prevents browser cache
-import removeLines from "gulp-remove-empty-lines"; // Removes empty lines and comments
+import removeEmptyLines  from "gulp-remove-empty-lines"; // Removes empty lines and comments
 
 export const html = () => {
   return app.gulp
@@ -15,7 +15,7 @@ export const html = () => {
       )
     )
     .pipe(
-      removeLines({
+      removeEmptyLines({
         removeComments: true,
       })
     )

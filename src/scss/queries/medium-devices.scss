@@ -1,11 +1,13 @@
 @media all and (max-width: 768px) {
-  /* ===== Header ===== */
+/* Header
+-------------------------------------*/
 
   .main-header-logo {
     font-size: 1.6875rem;
   }
 
-  /* ===== Intro ===== */
+/* Intro
+-------------------------------------*/
 
   .intro-suptitle {
     font-size: 2.5rem;
@@ -15,7 +17,8 @@
     font-size: 3.6875rem;
   }
 
-  /* ===== Section-Header ===== */
+/* Section-header
+-------------------------------------*/
 
   .section-suptitle {
     font-size: 1.25rem;
@@ -30,13 +33,15 @@
     margin-inline: auto;
   }
 
-  /* ===== Main Navigation ===== */
+/* Main-navigation
+-------------------------------------*/
 
   .main-navigation {
     display: none;
   }
 
-  /* ===== Navigation-toggle ===== */
+/* Navigation-toggle
+-------------------------------------*/
 
   .navigation-toggle {
     position: relative;
@@ -97,7 +102,8 @@
         top: 0.5rem;
       } */
 
-  /* ===== Intro-Slider ===== */
+/* Intro-slider
+-------------------------------------*/
 
   .intro-slider span {
     display: none;
@@ -107,7 +113,8 @@
     width: 50%;
   }
 
-  /* ===== Card ===== */
+/* Card
+-------------------------------------*/
 
   .card {
     justify-content: center;
@@ -124,13 +131,15 @@
     font-size: 1.125rem;
   }
 
-  /* ===== Statistics ===== */
+/* Statistics
+-------------------------------------*/
 
   .statistics {
     margin-top: 4.0625rem;
   }
 
-  /* ===== Service ===== */
+/* Service
+-------------------------------------*/
 
   .service-item {
     width: 50%;
@@ -138,7 +147,8 @@
     padding-bottom: 0;
   }
 
-  /* ===== Wedo ===== */
+/* Wedo
+-------------------------------------*/
 
   .wedo {
     flex-wrap: wrap;
@@ -156,7 +166,8 @@
     width: 80%;
   }
 
-  /* ===== Feedback ===== */
+/* Feedback
+-------------------------------------*/
 
   .feedback-wrapper {
     flex-direction: column;
@@ -189,7 +200,8 @@
     margin-right: 0;
   }
 
-  /* ===== Team-Footer ===== */
+/* Team-footer
+-------------------------------------*/
 
   .team-footer-wrapper {
     flex: none;
@@ -199,7 +211,8 @@
     margin-top: 5rem;
   }
 
-  /* ===== Work ===== */
+/* Work
+-------------------------------------*/
 
   .work {
     grid-template-columns: repeat(2, 1fr);
@@ -222,7 +235,8 @@
     font-size: 0.9375rem;
   }
 
-  /* ===== Clients ===== */
+/* Clients
+-------------------------------------*/
 
   .client-item {
     position: relative;
@@ -251,7 +265,8 @@
     padding-inline: 40px;
   }
 
-  /* ===== Blog ===== */
+/* Blog
+-------------------------------------*/
 
   .blog {
     max-width: 58%;
@@ -265,7 +280,8 @@
     padding: 0;
   }
 
-  /* ===== Main-Footer ===== */
+/* Main-footer
+-------------------------------------*/
 
   .footer-column--first {
     width: 100%;

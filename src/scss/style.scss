@@ -1,17 +1,17 @@
 @import "reset";
 @import "fonts";
-@import "queries/extra-large-devices.scss";
-@import "queries/large-devices.scss";
-@import "queries/medium-devices.scss";
-@import "queries/small-devices.scss"; 
-@import "queries/smaller-devices.scss";
+@import "queries/extra-large-devices";
+@import "queries/large-devices";
+@import "queries/medium-devices";
+@import "queries/small-devices";
+@import "queries/smaller-devices";
 
 /* Global
 -------------------------------------*/
 
 body {
   background-color: #00eeff;
-  background-image: url("../img/bg.jpg");
+  background-image: url("/@img/bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -400,7 +400,7 @@ p {
 -------------------------------------*/
 
 .section--device {
-  background: url("../img/devices/devices-bg.jpg") center no-repeat;
+  background: url("/@img/devices/devices-bg.jpg") center no-repeat;
   background-size: cover;
   max-height: 850px;
 }
@@ -432,7 +432,7 @@ p {
 }
 
 .wedo-item {
-  background: #333333 url("../img/wedo/wedo-img.jpg") center / no-repeat;
+  background: #333333 url("/@img/wedo/wedo-img.jpg") center / no-repeat;
   padding-right: 30px;
 }
 
@@ -703,7 +703,7 @@ p {
 -------------------------------------*/
 
 .section--clients {
-  background: #333333 url("../img/clients/clients-bg.jpg") center no-repeat;
+  background: #333333 url("/@img/clients/clients-bg.jpg") center no-repeat;
   background-size: cover;
   padding-bottom: 60px;
 }
@@ -781,14 +781,14 @@ p {
 }
 
 .blog-img-2 {
-  background: #333333 url("../img/blog/Blog-2.jpg");
+  background: #333333 url("/@img/blog/Blog-2.jpg");
   width: 380px;
   height: 240px;
   position: relative;
 }
 
 .blog-img-3 {
-  background: #333333 url("../img/blog/Blog-3.jpg");
+  background: #333333 url("/@img/blog/Blog-3.jpg");
   width: 380px;
   height: 240px;
   position: relative;
@@ -866,7 +866,7 @@ p {
 -------------------------------------*/
 
 .section--map {
-  background: #333333 url("../img/map/bg-map.png") center no-repeat;
+  background: #333333 url("/@img/map/bg-map.png") center no-repeat;
   background-size: cover;
   padding-block: 57px;
   text-align: center;

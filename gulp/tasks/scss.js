@@ -28,8 +28,7 @@ export const scss = () => {
         })
       )
       // Grouping media queries
-      .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
-
+      .pipe(groupCssMediaQueries())
       .pipe(
         app.plugins.if(
           app.isBuild,
@@ -50,7 +49,7 @@ export const scss = () => {
         )
       )
       // Unomment if a non-compressed file is needed.
-      .pipe(app.gulp.dest(app.path.build.css))
+      // .pipe(app.gulp.dest(app.path.build.css))
       .pipe(app.plugins.if(app.isBuild, cleanCss()))
       .pipe(
         rename({

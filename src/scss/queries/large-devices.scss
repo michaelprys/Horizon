@@ -1,11 +1,13 @@
 @media all and (max-width: 992px) {
-  /* ===== Header ===== */
+/* Header
+-------------------------------------*/
 
   .main-navigation {
     width: 520px;
   }
 
-  /* ===== Intro ===== */
+ /* Intro
+-------------------------------------*/
 
   .intro-suptitle {
     font-size: 3rem;
@@ -15,13 +17,15 @@
     font-size: 4.9375rem;
   }
 
-  /* ===== Card ===== */
+/* Card
+-------------------------------------*/
 
   .card-text {
     font-size: 1rem;
   }
 
-  /* ===== Statistics ===== */
+/* Statistics
+-------------------------------------*/
 
   .statistics-wrapper {
     justify-content: center;
@@ -38,13 +42,15 @@
     border: none;
   }
 
-  /* ===== Feedback ===== */
+/* Feedback
+-------------------------------------*/
 
   .feedback-text {
     font-size: 1.25rem;
   }
 
-  /* ===== Work ===== */
+/* Work
+-------------------------------------*/
 
   .work-title {
     font-size: 0.75rem;
@@ -54,7 +60,8 @@
     font-size: 0.8125rem;
   }
 
-  /* ===== Clients ===== */
+/* Clients
+-------------------------------------*/
 
   .client-item img {
     position: static;

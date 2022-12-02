@@ -1,11 +1,13 @@
 @media all and (max-width: 576px) {
-  /* ===== Header ===== */
+/* Header
+-------------------------------------*/
 
   .main-header-logo {
     font-size: 1.5rem;
   }
 
-  /* ===== Intro ===== */
+/* Intro
+-------------------------------------*/
 
   .intro-suptitle {
     font-size: 2rem;
@@ -15,7 +17,8 @@
     font-size: 3.0625rem;
   }
 
-  /* ===== Section-Header ===== */
+/* Section-header
+-------------------------------------*/
 
   .section-header {
     text-align: center;
@@ -30,7 +33,8 @@
     font-size: 1.375rem;
   }
 
-  /* ===== Statistics ===== */
+/* Statistics
+-------------------------------------*/
 
   .statistics-item {
     width: 100%;
@@ -49,7 +53,8 @@
     font-size: 0.875rem;
   }
 
-  /* ===== Service ===== */
+/* Service
+-------------------------------------*/
 
   .service {
     justify-content: center;
@@ -61,7 +66,8 @@
     padding-right: 0;
   }
 
-  /* ===== Device ===== */
+/* Device
+-------------------------------------*/
 
   .device {
     max-width: 315px;
@@ -72,7 +78,8 @@
     bottom: -60px;
   }
 
-  /* ===== Team Footer ===== */
+/* Team-footer
+-------------------------------------*/
 
   .team-footer-wrapper {
     grid-template-columns: 45% 45%;
@@ -80,7 +87,8 @@
     margin-top: 4.0625rem;
   }
 
-  /* ===== Work ===== */
+/* Work
+-------------------------------------*/
 
   .work-title {
     font-size: 0.8125rem;
@@ -90,7 +98,8 @@
     font-size: 0.875rem;
   }
 
-  /* ===== Clients ===== */
+/* Clients
+-------------------------------------*/
 
   .client-item img {
     position: static;
@@ -117,13 +126,15 @@
     margin-bottom: 0;
   }
 
-  /* ===== Blog ===== */
+/* Blog
+-------------------------------------*/
 
   .blog {
     max-width: 70%;
   }
 
-  /* ===== Main-footer ===== */
+/* Main footer
+-------------------------------------*/
 
   .subscribe {
     flex-wrap: wrap;
