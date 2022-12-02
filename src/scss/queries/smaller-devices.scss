@@ -1,0 +1,35 @@
+@media all and (max-width: 340px) {
+  /* Footer-Column-Third
+  -------------------------------------*/
+
+  .footer-gallery-wrapper {
+    justify-content: stretch;
+  }
+
+  .view-more {
+    margin-top: 1.25rem;
+  }
+
+  /* Main Footer
+  -------------------------------------*/
+
+  .footer-socials {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .footer-socials ul {
+    width: 70%;
+    margin-top: 0.625rem;
+    margin-left: 0;
+  }
+
+  /* ===== Feedback ===== */
+
+  .feedback-item--avatar {
+    max-width: 100%;
+    max-height: 100%;
+    width: 155px;
+    width: 155px;
+  }
+}

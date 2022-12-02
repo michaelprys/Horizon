@@ -1,0 +1,32 @@
+@media all and (max-width: 1230px) {
+  /* ===== Intro ===== */
+
+  .intro-suptitle {
+    font-size: 3.4375rem;
+  }
+
+  .intro-title {
+    font-size: 6.1875rem;
+  }
+
+  /* ===== Feedback ===== */
+
+  .feedback-text {
+    font-size: 1.25rem;
+  }
+
+  /* ===== Main-Footer ===== */
+
+  .footer-column--first {
+    width: 100%;
+    margin-bottom: 3.125rem;
+  }
+
+  .footer-column--second {
+    width: 50%;
+  }
+
+  .footer-column--third {
+    width: 50%;
+  }
+}

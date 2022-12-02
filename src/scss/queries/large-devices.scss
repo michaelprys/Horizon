@@ -1,0 +1,79 @@
+@media all and (max-width: 992px) {
+  /* ===== Header ===== */
+
+  .main-navigation {
+    width: 520px;
+  }
+
+  /* ===== Intro ===== */
+
+  .intro-suptitle {
+    font-size: 3rem;
+  }
+
+  .intro-title {
+    font-size: 4.9375rem;
+  }
+
+  /* ===== Card ===== */
+
+  .card-text {
+    font-size: 1rem;
+  }
+
+  /* ===== Statistics ===== */
+
+  .statistics-wrapper {
+    justify-content: center;
+  }
+
+  .statistics-item {
+    flex: none;
+    width: 33.33%;
+    border: none;
+    padding-block: 30px;
+  }
+
+  .statistics-item:last-child {
+    border: none;
+  }
+
+  /* ===== Feedback ===== */
+
+  .feedback-text {
+    font-size: 1.25rem;
+  }
+
+  /* ===== Work ===== */
+
+  .work-title {
+    font-size: 0.75rem;
+  }
+
+  .work-text {
+    font-size: 0.8125rem;
+  }
+
+  /* ===== Clients ===== */
+
+  .client-item img {
+    position: static;
+    margin-bottom: 1.5625rem;
+    margin-inline: auto;
+  }
+
+  .client-item {
+    padding: 0;
+    text-align: center;
+  }
+
+  .client-feedback::before {
+    margin-block: 1.5625rem;
+    margin-inline: auto;
+  }
+
+  .client-feedback {
+    text-align: left;
+    padding-inline: 40px;
+  }
+}

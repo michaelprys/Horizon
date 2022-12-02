@@ -1,0 +1,144 @@
+@media all and (max-width: 576px) {
+  /* ===== Header ===== */
+
+  .main-header-logo {
+    font-size: 1.5rem;
+  }
+
+  /* ===== Intro ===== */
+
+  .intro-suptitle {
+    font-size: 2rem;
+  }
+
+  .intro-title {
+    font-size: 3.0625rem;
+  }
+
+  /* ===== Section-Header ===== */
+
+  .section-header {
+    text-align: center;
+    padding-top: 70px;
+  }
+
+  .section-suptitle {
+    font-size: 1.125rem;
+  }
+
+  .section-title {
+    font-size: 1.375rem;
+  }
+
+  /* ===== Statistics ===== */
+
+  .statistics-item {
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .statistics-item:last-child {
+    border-bottom: 0;
+  }
+
+  .statistics-number {
+    font-size: 3.625rem;
+  }
+
+  .statistics-text {
+    font-size: 0.875rem;
+  }
+
+  /* ===== Service ===== */
+
+  .service {
+    justify-content: center;
+  }
+
+  .service-item {
+    width: 100%;
+    max-width: 400px;
+    padding-right: 0;
+  }
+
+  /* ===== Device ===== */
+
+  .device {
+    max-width: 315px;
+  }
+
+  .device-item--iphone {
+    width: 180px;
+    bottom: -60px;
+  }
+
+  /* ===== Team Footer ===== */
+
+  .team-footer-wrapper {
+    grid-template-columns: 45% 45%;
+    padding: 0;
+    margin-top: 4.0625rem;
+  }
+
+  /* ===== Work ===== */
+
+  .work-title {
+    font-size: 0.8125rem;
+  }
+
+  .work-text {
+    font-size: 0.875rem;
+  }
+
+  /* ===== Clients ===== */
+
+  .client-item img {
+    position: static;
+    margin-bottom: 1.5625rem;
+    margin-inline: auto;
+  }
+
+  .client-item {
+    padding: 0;
+    text-align: center;
+  }
+
+  .client-feedback::before {
+    margin-block: 1.5625rem;
+    margin-inline: auto;
+  }
+
+  .client-feedback {
+    padding-inline: 20px;
+    text-align: center;
+  }
+
+  .client-item:last-child {
+    margin-bottom: 0;
+  }
+
+  /* ===== Blog ===== */
+
+  .blog {
+    max-width: 70%;
+  }
+
+  /* ===== Main-footer ===== */
+
+  .subscribe {
+    flex-wrap: wrap;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    margin-bottom: 0.9375rem;
+  }
+
+  .subscribe-button {
+    width: 100%;
+  }
+
+  .footer-blog-title {
+    font-size: 0.6875rem;
+  }
+}

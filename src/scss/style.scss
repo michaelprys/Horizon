@@ -1,5 +1,10 @@
-@import "reset.css";
-@import "font-faces.css";
+@import "reset";
+@import "fonts";
+@import "queries/extra-large-devices.scss";
+@import "queries/large-devices.scss";
+@import "queries/medium-devices.scss";
+@import "queries/small-devices.scss"; 
+@import "queries/smaller-devices.scss";
 
 /* Global
 -------------------------------------*/
@@ -25,24 +30,10 @@ p {
   color: #cccccc;
 }
 
-/* Makes an element hidden, but still accessible to web crawlers.
+/* Wrapper
 -------------------------------------*/
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -0.0625rem;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
-/* Main Page
--------------------------------------*/
-
-.main-page {
+.main-wrapper {
   overflow: hidden;
 }
 
@@ -458,7 +449,7 @@ p {
 }
 
 .accordion-item.active .accordion-header::after {
-  transform: translateY(-25%) rotate(-45deg);
+  transform: translateY(-50%) rotate(90deg);
 }
 
 .accordion-item.active .accordion-content {
@@ -478,17 +469,15 @@ p {
 }
 
 .accordion-header::after {
-  content: "";
+  content: "❮";
   display: block;
-  width: 17px;
-  height: 17px;
+  font-size: 1.375rem;
   position: absolute;
-  top: 40%;
-  right: 20px;
-  transform: rotate(135deg);
-  border-left: 3px solid #cccccc;
-  border-bottom: 3px solid #cccccc;
+  top: 50%;
+  transform: translateY(-50%) rotate(-90deg);
   cursor: pointer;
+  color: #cccccc;
+  right: 20px;
 }
 
 .accordion-icon {
@@ -535,34 +524,28 @@ p {
   position: relative;
 }
 
-.feedback-wrapper::before {
-  content: "";
+.feedback-wrapper::before,
+.feedback-wrapper::after {
   display: block;
-  width: 17px;
-  height: 17px;
+  font-size: 2em;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 23px;
-  transform: rotate(45deg);
-  border-left: 3px solid #cccccc;
-  border-bottom: 3px solid #cccccc;
+  color: #cccccc;
   cursor: pointer;
+  padding: 10px;
+}
+
+.feedback-wrapper::before {
+  content: "❮";
+  left: 1.5rem;
+  margin-left: -10px;
 }
 
 .feedback-wrapper::after {
-  content: "";
-  display: block;
-  width: 17px;
-  height: 17px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 23px;
-  transform: rotate(-135deg);
-  border-left: 3px solid #cccccc;
-  border-bottom: 3px solid #cccccc;
-  cursor: pointer;
+  content: "❯";
+  right: 1.5rem;
+  margin-right: -10px;
 }
 
 .feedback-text {
@@ -597,10 +580,6 @@ p {
   max-height: 210px;
   border-radius: 50%;
   margin-right: 51px;
-  /* position: absolute;
-  left: 4.625rem;
-  top: 50%;
-  transform: translateY(-50%); */
 }
 
 /* Team
@@ -887,7 +866,7 @@ p {
 -------------------------------------*/
 
 .section--map {
-  background: #333333 url("../img/bg-map.png") center no-repeat;
+  background: #333333 url("../img/map/bg-map.png") center no-repeat;
   background-size: cover;
   padding-block: 57px;
   text-align: center;
@@ -895,7 +874,7 @@ p {
 
 .map-pin {
   font-size: 1.625rem;
-  color: #f38181;
+  margin-bottom: 0.5rem;
 }
 
 .map-link a {
@@ -919,7 +898,7 @@ p {
   width: 3.75rem;
   height: 3px;
   background-color: #f38181;
-  margin-top: 1.3125rem;
+  margin-top: 1rem;
   margin-inline: auto;
 }
 
@@ -1117,686 +1096,4 @@ p {
   text-align: center;
   border-top: 1px solid #e5e5e5;
   padding-block: 22px;
-}
-
-/* Imports
--------------------------------------*/
-/* 
-@import "media-queries/extra-large-devices.css";
-@import "media-queries/large-devices.css";
-@import "media-queries/mediu,-devices.css";
-@import "media-queries/small-devices.css"; */
-
-/* Extra large devices (large desktops, 1230px and below)
-@media (max-width: 1230px)
--------------------------------------*/
-
-@media all and (max-width: 1230px) {
-  /* ===== Intro ===== */
-
-  .intro-suptitle {
-    font-size: 3.4375rem;
-  }
-
-  .intro-title {
-    font-size: 6.1875rem;
-  }
-
-  /* ===== Feedback ===== */
-
-  .feedback-text {
-    font-size: 1.25rem;
-  }
-
-  /* ===== Main-Footer ===== */
-
-  .footer-column--first {
-    width: 100%;
-    margin-bottom: 3.125rem;
-  }
-
-  .footer-column--second {
-    width: 50%;
-  }
-
-  .footer-column--third {
-    width: 50%;
-  }
-}
-/* Large devices (desktops, 992px and below)
-  @media (max-width: 992px)
-  -------------------------------------*/
-
-@media all and (max-width: 992px) {
-  /* ===== Header ===== */
-
-  .main-navigation {
-    width: 520px;
-  }
-
-  /* ===== Intro ===== */
-
-  .intro-suptitle {
-    font-size: 3rem;
-  }
-
-  .intro-title {
-    font-size: 4.9375rem;
-  }
-
-  /* ===== Card ===== */
-
-  .card-text {
-    font-size: 1rem;
-  }
-
-  /* ===== Statistics ===== */
-
-  .statistics-wrapper {
-    justify-content: center;
-  }
-
-  .statistics-item {
-    flex: none;
-    width: 33.33%;
-    border: none;
-    padding-block: 30px;
-  }
-
-  .statistics-item:last-child {
-    border: none;
-  }
-
-  /* ===== Feedback ===== */
-
-  .feedback-text {
-    font-size: 1.25rem;
-  }
-
-  /* ===== Work ===== */
-
-  .work-title {
-    font-size: 0.75rem;
-  }
-
-  .work-text {
-    font-size: 0.8125rem;
-  }
-
-  /* ===== Clients ===== */
-
-  .client-item img {
-    position: static;
-    margin-bottom: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-item {
-    padding: 0;
-    text-align: center;
-  }
-
-  .client-feedback::before {
-    margin-block: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-feedback {
-    text-align: left;
-    padding-inline: 40px;
-  }
-}
-
-/* Large devices (desktops, 992px and below)
-  @media (max-width: 992px)
-  -------------------------------------*/
-
-@media all and (max-width: 992px) {
-  /* ===== Header ===== */
-
-  .main-navigation {
-    width: 520px;
-  }
-
-  /* ===== Intro ===== */
-
-  .intro-suptitle {
-    font-size: 3rem;
-  }
-
-  .intro-title {
-    font-size: 4.9375rem;
-  }
-
-  /* ===== Card ===== */
-
-  .card-text {
-    font-size: 1rem;
-  }
-
-  /* ===== Statistics ===== */
-
-  .statistics-wrapper {
-    justify-content: center;
-  }
-
-  .statistics-item:last-child {
-    border: none;
-  }
-
-  /* ===== Feedback ===== */
-
-  .feedback-text {
-    font-size: 1.25rem;
-  }
-
-  /* ===== Work ===== */
-
-  .work-title {
-    font-size: 0.75rem;
-  }
-
-  .work-text {
-    font-size: 0.8125rem;
-  }
-
-  /* ===== Clients ===== */
-
-  .client-item img {
-    position: static;
-    margin-bottom: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-item {
-    padding: 0;
-    text-align: center;
-  }
-
-  .client-feedback::before {
-    margin-block: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-feedback {
-    text-align: left;
-    padding-inline: 40px;
-  }
-}
-
-/* Medium devices (tablets, 768px and below)
-  @media (max-width: 768px)
-  -------------------------------------*/
-
-@media all and (max-width: 768px) {
-  /* ===== Header ===== */
-
-  .main-header-logo {
-    font-size: 1.6875rem;
-  }
-
-  /* ===== Intro ===== */
-
-  .intro-suptitle {
-    font-size: 2.5rem;
-  }
-
-  .intro-title {
-    font-size: 3.6875rem;
-  }
-
-  /* ===== Section-Header ===== */
-
-  .section-suptitle {
-    font-size: 1.25rem;
-  }
-
-  .section-title {
-    font-size: 1.5rem;
-  }
-
-  .section-title::after {
-    margin-block: 1.25rem;
-    margin-inline: auto;
-  }
-
-  /* ===== Main Navigation ===== */
-
-  .main-navigation {
-    display: none;
-  }
-
-  /* ===== Navigation-toggle ===== */
-
-  .navigation-toggle {
-    position: relative;
-    align-items: center;
-    display: flex;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    top: 15px;
-  }
-
-  .navigation-toggle-item {
-    width: 100%;
-    height: 3px;
-    background-color: #ffffff;
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-    left: 0;
-  }
-
-  .navigation-toggle-item::before,
-  .navigation-toggle-item::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: #ffffff;
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-    border-radius: 5px;
-  }
-
-  .navigation-toggle-item::before {
-    transform: translate3d(0, -0.75rem, 0);
-  }
-
-  .navigation-toggle-item::after {
-    transform: translate3d(0, 0.75rem, 0);
-  }
-
-  /* .navigation-toggle-item::before,
-      .navigation-toggle-item::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 3px;
-        position: absolute;
-        background-color: #ffffff;
-      }
-    
-      .navigation-toggle-item::before {
-        top: -0.5rem;
-      }
-    
-      .navigation-toggle-item::after {
-        top: 0.5rem;
-      } */
-
-  /* ===== Intro-Slider ===== */
-
-  .intro-slider span {
-    display: none;
-  }
-
-  .intro-slider-item.active::before {
-    width: 50%;
-  }
-
-  /* ===== Card ===== */
-
-  .card {
-    justify-content: center;
-    gap: 1.875rem;
-    margin-top: 3.125rem;
-  }
-
-  .card-item {
-    width: 100%;
-    max-width: 410px;
-  }
-
-  .card-text {
-    font-size: 1.125rem;
-  }
-
-  /* ===== Statistics ===== */
-
-  .statistics {
-    margin-top: 4.0625rem;
-  }
-
-  /* ===== Service ===== */
-
-  .service-item {
-    width: 50%;
-    border: none;
-    padding-bottom: 0;
-  }
-
-  /* ===== Wedo ===== */
-
-  .wedo {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 3.75rem;
-  }
-
-  .wedo-item {
-    padding-right: 0;
-    margin-bottom: 3.125rem;
-    width: 70%;
-  }
-
-  .accordion {
-    width: 80%;
-  }
-
-  /* ===== Feedback ===== */
-
-  .feedback-wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .feedback-text {
-    margin-top: 2.1875rem;
-  }
-
-  .feedback-author {
-    display: block;
-    padding: 0;
-  }
-
-  .feedback-author::before {
-    position: static;
-    margin-block: 1.25rem;
-    margin-inline: auto;
-  }
-
-  .feedback-icon {
-    position: static;
-    margin-inline: auto;
-    max-width: 110px;
-    font-size: 2.8125rem;
-  }
-
-  .feedback-item--avatar {
-    margin-right: 0;
-  }
-
-  /* ===== Team-Footer ===== */
-
-  .team-footer-wrapper {
-    flex: none;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 12.5rem 12.5rem 12.5rem;
-    margin-top: 5rem;
-  }
-
-  /* ===== Work ===== */
-
-  .work {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-      "work-item--1 work-item--2"
-      "work-item--3 work-item--4"
-      "work-item--5 work-item--6"
-      "work-item--5 work-item--7";
-  }
-
-  .work-item--5 {
-    grid-area: work-item--5;
-  }
-
-  .work-title {
-    font-size: 0.875rem;
-  }
-
-  .work-text {
-    font-size: 0.9375rem;
-  }
-
-  /* ===== Clients ===== */
-
-  .client-item {
-    position: relative;
-    width: 600px;
-    padding-left: 145px;
-    text-align: left;
-    margin-bottom: 4.0625rem;
-    margin-inline: auto;
-  }
-
-  .client-item img {
-    border-radius: 50%;
-    position: absolute;
-  }
-
-  .client-feedback {
-    padding: 0;
-  }
-
-  .client-feedback::before {
-    margin-block: 0.9375rem;
-    margin-inline: 0;
-  }
-
-  .client-info {
-    padding-inline: 40px;
-  }
-
-  /* ===== Blog ===== */
-
-  .blog {
-    max-width: 58%;
-    margin-inline: auto;
-    gap: 3.125rem;
-    padding-bottom: 5rem;
-  }
-
-  .blog-item {
-    width: 100%;
-    padding: 0;
-  }
-
-  /* ===== Main-Footer ===== */
-
-  .footer-column--first {
-    width: 100%;
-    margin-bottom: 3.125rem;
-  }
-
-  .footer-column--second {
-    width: 100%;
-    margin-bottom: 3.125rem;
-  }
-
-  .footer-column--third {
-    width: 100%;
-  }
-}
-
-/* Small devices (landscape phones, 576px and below)
-  @media (max-width: 576px)
-  -------------------------------------*/
-
-@media all and (max-width: 576px) {
-  /* ===== Header ===== */
-
-  .main-header-logo {
-    font-size: 1.5rem;
-  }
-
-  /* ===== Intro ===== */
-
-  .intro-suptitle {
-    font-size: 2rem;
-  }
-
-  .intro-title {
-    font-size: 3.0625rem;
-  }
-
-  /* ===== Section-Header ===== */
-
-  .section-header {
-    text-align: center;
-    padding-top: 70px;
-  }
-
-  .section-suptitle {
-    font-size: 1.125rem;
-  }
-
-  .section-title {
-    font-size: 1.375rem;
-  }
-
-  /* ===== Statistics ===== */
-
-  .statistics-item {
-    width: 100%;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  }
-
-  .statistics-item:last-child {
-    border-bottom: 0;
-  }
-
-  .statistics-number {
-    font-size: 3.625rem;
-  }
-
-  .statistics-text {
-    font-size: 0.875rem;
-  }
-
-  /* ===== Service ===== */
-
-  .service {
-    justify-content: center;
-  }
-
-  .service-item {
-    width: 100%;
-    max-width: 400px;
-    padding-right: 0;
-  }
-
-  /* ===== Device ===== */
-
-  .device {
-    max-width: 315px;
-  }
-
-  .device-item--iphone {
-    width: 180px;
-    bottom: -60px;
-  }
-
-  /* ===== Team Footer ===== */
-
-  .team-footer-wrapper {
-    grid-template-columns: 45% 45%;
-    padding: 0;
-    margin-top: 4.0625rem;
-  }
-
-  /* ===== Work ===== */
-
-  .work-title {
-    font-size: 0.8125rem;
-  }
-
-  .work-text {
-    font-size: 0.875rem;
-  }
-
-  /* ===== Clients ===== */
-
-  .client-item img {
-    position: static;
-    margin-bottom: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-item {
-    padding: 0;
-    text-align: center;
-  }
-
-  .client-feedback::before {
-    margin-block: 1.5625rem;
-    margin-inline: auto;
-  }
-
-  .client-feedback {
-    padding-inline: 20px;
-    text-align: center;
-  }
-
-  .client-item:last-child {
-    margin-bottom: 0;
-  }
-
-  /* ===== Blog ===== */
-
-  .blog {
-    max-width: 70%;
-  }
-
-  /* ===== Main-footer ===== */
-
-  .subscribe {
-    flex-wrap: wrap;
-  }
-
-  .subscribe-input {
-    width: 100%;
-    margin-bottom: 0.9375rem;
-  }
-
-  .subscribe-button {
-    width: 100%;
-  }
-
-  .footer-blog-title {
-    font-size: 0.6875rem;
-  }
-}
-
-/* Very small devices (landscape phones, 340px and below)
-  @media (max-width: 340px)
-  -------------------------------------*/
-
-@media all and (max-width: 340px) {
-  /* Footer-Column-Third
-  -------------------------------------*/
-
-  .footer-gallery-wrapper {
-    justify-content: stretch;
-  }
-
-  .view-more {
-    margin-top: 1.25rem;
-  }
-
-  /* Main Footer
-  -------------------------------------*/
-
-  .footer-socials {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .footer-socials ul {
-    width: 70%;
-    margin-top: 0.625rem;
-    margin-left: 0;
-  }
-
-  /* ===== Feedback ===== */
-
-  .feedback-item--avatar {
-    max-width: 100%;
-    max-height: 100%;
-    width: 155px;
-    width: 155px;
-  }
 }
