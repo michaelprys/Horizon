@@ -33,7 +33,6 @@ export const scss = () => {
         app.plugins.if(
           app.isBuild,
           autoprefixer({
-            grid: true,
             overrideBrowserslist: ["last 3 versions"],
             cascade: true,
           })
