@@ -1,33 +1,33 @@
 @media all and (max-width: 340px) {
-  /* Footer-Column-Third
-  -------------------------------------*/
+  /* Main Footer Column #3
+          -------------------------------------*/
 
-  .footer-gallery-wrapper {
+  .footer-gallery {
     justify-content: stretch;
   }
 
-  .view-more {
+  .footer-gallery__view-more {
     margin-top: 1.25rem;
   }
 
   /* Main Footer
-  -------------------------------------*/
+          -------------------------------------*/
 
-  .footer-socials {
+  .main-footer__socials {
     flex-direction: column;
     align-items: start;
   }
 
-  .footer-socials ul {
+  .footer-socials__wrapper {
     width: 70%;
     margin-top: 0.625rem;
     margin-left: 0;
   }
 
-/* Feedback
--------------------------------------*/
+  /* Feedback
+        -------------------------------------*/
 
-  .feedback-item--avatar {
+  .feedback__avatar {
     max-width: 100%;
     max-height: 100%;
     width: 155px;

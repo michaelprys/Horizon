@@ -1,35 +1,35 @@
 @media all and (max-width: 1230px) {
-/* Intro
--------------------------------------*/
+  /* Intro
+  -------------------------------------*/
 
-  .intro-suptitle {
+  .intro__suptitle {
     font-size: 3.4375rem;
   }
 
-  .intro-title {
+  .intro__title {
     font-size: 6.1875rem;
   }
 
-/* Feedback
--------------------------------------*/
+  /* Feedback
+  -------------------------------------*/
 
-  .feedback-text {
+  .feedback__text {
     font-size: 1.25rem;
   }
 
-/* Main-footer
--------------------------------------*/
+  /* Main Footer
+  -------------------------------------*/
 
-  .footer-column--first {
+  .main-footer__column:nth-child(1) {
     width: 100%;
     margin-bottom: 3.125rem;
   }
 
-  .footer-column--second {
+  .main-footer__column:nth-child(2) {
     width: 50%;
   }
 
-  .footer-column--third {
+  .main-footer__column:nth-child(3) {
     width: 50%;
   }
 }

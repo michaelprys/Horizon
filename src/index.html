@@ -4,27 +4,27 @@
   <div class="main-wrapper">
     <div class="intro">
       <div class="container">
-        <div class="intro-wrapper">
-          <h3 class="intro-suptitle">Creative Studio</h3>
-          <h2 class="intro-title">Welcome to Horizon</h2>
-          <a class="intro-button" href="#">learn more</a>
+        <div class="intro__wrapper">
+          <h3 class="intro__suptitle">Creative Studio</h3>
+          <h2 class="intro__title">Welcome to Horizon</h2>
+          <a class="intro__button" href="#">learn more</a>
         </div>
 
-        <ul class="intro-slider">
-          <li class="intro-slider-item active">
+        <ul class="intro__slider">
+          <li class="intro__slider-item active">
             <p><b>01</b>&nbsp;&nbsp;<span>intro</span></p>
           </li>
-          <li class="intro-slider-item">
+          <li class="intro__slider-item">
             <p><b>02</b>&nbsp;&nbsp;<span>work</span></p>
           </li>
-          <li class="intro-slider-item">
+          <li class="intro__slider-item">
             <p><b>03</b>&nbsp;&nbsp;<span>about</span></p>
           </li>
-          <li class="intro-slider-item">
+          <li class="intro__slider-item">
             <p><b>04</b>&nbsp;&nbsp;<span>contacts</span></p>
           </li>
         </ul>
-        <!-- ===== /.Intro-Slider ===== -->
+        <!-- ===== /.Intro__slider ===== -->
       </div>
       <!-- ===== /.Container ===== -->
     </div>
@@ -32,10 +32,10 @@
 
     <section class="section">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">What we do</p>
-          <h2 class="section-title">Story about us</h2>
-          <p class="section-text">
+        <header class="section__header">
+          <p class="section__suptitle">What we do</p>
+          <h2 class="section__title">Story about us</h2>
+          <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -44,28 +44,28 @@
         </header>
 
         <ul class="card">
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/about/about-1.jpg" alt="about card 1" />
               </div>
-              <div class="card-text">super team</div>
+              <div class="card__text">super team</div>
             </div>
           </li>
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/about/about-2.jpg" alt="about card 2" />
               </div>
-              <div class="card-text">super team</div>
+              <div class="card__text">super team</div>
             </div>
           </li>
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/about/about-3.jpg" alt="about card 3" />
               </div>
-              <div class="card-text">super team</div>
+              <div class="card__text">super team</div>
             </div>
           </li>
         </ul>
@@ -75,26 +75,26 @@
 
       <div class="statistics">
         <div class="container">
-          <ul class="statistics-wrapper">
-            <li class="statistics-item">
-              <p class="statistics-number">42</p>
-              <p class="statistics-text">web design projects</p>
+          <ul class="statistics__wrapper">
+            <li class="statistics__item">
+              <p class="statistics__number">42</p>
+              <p class="statistics__text">web design projects</p>
             </li>
-            <li class="statistics-item">
-              <p class="statistics-number">123</p>
-              <p class="statistics-text">happy client</p>
+            <li class="statistics__item">
+              <p class="statistics__number">123</p>
+              <p class="statistics__text">happy client</p>
             </li>
-            <li class="statistics-item">
-              <p class="statistics-number">15</p>
-              <p class="statistics-text">award winner</p>
+            <li class="statistics__item">
+              <p class="statistics__number">15</p>
+              <p class="statistics__text">award winner</p>
             </li>
-            <li class="statistics-item">
-              <p class="statistics-number">99</p>
-              <p class="statistics-text">cup of coffee</p>
+            <li class="statistics__item">
+              <p class="statistics__number">99</p>
+              <p class="statistics__text">cup of coffee</p>
             </li>
-            <li class="statistics-item">
-              <p class="statistics-number">24</p>
-              <p class="statistics-text">members</p>
+            <li class="statistics__item">
+              <p class="statistics__number">24</p>
+              <p class="statistics__text">members</p>
             </li>
           </ul>
         </div>
@@ -106,14 +106,15 @@
 
     <section class="section">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">We work with</p>
-          <h2 class="section-title">Amazing Services</h2>
+        <header class="section__header">
+          <p class="section__suptitle">We work with</p>
+          <h2 class="section__title">Amazing Services</h2>
         </header>
         <ul class="service">
-          <li class="service-item service-item--border">
+          <!-- ? --border -->
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -125,15 +126,15 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">Photography</h2>
-            <p class="service-text">
+            <h2 class="service__title">Photography</h2>
+            <p class="service__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor.
             </p>
           </li>
-          <li class="service-item service-item--border">
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -145,15 +146,15 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">Web Design</h2>
-            <p class="service-text">
+            <h2 class="service__title">Web Design</h2>
+            <p class="service__text">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
-          <li class="service-item service-item--border">
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -165,15 +166,15 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">Creativity</h2>
-            <p class="service-text">
+            <h2 class="service__title">Creativity</h2>
+            <p class="service__text">
               Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor.
             </p>
           </li>
-          <li class="service-item">
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -185,14 +186,14 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">seo</h2>
-            <p class="service-text">
+            <h2 class="service__title">seo</h2>
+            <p class="service__text">
               Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
             </p>
           </li>
-          <li class="service-item">
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -204,14 +205,14 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">Css/Html</h2>
-            <p class="service-text">
+            <h2 class="service__title">Css/Html</h2>
+            <p class="service__text">
               Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
             </p>
           </li>
-          <li class="service-item">
+          <li class="service__item">
             <svg
-              class="service-icon"
+              class="service__icon"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               width="32"
@@ -223,8 +224,8 @@
                 fill="rgba(149,225,211,1)"
               />
             </svg>
-            <h2 class="service-title">Digital</h2>
-            <p class="service-text">
+            <h2 class="service__title">Digital</h2>
+            <p class="service__text">
               Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
             </p>
           </li>
@@ -237,18 +238,18 @@
 
     <section class="section section--device">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">For all devices</p>
-          <h2 class="section-title">Unique design</h2>
+        <header class="section__header">
+          <p class="section__suptitle">For all devices</p>
+          <h2 class="section__title">Unique design</h2>
         </header>
         <div class="device">
           <img
-            class="device-item"
+            class="device__item"
             src="@img/devices/ipad.png"
             alt="ipad image"
           />
           <img
-            class="device-item device-item--iphone"
+            class="device__item device__item--iphone"
             src="@img/devices/iphone.png"
             alt="iphone image"
           />
@@ -260,10 +261,10 @@
 
     <section class="section section--service">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">Service</p>
-          <h2 class="section-title">what we do</h2>
-          <p class="section-text">
+        <header class="section__header">
+          <p class="section__suptitle">Service</p>
+          <h2 class="section__title">what we do</h2>
+          <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -271,14 +272,16 @@
           </p>
         </header>
         <div class="wedo">
-          <div class="wedo-item">
-            <img src="@img/wedo/wedo-img.jpg" alt="wedo image" />
-          </div>
-          <ul class="accordion">
-            <li class="accordion-item active">
-              <div class="accordion-header">
+          <img
+            class="wedo__item"
+            src="@img/wedo/wedo-img.jpg"
+            alt="wedo image"
+          />
+          <ul class="wedo__accordion">
+            <li class="wedo__accordion-item active">
+              <div class="wedo__accordion-header">
                 <svg
-                  class="accordion-icon"
+                  class="wedo__accordion-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -292,7 +295,7 @@
                 </svg>
                 <span>photography</span>
               </div>
-              <p class="accordion-content">
+              <p class="wedo__accordion-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -302,10 +305,10 @@
                 sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </li>
-            <li class="accordion-item">
-              <div class="accordion-header">
+            <li class="wedo__accordion-item">
+              <div class="wedo__accordion-header">
                 <svg
-                  class="accordion-icon"
+                  class="wedo__accordion-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -319,7 +322,7 @@
                 </svg>
                 <span>creativity</span>
               </div>
-              <p class="accordion-content">
+              <p class="wedo__accordion-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -330,10 +333,10 @@
               </p>
             </li>
 
-            <li class="accordion-item">
-              <div class="accordion-header">
+            <li class="wedo__accordion-item">
+              <div class="wedo__accordion-header">
                 <svg
-                  class="accordion-icon"
+                  class="wedo__accordion-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -347,7 +350,7 @@
                 </svg>
                 <span>web design</span>
               </div>
-              <p class="accordion-content">
+              <p class="wedo__accordion-content">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -390,10 +393,10 @@
 
     <section class="section">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">Who we are</p>
-          <h2 class="section-title">Meet our team</h2>
-          <p class="section-text">
+        <header class="section__header">
+          <p class="section__suptitle">Who we are</p>
+          <h2 class="section__title">Meet our team</h2>
+          <p class="section__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -402,15 +405,15 @@
         </header>
 
         <ul class="card">
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/whoweare/employee-1.jpg" alt="employee 1" />
               </div>
-              <div class="card-text">
-                <ul class="card-social">
+              <div class="card__text">
+                <ul class="card__social">
                   <li>
-                    <a class="social-item" href="#" aria-label="facebook"
+                    <a class="social__item" href="#" aria-label="facebook"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -419,14 +422,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="twitter"
+                    <a class="social__item" href="#" aria-label="twitter"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -435,14 +438,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="pinterest"
+                    <a class="social__item" href="#" aria-label="pinterest"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -451,7 +454,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -459,7 +462,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item social-item--borderless"
+                      class="social__item social__item--borderless"
                       href="#"
                       aria-label="instagram"
                       ><svg
@@ -470,7 +473,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -484,15 +487,15 @@
               <p class="employee-position">Graphic Design</p>
             </div>
           </li>
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/whoweare/employee-2.jpg" alt="employee 2" />
               </div>
-              <div class="card-text">
-                <ul class="card-social">
+              <div class="card__text">
+                <ul class="card__social">
                   <li>
-                    <a class="social-item" href="#" aria-label="facebook"
+                    <a class="social__item" href="#" aria-label="facebook"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -501,14 +504,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="twitter"
+                    <a class="social__item" href="#" aria-label="twitter"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -517,14 +520,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="pinterest"
+                    <a class="social__item" href="#" aria-label="pinterest"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -533,7 +536,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -541,7 +544,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item social-item--borderless"
+                      class="social__item social__item--borderless"
                       href="#"
                       aria-label="instagram"
                       ><svg
@@ -552,7 +555,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -566,15 +569,15 @@
               <p class="employee-position">Developer</p>
             </div>
           </li>
-          <li class="card-item">
-            <div class="card-wrapper">
-              <div class="card-img">
+          <li class="card__item">
+            <div class="card__wrapper">
+              <div class="card__img">
                 <img src="@img/card/whoweare/employee-3.jpg" alt="employee 2" />
               </div>
-              <div class="card-text">
-                <ul class="card-social">
+              <div class="card__text">
+                <ul class="card__social">
                   <li>
-                    <a class="social-item" href="#" aria-label="facebook"
+                    <a class="social__item" href="#" aria-label="facebook"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -583,14 +586,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="twitter"
+                    <a class="social__item" href="#" aria-label="twitter"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -599,14 +602,14 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
                           fill="rgba(243,129,129,1)"
                         /></svg
                     ></a>
                   </li>
                   <li>
-                    <a class="social-item" href="#" aria-label="pinterest"
+                    <a class="social__item" href="#" aria-label="pinterest"
                       ><svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 24 24"
@@ -615,7 +618,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -623,7 +626,7 @@
                   </li>
                   <li>
                     <a
-                      class="social-item social-item--borderless"
+                      class="social__item social__item--borderless"
                       href="#"
                       aria-label="instagram"
                       ><svg
@@ -634,7 +637,7 @@
                       >
                         <path fill="none" d="M0 0h24v24H0z" />
                         <path
-                          class="social-item-path"
+                          class="social__item-path"
                           d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
                           fill="rgba(243,129,129,1)"
                         /></svg
@@ -656,24 +659,24 @@
       <section class="team-footer">
         <h2 class="visually-hidden">Sponsors</h2>
         <div class="container">
-          <ul class="team-footer-wrapper">
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-1.png" alt="sponsor 1" />
+          <ul class="team-footer__wrapper">
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-1.png" alt="sponsor image 1" />
             </li>
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-2.png" alt="sponsor 2" />
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-2.png" alt="sponsor image 2" />
             </li>
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-3.png" alt="sponsor 3" />
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-3.png" alt="sponsor image 3" />
             </li>
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-4.png" alt="sponsor 4" />
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-4.png" alt="sponsor image 4" />
             </li>
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-5.png" alt="sponsor 5" />
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-5.png" alt="sponsor image 5" />
             </li>
-            <li class="sponsor-item">
-              <img src="@img/sponsor/sponsor-6.png" alt="sponsor 6" />
+            <li class="sponsor__item">
+              <img src="@img/sponsor/sponsor-6.png" alt="sponsor image 6" />
             </li>
           </ul>
         </div>
@@ -682,10 +685,10 @@
     <!-- ===== /.Section ===== -->
 
     <section class="section">
-      <header class="section-header">
-        <p class="section-suptitle">What we do</p>
-        <h2 class="section-title">some of our work</h2>
-        <p class="section-text">
+      <header class="section__header">
+        <p class="section__suptitle">What we do</p>
+        <h2 class="section__title">some of our work</h2>
+        <p class="section__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -694,53 +697,81 @@
       </header>
 
       <ul class="work">
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-1.jpg" alt="work 1" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-1.jpg"
+            alt="work photo 1"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-2.jpg" alt="work 2" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-2.jpg"
+            alt="work photo 2"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-3.jpg" alt="work 3" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-3.jpg"
+            alt="work photo 3"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-4.jpg" alt="work 4" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-4.jpg"
+            alt="work photo 4"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-5.jpg" alt="work 5" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-5.jpg"
+            alt="work photo 5"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-6.jpg" alt="work 6" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-6.jpg"
+            alt="work photo 6"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
-        <li class="work-item">
-          <img class="work-photo" src="@img/work/work-7.jpg" alt="work 7" />
-          <div class="work-info">
-            <div class="work-title">creatively designed</div>
-            <div class="work-text">Lorem ipsum dolor sit</div>
+        <li class="work__item">
+          <img
+            class="work__photo"
+            src="@img/work/work-7.jpg"
+            alt="work photo 7"
+          />
+          <div class="work__info">
+            <div class="work__title">creatively designed</div>
+            <div class="work__text">Lorem ipsum dolor sit</div>
           </div>
         </li>
       </ul>
@@ -772,53 +803,53 @@
 
     <section class="section section--clients">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">Happy Clients</p>
-          <h2 class="section-title">What people say</h2>
+        <header class="section__header">
+          <p class="section__suptitle">Happy Clients</p>
+          <h2 class="section__title">What people say</h2>
         </header>
         <div class="client">
-          <article class="client-item">
-            <img src="@img/clients/client-1.jpg" alt="client 1" />
-            <div class="client-info">
-              <h4 class="client-name">Jordan Mayers</h4>
-              <p class="client-position">Graphic Design</p>
-              <p class="client-feedback">
+          <article class="client__item">
+            <img src="@img/clients/client-1.jpg" alt="client photo 1" />
+            <div class="client__info">
+              <h4 class="client__name">Jordan Mayers</h4>
+              <p class="client__position">Graphic Design</p>
+              <p class="client__feedback">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim.
               </p>
             </div>
           </article>
-          <article class="client-item">
-            <img src="@img/clients/client-2.jpg" alt="client 2" />
-            <div class="client-info">
-              <h4 class="client-name">Julia Liu</h4>
-              <p class="client-position">Graphic Design</p>
-              <p class="client-feedback">
+          <article class="client__item">
+            <img src="@img/clients/client-2.jpg" alt="client photo 2" />
+            <div class="client__info">
+              <h4 class="client__name">Julia Liu</h4>
+              <p class="client__position">Graphic Design</p>
+              <p class="client__feedback">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim.
               </p>
             </div>
           </article>
-          <article class="client-item">
-            <img src="@img/clients/client-3.jpg" alt="client 3" />
-            <div class="client-info">
-              <h4 class="client-name">Steven Neumann</h4>
-              <p class="client-position">Graphic Design</p>
-              <p class="client-feedback">
+          <article class="client__item">
+            <img src="@img/clients/client-3.jpg" alt="client photo 3" />
+            <div class="client__info">
+              <h4 class="client__name">Steven Neumann</h4>
+              <p class="client__position">Graphic Design</p>
+              <p class="client__feedback">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim.
               </p>
             </div>
           </article>
-          <article class="client-item">
-            <img src="@img/clients/client-4.jpg" alt="client 4" />
-            <div class="client-info">
-              <h4 class="client-name">Robert Jackson</h4>
-              <p class="client-position">Graphic Design</p>
-              <p class="client-feedback">
+          <article class="client__item">
+            <img src="@img/clients/client-4.jpg" alt="client photo 4" />
+            <div class="client__info">
+              <h4 class="client__name">Robert Jackson</h4>
+              <p class="client__position">Graphic Design</p>
+              <p class="client__feedback">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim.
@@ -833,32 +864,32 @@
 
     <section class="section">
       <div class="container">
-        <header class="section-header">
-          <p class="section-suptitle">Our stories</p>
-          <h2 class="section-title">Latest blog</h2>
+        <header class="section__header">
+          <p class="section__suptitle">Our stories</p>
+          <h2 class="section__title">Latest blog</h2>
         </header>
         <div class="blog">
-          <article class="blog-item">
-            <div class="blog-wrapper">
+          <article class="blog__item">
+            <div class="blog__wrapper">
               <a href="#"
-                ><img src="@img/blog/Blog-1.jpg" alt="Blog image 1"
+                ><img src="@img/blog/Blog-1.jpg" alt="blog image 1"
               /></a>
-              <div class="blog-date">
+              <div class="blog__date">
                 15
-                <div class="blog-date-month">Jan</div>
+                <div class="blog__date-month">Jan</div>
               </div>
             </div>
-            <h4 class="blog-title">
+            <h4 class="blog__title">
               <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
             </h4>
-            <p class="blog-content">
+            <p class="blog__content">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua.
             </p>
-            <div class="blog-statistics">
-              <div class="blog-views">
+            <div class="blog__statistics">
+              <div class="blog__views">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -872,9 +903,9 @@
                 </svg>
                 <span>361</span>
               </div>
-              <div class="blog-comments">
+              <div class="blog__comments">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -890,27 +921,27 @@
               </div>
             </div>
           </article>
-          <article class="blog-item">
-            <div class="blog-wrapper">
+          <article class="blog__item">
+            <div class="blog__wrapper">
               <a href="#"
-                ><img src="@img/blog/Blog-2.jpg" alt="Blog image 2"
+                ><img src="@img/blog/Blog-2.jpg" alt="blog image 2"
               /></a>
-              <div class="blog-date">
+              <div class="blog__date">
                 14
-                <div class="blog-date-month">Jan</div>
+                <div class="blog__date-month">Jan</div>
               </div>
             </div>
-            <h4 class="blog-title">
+            <h4 class="blog__title">
               <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
             </h4>
-            <p class="blog-content">
+            <p class="blog__content">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua.
             </p>
-            <div class="blog-statistics">
-              <div class="blog-views">
+            <div class="blog__statistics">
+              <div class="blog__views">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -924,9 +955,9 @@
                 </svg>
                 <span>678</span>
               </div>
-              <div class="blog-comments">
+              <div class="blog__comments">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -942,27 +973,27 @@
               </div>
             </div>
           </article>
-          <article class="blog-item">
-            <div class="blog-wrapper">
+          <article class="blog__item">
+            <div class="blog__wrapper">
               <a href="#"
-                ><img src="@img/blog/Blog-3.jpg" alt="Blog image 3"
+                ><img src="@img/blog/Blog-3.jpg" alt="blog image 3"
               /></a>
-              <div class="blog-date">
+              <div class="blog__date">
                 12
-                <div class="blog-date-month">Jan</div>
+                <div class="blog__date-month">Jan</div>
               </div>
             </div>
-            <h4 class="blog-title">
+            <h4 class="blog__title">
               <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
             </h4>
-            <p class="blog-content">
+            <p class="blog__content">
               Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
               labore et dolore magna aliqua.
             </p>
-            <div class="blog-statistics">
-              <div class="blog-views">
+            <div class="blog__statistics">
+              <div class="blog__views">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -976,9 +1007,9 @@
                 </svg>
                 <span>542</span>
               </div>
-              <div class="blog-comments">
+              <div class="blog__comments">
                 <svg
-                  class="blog-icon"
+                  class="blog__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="18"
@@ -1004,7 +1035,7 @@
     <section class="section section--map">
       <h2 class="visually-hidden">Map</h2>
       <svg
-        class="map-pin"
+        class="map__pin"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         width="24"
@@ -1016,7 +1047,7 @@
           fill="rgba(243,129,129,1)"
         />
       </svg>
-      <div class="map-link">
+      <div class="map__link">
         <a href="https://goo.gl/maps/U6v7ZuxjH3iDkx8S6" target="_blank"
           >open map</a
         >

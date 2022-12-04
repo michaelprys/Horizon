@@ -1,155 +1,155 @@
 @media all and (max-width: 576px) {
-/* Header
--------------------------------------*/
+  /* Header
+        -------------------------------------*/
 
-  .main-header-logo {
+  .main-header__logo {
     font-size: 1.5rem;
   }
 
-/* Intro
--------------------------------------*/
+  /* Intro
+        -------------------------------------*/
 
-  .intro-suptitle {
+  .intro__suptitle {
     font-size: 2rem;
   }
 
-  .intro-title {
+  .intro__title {
     font-size: 3.0625rem;
   }
 
-/* Section-header
--------------------------------------*/
+  /* Section Header
+        -------------------------------------*/
 
-  .section-header {
+  .section__header {
     text-align: center;
     padding-top: 70px;
   }
 
-  .section-suptitle {
+  .section__suptitle {
     font-size: 1.125rem;
   }
 
-  .section-title {
+  .section__title {
     font-size: 1.375rem;
   }
 
-/* Statistics
--------------------------------------*/
+  /* Statistics
+        -------------------------------------*/
 
-  .statistics-item {
+  .statistics__item {
     width: 100%;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 
-  .statistics-item:last-child {
+  .statistics__item:last-child {
     border-bottom: 0;
   }
 
-  .statistics-number {
+  .statistics__number {
     font-size: 3.625rem;
   }
 
-  .statistics-text {
+  .statistics__text {
     font-size: 0.875rem;
   }
 
-/* Service
--------------------------------------*/
+  /* Service
+        -------------------------------------*/
 
   .service {
     justify-content: center;
   }
 
-  .service-item {
+  .service__item {
     width: 100%;
     max-width: 400px;
     padding-right: 0;
   }
 
-/* Device
--------------------------------------*/
+  /* Device
+        -------------------------------------*/
 
   .device {
     max-width: 315px;
   }
 
-  .device-item--iphone {
+  .device__item--iphone {
     width: 180px;
     bottom: -60px;
   }
 
-/* Team-footer
--------------------------------------*/
+  /* Team Footer
+        -------------------------------------*/
 
-  .team-footer-wrapper {
+  .team-footer__wrapper {
     grid-template-columns: 45% 45%;
     padding: 0;
     margin-top: 4.0625rem;
   }
 
-/* Work
--------------------------------------*/
+  /* Work
+        -------------------------------------*/
 
-  .work-title {
+  .work__title {
     font-size: 0.8125rem;
   }
 
-  .work-text {
+  .work__text {
     font-size: 0.875rem;
   }
 
-/* Clients
--------------------------------------*/
+  /* Clients
+        -------------------------------------*/
 
-  .client-item img {
+  .client__item img {
     position: static;
     margin-bottom: 1.5625rem;
     margin-inline: auto;
   }
 
-  .client-item {
+  .client__item {
     padding: 0;
     text-align: center;
   }
 
-  .client-feedback::before {
+  .client__feedback::before {
     margin-block: 1.5625rem;
     margin-inline: auto;
   }
 
-  .client-feedback {
+  .client__feedback {
     padding-inline: 20px;
     text-align: center;
   }
 
-  .client-item:last-child {
+  .client__item:last-child {
     margin-bottom: 0;
   }
 
-/* Blog
--------------------------------------*/
+  /* Blog
+        -------------------------------------*/
 
   .blog {
     max-width: 70%;
   }
 
-/* Main footer
--------------------------------------*/
+  /* Main Footer
+        -------------------------------------*/
 
   .subscribe {
     flex-wrap: wrap;
   }
 
-  .subscribe-input {
+  .subscribe__input {
     width: 100%;
     margin-bottom: 0.9375rem;
   }
 
-  .subscribe-button {
+  .subscribe__button {
     width: 100%;
   }
 
-  .footer-blog-title {
+  .footer-blog__title {
     font-size: 0.6875rem;
   }
 }

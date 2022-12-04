@@ -1,85 +1,85 @@
 @media all and (max-width: 992px) {
-/* Header
--------------------------------------*/
+  /* Header
+    -------------------------------------*/
 
-  .main-navigation {
+  .main-nav {
     width: 520px;
   }
 
- /* Intro
--------------------------------------*/
+  /* Intro
+    -------------------------------------*/
 
-  .intro-suptitle {
+  .intro__suptitle {
     font-size: 3rem;
   }
 
-  .intro-title {
+  .intro__title {
     font-size: 4.9375rem;
   }
 
-/* Card
--------------------------------------*/
+  /* Card
+    -------------------------------------*/
 
-  .card-text {
+  .card__text {
     font-size: 1rem;
   }
 
-/* Statistics
--------------------------------------*/
+  /* Statistics
+    -------------------------------------*/
 
-  .statistics-wrapper {
+  .statistics__wrapper {
     justify-content: center;
   }
 
-  .statistics-item {
+  .statistics__item {
     flex: none;
     width: 33.33%;
     border: none;
     padding-block: 30px;
   }
 
-  .statistics-item:last-child {
+  .statistics__item:last-child {
     border: none;
   }
 
-/* Feedback
--------------------------------------*/
+  /* Feedback
+    -------------------------------------*/
 
-  .feedback-text {
+  .feedback__text {
     font-size: 1.25rem;
   }
 
-/* Work
--------------------------------------*/
+  /* Work
+    -------------------------------------*/
 
-  .work-title {
+  .work__title {
     font-size: 0.75rem;
   }
 
-  .work-text {
+  .work__text {
     font-size: 0.8125rem;
   }
 
-/* Clients
--------------------------------------*/
+  /* Clients
+    -------------------------------------*/
 
-  .client-item img {
+  .client__item img {
     position: static;
     margin-bottom: 1.5625rem;
     margin-inline: auto;
   }
 
-  .client-item {
+  .client__item {
     padding: 0;
     text-align: center;
   }
 
-  .client-feedback::before {
+  .client__feedback::before {
     margin-block: 1.5625rem;
     margin-inline: auto;
   }
 
-  .client-feedback {
+  .client__feedback {
     text-align: left;
     padding-inline: 40px;
   }
