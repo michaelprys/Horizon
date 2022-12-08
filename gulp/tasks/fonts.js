@@ -46,7 +46,7 @@ export const ttfToWoff = () => {
 
 // upload fonts to CSS
 export const fontsStyle = () => {
-  let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+  let fontsFile = `${app.path.srcFolder}/scss/base/font-face.scss`;
   // check if there are font files
   fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
     if (fontsFiles) {
@@ -97,7 +97,7 @@ export const fontsStyle = () => {
       } else {
         console.log(
           chalk.cyanBright.italic(
-            "File scss/fonts.scss already exists. To update the file you need to delete it!"
+            "File scss/base/font-face.scss already exists. To update the file you need to delete it!"
           )
         );
       }

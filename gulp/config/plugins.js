@@ -4,6 +4,7 @@ import notify from "gulp-notify"; // Display errors
 import browsersync from "browser-sync"; // Local server
 import newer from "gulp-newer"; // Check if the image in dist is compressed/exists
 import ifPlugin from "gulp-if"; // Conditional branch
+import { deleteAsync } from "del"; // Reset
 
 export const plugins = {
   replace: replace,
@@ -12,4 +13,5 @@ export const plugins = {
   browsersync: browsersync,
   newer: newer,
   if: ifPlugin,
+  deleteAsync: deleteAsync,
 };

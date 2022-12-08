@@ -28,7 +28,7 @@ export const scss = () => {
         })
       )
       // Grouping media queries
-      .pipe(groupCssMediaQueries())
+      .pipe(app.plugins.if(app.isBuild, groupCssMediaQueries()))
       .pipe(
         app.plugins.if(
           app.isBuild,

@@ -1,15 +1,19 @@
-@import "reset";
-@import "fonts";
-@import "global";
-@import "variables";
-@import "queries/extra-large-devices";
-@import "queries/large-devices";
-@import "queries/medium-devices";
-@import "queries/small-devices";
-@import "queries/smaller-devices";
+@import "abstracts/variables";
+@import "base/font-face";
+@import "base/reset";
 
-/* Container
--------------------------------------*/
+body {
+  background-color: #00eeff;
+  background-image: url("@img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: 1.1;
+  font-family: "Montserrat", sans-serif;
+}
 
 .container {
   width: min(100%, 1230px);
@@ -30,6 +34,10 @@
   padding-block: 10px;
 } */
 
+.main-wrapper {
+  overflow: hidden;
+}
+
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
@@ -37,7 +45,7 @@
 
 .main-header__logo {
   margin-top: 1.75rem;
-  color: $c-white;
+  color: $white;
   font-size: 1.875rem;
   font-weight: 700;
 }
@@ -62,7 +70,7 @@
     display: block;
     width: 100%;
     height: 3px;
-    background-color: $c-yellow;
+    background-color: $yellow;
     margin-top: 0.4375rem;
     opacity: 0;
     transition: opacity 0.2s linear;
@@ -71,7 +79,7 @@
     transition: color 0.2s linear;
   }
   &:hover a {
-    color: $c-yellow;
+    color: $yellow;
   }
   &:hover,
   &.active {
@@ -85,7 +93,7 @@
   width: 1rem;
   height: 1rem;
   &:hover .main-nav__path {
-    fill: $c-yellow;
+    fill: $yellow;
   }
 }
 
@@ -100,12 +108,13 @@
     }
   }
 }
+
 /* Intro
 -------------------------------------*/
 
 .intro__wrapper {
   text-align: center;
-  color: $c-white;
+  color: $white;
   width: 100%;
   max-width: 840px;
   margin-inline: auto;
@@ -113,7 +122,7 @@
 }
 
 .intro__suptitle {
-  font-family: $f-kaushan-script;
+  font-family: $kaushan-script;
   font-size: 4.0625rem;
   margin-bottom: 32px;
   user-select: none;
@@ -130,7 +139,7 @@
     display: block;
     width: 3.75rem;
     height: 0.1875rem;
-    background-color: $c-white;
+    background-color: $white;
     margin-block: 2.1875rem;
     margin-inline: auto;
   }
@@ -141,12 +150,12 @@
   vertical-align: top;
   font-weight: 700;
   text-transform: uppercase;
-  border: 3px solid $c-white;
+  border: 3px solid $white;
   padding-block: 9px;
   padding-inline: 32px;
   transition: all 0.2s linear;
   &:hover {
-    background-color: $c-yellow;
+    background-color: $yellow;
     color: #333;
   }
 }
@@ -159,7 +168,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.125rem;
-  color: $c-white;
+  color: $white;
   margin-top: 6.25rem;
   & b {
     font-size: 1.5rem;
@@ -167,7 +176,7 @@
 }
 
 .intro__slider-item {
-  border-top: 2px solid $c-white;
+  border-top: 2px solid $white;
   width: 23.33%;
   position: relative;
   opacity: 0.7;
@@ -182,7 +191,7 @@
       left: 0;
       width: 60px;
       height: 2px;
-      background-color: $c-peach;
+      background-color: $peach;
     }
   }
 }
@@ -191,7 +200,7 @@
 -------------------------------------*/
 
 .section {
-  background-color: $c-white;
+  background-color: $white;
 }
 
 .section__header {
@@ -200,7 +209,7 @@
 }
 
 .section__suptitle {
-  font-family: $f-kaushan-script;
+  font-family: $kaushan-script;
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 10px;
@@ -215,7 +224,7 @@
     display: block;
     width: 60px;
     height: 0.1875rem;
-    background-color: $c-peach;
+    background-color: $peach;
     margin-block: 2.1875rem;
     margin-inline: auto;
   }
@@ -226,8 +235,8 @@
   margin-inline: auto;
   width: 79.5%;
   text-align: center;
-  color: $c-mild-grey;
-  font-family: $f-roboto;
+  color: $mild-grey;
+  font-family: $roboto;
   font-style: normal;
   font-size: 0.9375rem;
   line-height: 1.5rem;
@@ -245,7 +254,7 @@
 }
 
 .card__wrapper {
-  background-color: $c-nephritis;
+  background-color: $nephritis;
   position: relative;
   &:hover .card__text {
     opacity: 1;
@@ -265,7 +274,7 @@
 }
 
 .card__img {
-  background: linear-gradient(to bottom, $c-peach, $c-yellow);
+  background: linear-gradient(to bottom, $peach, $yellow);
   transition: transform 0.2s linear;
   & img {
     transition: opacity 0.2s linear;
@@ -279,7 +288,7 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  color: $c-white;
+  color: $white;
   text-transform: uppercase;
   font-size: 1.125rem;
   font-weight: 700;
@@ -292,13 +301,29 @@
   background-color: transparent;
 }
 
+.card__social-item {
+  display: block;
+  padding: 15px;
+  border-right: 1px solid rgba(243, 129, 129, 0.438);
+  background-color: $yellow;
+  &:hover {
+    background-color: $peach;
+    .card__social-item-path {
+      fill: $white;
+    }
+  }
+  &:last-child {
+    border-color: transparent;
+  }
+}
+
 /* Statistics
 -------------------------------------*/
 
 .statistics {
-  background-color: $c-nephritis;
+  background-color: $nephritis;
   margin-top: 6.875rem;
-  color: $c-white;
+  color: $white;
 }
 
 .statistics__wrapper {
@@ -344,7 +369,7 @@
   position: relative;
   width: 33.33%;
   &:nth-child(-n + 3) {
-    border-bottom: 1px solid $c-bright-grey;
+    border-bottom: 1px solid $bright-grey;
   }
 }
 
@@ -355,8 +380,8 @@
 
 .service__text {
   font-size: 0.9375rem;
-  font-family: $f-roboto;
-  color: $c-mild-grey;
+  font-family: $roboto;
+  color: $mild-grey;
   line-height: 1.5rem;
 }
 
@@ -406,7 +431,7 @@
 }
 
 .wedo__item {
-  background: $c-dark-grey url("@img/wedo/wedo-img.jpg") center / no-repeat;
+  background: $dark-grey url("@img/wedo/wedo-img.jpg") center / no-repeat;
   padding-right: 30px;
   max-width: 35.625rem;
   max-height: 23.75rem;
@@ -440,7 +465,7 @@
   text-transform: uppercase;
   font-weight: 700;
   position: relative;
-  border: 1px solid $c-bright-grey;
+  border: 1px solid $bright-grey;
   &::after {
     content: "❮";
     display: block;
@@ -449,7 +474,7 @@
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
     cursor: pointer;
-    color: $c-light-grey;
+    color: $light-grey;
     right: 20px;
   }
 }
@@ -460,7 +485,7 @@
   transform: translateY(-50%);
   left: 20px;
   font-size: 2rem;
-  color: $c-nephritis;
+  color: $nephritis;
   font-weight: 400;
 }
 
@@ -468,12 +493,12 @@
   font-size: 0.9375rem;
   padding-block: 21px 28px;
   padding-inline: 20px 55px;
-  font-family: $f-roboto;
+  font-family: $roboto;
   font-style: italic;
   font-weight: 300;
   line-height: 1.5rem;
-  color: $c-mild-grey;
-  border: 1px solid $c-bright-grey;
+  color: $mild-grey;
+  border: 1px solid $bright-grey;
   border-top: none;
   display: none;
 }
@@ -505,7 +530,7 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: $c-light-grey;
+    color: $light-grey;
     cursor: pointer;
     padding: 10px;
   }
@@ -523,17 +548,17 @@
 
 .feedback__text {
   font-size: 1.5rem;
-  font-family: $f-roboto;
+  font-family: $roboto;
   font-style: italic;
   line-height: 2.25rem;
-  color: $c-mild-grey;
+  color: $mild-grey;
 }
 
 .feedback__author {
   padding-top: 1.4375rem;
   padding-left: 4.3125rem;
   position: relative;
-  font-family: $f-kaushan-script;
+  font-family: $kaushan-script;
   font-size: 1.5rem;
   &::before {
     content: "";
@@ -543,7 +568,7 @@
     left: 0;
     width: 3.75rem;
     height: 0.1875rem;
-    background-color: $c-peach;
+    background-color: $peach;
   }
 }
 
@@ -557,22 +582,6 @@
 /* Team
 -------------------------------------*/
 
-.card__social-item {
-  display: block;
-  padding: 15px;
-  border-right: 1px solid rgba(243, 129, 129, 0.438);
-  background-color: $c-yellow;
-  &:hover {
-    background-color: $c-peach;
-    .card__social-item-path {
-      fill: $c-white;
-    }
-  }
-  &:last-child {
-    border-color: transparent;
-  }
-}
-
 .employee {
   margin-top: 1.9375rem;
   text-align: center;
@@ -585,15 +594,15 @@
 
 .employee-position {
   font-size: 0.9375rem;
-  font-family: $f-roboto;
+  font-family: $roboto;
   font-style: italic;
   font-weight: 300;
   line-height: 1.5rem;
-  color: $c-mild-grey;
+  color: $mild-grey;
 }
 
 .team-footer {
-  background-color: $c-white;
+  background-color: $white;
 }
 
 .team-footer__wrapper {
@@ -670,7 +679,7 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
-  color: $c-white;
+  color: $white;
   opacity: 0;
   transition: opacity 0.2s linear;
 }
@@ -683,14 +692,14 @@
 .work__text {
   font-style: italic;
   font-size: 0.9375rem;
-  font-family: $f-roboto;
+  font-family: $roboto;
 }
 
 /* Clients
 -------------------------------------*/
 
 .section--clients {
-  background: $c-dark-grey url("@img/clients/clients-bg.jpg") center no-repeat;
+  background: $dark-grey url("@img/clients/clients-bg.jpg") center no-repeat;
   background-size: cover;
   padding-bottom: 60px;
 }
@@ -727,14 +736,14 @@
   font-size: 0.9375rem;
   color: #333;
   font-style: italic;
-  font-family: $f-roboto;
+  font-family: $roboto;
   font-weight: 300;
 }
 
 .client__feedback {
   font-size: 0.9375rem;
-  font-family: $f-roboto;
-  color: $c-mild-grey;
+  font-family: $roboto;
+  color: $mild-grey;
   line-height: 1.625rem;
   &::before {
     content: "";
@@ -742,7 +751,7 @@
     margin-block: 0.9375rem;
     width: 3.75rem;
     height: 3px;
-    background-color: $c-peach;
+    background-color: $peach;
   }
 }
 
@@ -768,18 +777,18 @@
 .blog__date {
   position: absolute;
   display: block;
-  background-color: $c-nephritis;
+  background-color: $nephritis;
   padding-block: 15px 10px;
   padding-inline: 15px;
   bottom: 10px;
   left: -10px;
   font-size: 1.875rem;
   font-weight: 700;
-  color: $c-white;
+  color: $white;
   text-align: center;
   line-height: 1.5rem;
   &--month {
-    font-family: $f-roboto;
+    font-family: $roboto;
     font-weight: 300;
     font-style: italic;
     font-size: 0.9375rem;
@@ -795,7 +804,7 @@
 
 .blog__title {
   & a {
-    color: $c-dark-grey;
+    color: $dark-grey;
     &:hover {
       text-decoration: underline;
       cursor: pointer;
@@ -806,7 +815,7 @@
 .blog__content {
   font-size: 0.9375rem;
   padding-block: 20px;
-  border-bottom: 1px solid $c-bright-grey;
+  border-bottom: 1px solid $bright-grey;
 }
 
 .blog__statistics {
@@ -838,7 +847,7 @@
 
 .section {
   &--map {
-    background: $c-dark-grey url("@img/map/bg-map.png") center no-repeat;
+    background: $dark-grey url("@img/map/bg-map.png") center no-repeat;
     background-size: cover;
     padding-block: 57px;
     text-align: center;
@@ -852,7 +861,7 @@
 
 .map__link {
   & a {
-    color: $c-peach;
+    color: $peach;
     font-size: 1.5rem;
     font-weight: 700;
     font-style: normal;
@@ -868,7 +877,7 @@
       display: block;
       width: 3.75rem;
       height: 3px;
-      background-color: $c-peach;
+      background-color: $peach;
       margin-top: 1rem;
       margin-inline: auto;
     }
@@ -879,7 +888,7 @@
 -------------------------------------*/
 
 .main-footer {
-  background-color: $c-white;
+  background-color: $white;
   padding-top: 74px;
 }
 
@@ -891,7 +900,7 @@
 }
 
 .main-footer__title {
-  color: $c-dark-grey;
+  color: $dark-grey;
   line-height: 1.125rem;
   text-align: left;
   text-transform: uppercase;
@@ -911,26 +920,26 @@
 }
 
 .main-footer__logo {
-  color: $c-light-grey;
+  color: $light-grey;
   font-size: 2.875rem;
   font-weight: 700;
   transform: translate3d(-3px, 0, 0);
 }
 
 .main-footer__text {
-  font-family: $f-roboto;
+  font-family: $roboto;
   font-size: 0.9375rem;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 1.5rem;
-  color: $c-mild-grey;
+  color: $mild-grey;
   padding-block: 22px 32px;
   padding-right: 18px;
 }
 
 .main-footer__followers {
-  border-bottom: 1px solid $c-bright-grey;
+  border-bottom: 1px solid $bright-grey;
   padding-bottom: 0.75rem;
   & span {
     font-weight: 700;
@@ -944,12 +953,12 @@
   flex-wrap: wrap;
   align-items: center;
   font-size: 1.1875rem;
-  color: $c-nephritis;
+  color: $nephritis;
 }
 
 .footer-socials__item {
   & a {
-    color: $c-nephritis;
+    color: $nephritis;
   }
 }
 
@@ -961,8 +970,8 @@
 }
 
 .main-footer__text {
-  color: $c-mild-grey;
-  font-family: $f-roboto;
+  color: $mild-grey;
+  font-family: $roboto;
   font-style: italic;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -977,20 +986,20 @@
   border: 1px solid #e7e7e7;
   font-style: italic;
   font-size: 0.9375rem;
-  font-family: $f-roboto;
-  color: $c-dark-grey;
+  font-family: $roboto;
+  color: $dark-grey;
   &:focus {
     outline: 0;
-    border-color: $c-nephritis;
+    border-color: $nephritis;
   }
 }
 
 .subscribe__button {
   padding-block: 12px;
   padding-inline: 28px;
-  background-color: $c-nephritis;
+  background-color: $nephritis;
   font-weight: 700;
-  color: $c-white;
+  color: $white;
   text-transform: uppercase;
   cursor: pointer;
   border: none;
@@ -1018,7 +1027,7 @@
 
 .footer-blog__title {
   & a {
-    color: $c-dark-grey;
+    color: $dark-grey;
     font-size: 0.75rem;
     text-transform: uppercase;
     margin-bottom: 2.5rem;
@@ -1031,8 +1040,8 @@
 }
 
 .footer-blog__date {
-  color: $c-mild-grey;
-  font-family: $f-roboto;
+  color: $mild-grey;
+  font-family: $roboto;
   font-style: italic;
   font-size: 0.8125rem;
   line-height: 1.5rem;
@@ -1057,9 +1066,9 @@
 
 .footer-gallery__view-more {
   & a {
-    font-family: $f-roboto;
+    font-family: $roboto;
     font-style: italic;
-    color: $c-dark-grey;
+    color: $dark-grey;
     line-height: 0;
     &:hover {
       text-decoration: underline;
@@ -1072,6 +1081,14 @@
 
 .copyright {
   text-align: center;
-  border-top: 1px solid $c-bright-grey;
+  border-top: 1px solid $bright-grey;
   padding-block: 22px;
 }
+
+/* Media Queries
+-------------------------------------*/
+@import "queries/extra-large-devices";
+@import "queries/large-devices";
+@import "queries/medium-devices";
+@import "queries/small-devices";
+@import "queries/smaller-devices";
