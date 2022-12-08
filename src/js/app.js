@@ -13,3 +13,11 @@ flsFunctions.isWebP();
 //         menuOpen = false;
 //     }
 // });
+
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
+});

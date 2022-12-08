@@ -1,287 +1,188 @@
-@@include('html/head.html',{ "title":"Horizon" })
-@@include('html/header.html',{})
-<main>
-  <div class="main-wrapper">
-    <div class="intro">
-      <div class="container">
-        <div class="intro__wrapper">
-          <h3 class="intro__suptitle">Creative Studio</h3>
-          <h2 class="intro__title">Welcome to Horizon</h2>
-          <a class="intro__button" href="#">learn more</a>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizon</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="@img/horizon-favicon.ico"
+      sizes="32x32"
+    />
+    <!-- CSS Files ================================================================== -->
+    <link rel="stylesheet" href="/css/style.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
 
-        <ul class="intro__slider">
-          <li class="intro__slider-item active">
-            <p><b>01</b>&nbsp;&nbsp;<span>intro</span></p>
-          </li>
-          <li class="intro__slider-item">
-            <p><b>02</b>&nbsp;&nbsp;<span>work</span></p>
-          </li>
-          <li class="intro__slider-item">
-            <p><b>03</b>&nbsp;&nbsp;<span>about</span></p>
-          </li>
-          <li class="intro__slider-item">
-            <p><b>04</b>&nbsp;&nbsp;<span>contacts</span></p>
-          </li>
-        </ul>
-        <!-- ===== /.Intro__slider ===== -->
-      </div>
-      <!-- ===== /.Container ===== -->
-    </div>
-    <!-- ===== /.Intro ===== -->
-
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">What we do</p>
-          <h2 class="section__title">Story about us</h2>
-          <p class="section__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </header>
-
-        <ul class="card">
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/about/about-1.jpg" alt="about card 1" />
-              </div>
-              <div class="card__text">super team</div>
-            </div>
-          </li>
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/about/about-2.jpg" alt="about card 2" />
-              </div>
-              <div class="card__text">super team</div>
-            </div>
-          </li>
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/about/about-3.jpg" alt="about card 3" />
-              </div>
-              <div class="card__text">super team</div>
-            </div>
-          </li>
-        </ul>
-        <!-- ===== /.Card ===== -->
-      </div>
-      <!-- ===== /.Container ===== -->
-
-      <div class="statistics">
+  <body>
+    <main>
+      <header class="main-header main-header--fixed">
         <div class="container">
-          <ul class="statistics__wrapper">
-            <li class="statistics__item">
-              <p class="statistics__number">42</p>
-              <p class="statistics__text">web design projects</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">123</p>
-              <p class="statistics__text">happy client</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">15</p>
-              <p class="statistics__text">award winner</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">99</p>
-              <p class="statistics__text">cup of coffee</p>
-            </li>
-            <li class="statistics__item">
-              <p class="statistics__number">24</p>
-              <p class="statistics__text">members</p>
-            </li>
-          </ul>
+          <div class="main-header__wrapper">
+            <h1 class="main-header__logo"><a href="">Horizon</a></h1>
+            <nav class="main-nav">
+              <ul class="main-nav__wrapper">
+                <li class="main-nav__item active"><a href="#">about</a></li>
+                <li class="main-nav__item"><a href="#">service</a></li>
+                <li class="main-nav__item"><a href="#">work</a></li>
+                <li class="main-nav__item"><a href="#">blog</a></li>
+                <li class="main-nav__item"><a href="#">contact</a></li>
+                <li class="main-nav__item">
+                  <a href="#" aria-label="shopping cart"
+                    ><svg
+                      class="main-nav__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      height="16"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        class="main-nav__path"
+                        d="M4 16V4H2V2h3a1 1 0 0 1 1 1v12h12.438l2-8H8V5h13.72a1 1 0 0 1 .97 1.243l-2.5 10a1 1 0 0 1-.97.757H5a1 1 0 0 1-1-1zm2 7a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm12 0a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                        fill="rgba(255,255,255,1)"
+                      /></svg
+                  ></a>
+                </li>
+                <li class="main-nav__item">
+                  <a href="#" aria-label="search"
+                    ><svg
+                      class="main-nav__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="16"
+                      height="16"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        class="main-nav__path"
+                        d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
+                        fill="rgba(255,255,255,1)"
+                      /></svg
+                  ></a>
+                </li>
+              </ul>
+            </nav>
+            <!-- <div class="navigation-toggle">
+          <span class="navigation-toggle-item"></span>
+        </div> -->
+          </div>
         </div>
-        <!-- ===== /.Container ===== -->
-      </div>
-      <!-- ===== /.Statistics ===== -->
-    </section>
-    <!-- ===== /.Section ===== -->
+      </header>
+      <!-- /.Main-header ================================================================== -->
 
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">We work with</p>
-          <h2 class="section__title">Amazing Services</h2>
-        </header>
-        <ul class="service">
-          <!-- ? --border -->
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">Photography</h2>
-            <p class="service__text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor.
-            </p>
-          </li>
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M15.456 9.678l-.142-.142a5.475 5.475 0 0 0-2.39-1.349c-2.907-.778-5.699.869-6.492 3.83-.043.16-.066.34-.104.791-.154 1.87-.594 3.265-1.8 4.68 2.26.888 4.938 1.514 6.974 1.514a5.505 5.505 0 0 0 5.31-4.078 5.497 5.497 0 0 0-1.356-5.246zM13.29 6.216l4.939-3.841a1 1 0 0 1 1.32.082l2.995 2.994a1 1 0 0 1 .082 1.321l-3.84 4.938a7.505 7.505 0 0 1-7.283 9.292C8 21.002 3.5 19.5 1 18c3.98-3 3.047-4.81 3.5-6.5 1.058-3.95 4.842-6.257 8.789-5.284zm3.413 1.879c.065.063.13.128.193.194l1.135 1.134 2.475-3.182-1.746-1.746-3.182 2.475 1.125 1.125z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">Web Design</h2>
-            <p class="service__text">
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor.
-            </p>
-          </li>
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">Creativity</h2>
-            <p class="service__text">
-              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor.
-            </p>
-          </li>
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">seo</h2>
-            <p class="service__text">
-              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
-            </p>
-          </li>
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">Css/Html</h2>
-            <p class="service__text">
-              Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
-            </p>
-          </li>
-          <li class="service__item">
-            <svg
-              class="service__icon"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="32"
-              height="32"
-            >
-              <path fill="none" d="M0 0h24v24H0z" />
-              <path
-                d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
-                fill="rgba(149,225,211,1)"
-              />
-            </svg>
-            <h2 class="service__title">Digital</h2>
-            <p class="service__text">
-              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
-            </p>
-          </li>
-        </ul>
-        <!--=====/.Service=====-->
-      </div>
-      <!-- ===== /.Container ===== -->
-    </section>
-    <!-- ===== /.Section ===== -->
-
-    <section class="section section--device">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">For all devices</p>
-          <h2 class="section__title">Unique design</h2>
-        </header>
-        <div class="device">
-          <img
-            class="device__item"
-            src="@img/devices/ipad.png"
-            alt="ipad image"
-          />
-          <img
-            class="device__item device__item--iphone"
-            src="@img/devices/iphone.png"
-            alt="iphone image"
-          />
+      <div class="main-wrapper">
+        <div class="intro">
+          <div class="container">
+            <div class="intro__wrapper">
+              <h3 class="intro__suptitle">Creative Studio</h3>
+              <h2 class="intro__title">Welcome to Horizon</h2>
+              <a class="intro__button" href="#">learn more</a>
+            </div>
+            <ul class="intro__slider">
+              <li class="intro__slider-item active">
+                <p><b>01</b>&nbsp;&nbsp;<span>intro</span></p>
+              </li>
+              <li class="intro__slider-item">
+                <p><b>02</b>&nbsp;&nbsp;<span>work</span></p>
+              </li>
+              <li class="intro__slider-item">
+                <p><b>03</b>&nbsp;&nbsp;<span>about</span></p>
+              </li>
+              <li class="intro__slider-item">
+                <p><b>04</b>&nbsp;&nbsp;<span>contacts</span></p>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <!-- ===== /.Container ===== -->
-    </section>
-    <!-- ===== /.Section Device ===== -->
+        <!-- /.Intro ================================================================== -->
 
-    <section class="section section--service">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">Service</p>
-          <h2 class="section__title">what we do</h2>
-          <p class="section__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </header>
-        <div class="wedo">
-          <img
-            class="wedo__item"
-            src="@img/wedo/wedo-img.jpg"
-            alt="wedo image"
-          />
-          <ul class="wedo__accordion">
-            <li class="wedo__accordion-item active">
-              <div class="wedo__accordion-header">
+        <section class="section">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">What we do</p>
+              <h2 class="section__title">Story about us</h2>
+              <p class="section__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </header>
+
+            <ul class="card">
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img src="@img/card/about/about-1.jpg" alt="about card 1" />
+                  </div>
+                  <div class="card__text">super team</div>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img src="@img/card/about/about-2.jpg" alt="about card 2" />
+                  </div>
+                  <div class="card__text">super team</div>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img src="@img/card/about/about-3.jpg" alt="about card 3" />
+                  </div>
+                  <div class="card__text">super team</div>
+                </div>
+              </li>
+            </ul>
+            <!-- /.Card ================================================================ -->
+          </div>
+
+          <div class="statistics">
+            <div class="container">
+              <ul class="statistics__wrapper">
+                <li class="statistics__item">
+                  <p class="statistics__number">42</p>
+                  <p class="statistics__text">web design projects</p>
+                </li>
+                <li class="statistics__item">
+                  <p class="statistics__number">123</p>
+                  <p class="statistics__text">happy client</p>
+                </li>
+                <li class="statistics__item">
+                  <p class="statistics__number">15</p>
+                  <p class="statistics__text">award winner</p>
+                </li>
+                <li class="statistics__item">
+                  <p class="statistics__number">99</p>
+                  <p class="statistics__text">cup of coffee</p>
+                </li>
+                <li class="statistics__item">
+                  <p class="statistics__number">24</p>
+                  <p class="statistics__text">members</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.Statistics ================================================================== -->
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">We work with</p>
+              <h2 class="section__title">Amazing Services</h2>
+            </header>
+            <ul class="service">
+              <li class="service__item">
                 <svg
-                  class="wedo__accordion-icon"
+                  class="service__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -289,26 +190,39 @@
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
-                    d="M21 6h-2V5H5v14h14v-1h2v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2zM6 6h2v3H6V6zm9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                    d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
                     fill="rgba(149,225,211,1)"
                   />
                 </svg>
-                <span>photography</span>
-              </div>
-              <p class="wedo__accordion-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </li>
-            <li class="wedo__accordion-item">
-              <div class="wedo__accordion-header">
+                <h2 class="service__title">Photography</h2>
+                <p class="service__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor.
+                </p>
+              </li>
+              <li class="service__item">
                 <svg
-                  class="wedo__accordion-icon"
+                  class="service__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M15.456 9.678l-.142-.142a5.475 5.475 0 0 0-2.39-1.349c-2.907-.778-5.699.869-6.492 3.83-.043.16-.066.34-.104.791-.154 1.87-.594 3.265-1.8 4.68 2.26.888 4.938 1.514 6.974 1.514a5.505 5.505 0 0 0 5.31-4.078 5.497 5.497 0 0 0-1.356-5.246zM13.29 6.216l4.939-3.841a1 1 0 0 1 1.32.082l2.995 2.994a1 1 0 0 1 .082 1.321l-3.84 4.938a7.505 7.505 0 0 1-7.283 9.292C8 21.002 3.5 19.5 1 18c3.98-3 3.047-4.81 3.5-6.5 1.058-3.95 4.842-6.257 8.789-5.284zm3.413 1.879c.065.063.13.128.193.194l1.135 1.134 2.475-3.182-1.746-1.746-3.182 2.475 1.125 1.125z"
+                    fill="rgba(149,225,211,1)"
+                  />
+                </svg>
+                <h2 class="service__title">Web Design</h2>
+                <p class="service__text">
+                  Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod tempor.
+                </p>
+              </li>
+              <li class="service__item">
+                <svg
+                  class="service__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -320,23 +234,15 @@
                     fill="rgba(149,225,211,1)"
                   />
                 </svg>
-                <span>creativity</span>
-              </div>
-              <p class="wedo__accordion-content">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
-              </p>
-            </li>
-
-            <li class="wedo__accordion-item">
-              <div class="wedo__accordion-header">
+                <h2 class="service__title">Creativity</h2>
+                <p class="service__text">
+                  Dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor.
+                </p>
+              </li>
+              <li class="service__item">
                 <svg
-                  class="wedo__accordion-icon"
+                  class="service__icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   width="32"
@@ -344,709 +250,1158 @@
                 >
                   <path fill="none" d="M0 0h24v24H0z" />
                   <path
-                    d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z"
+                    d="M18.031 16.617l4.283 4.282-1.415 1.415-4.282-4.283A8.96 8.96 0 0 1 11 20c-4.968 0-9-4.032-9-9s4.032-9 9-9 9 4.032 9 9a8.96 8.96 0 0 1-1.969 5.617zm-2.006-.742A6.977 6.977 0 0 0 18 11c0-3.868-3.133-7-7-7-3.868 0-7 3.132-7 7 0 3.867 3.132 7 7 7a6.977 6.977 0 0 0 4.875-1.975l.15-.15z"
                     fill="rgba(149,225,211,1)"
                   />
                 </svg>
-                <span>web design</span>
-              </div>
-              <p class="wedo__accordion-content">
+                <h2 class="service__title">seo</h2>
+                <p class="service__text">
+                  Ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                  eiusmod.
+                </p>
+              </li>
+              <li class="service__item">
+                <svg
+                  class="service__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M4 16h16V5H4v11zm9 2v2h4v2H7v-2h4v-2H2.992A.998.998 0 0 1 2 16.993V4.007C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007v12.986c0 .556-.455 1.007-.992 1.007H13z"
+                    fill="rgba(149,225,211,1)"
+                  />
+                </svg>
+                <h2 class="service__title">Css/Html</h2>
+                <p class="service__text">
+                  Lorem dolor sit amet, consectetur adipiscing elit, sed do
+                  tempor.
+                </p>
+              </li>
+              <li class="service__item">
+                <svg
+                  class="service__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="32"
+                  height="32"
+                >
+                  <path fill="none" d="M0 0h24v24H0z" />
+                  <path
+                    d="M9.828 5l-2 2H4v12h16V7h-3.828l-2-2H9.828zM9 3h6l2 2h4a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4l2-2zm3 15a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11zm0-2a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                    fill="rgba(149,225,211,1)"
+                  />
+                </svg>
+                <h2 class="service__title">Digital</h2>
+                <p class="service__text">
+                  Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                </p>
+              </li>
+            </ul>
+            <!-- /.Service ================================================================ -->
+          </div>
+        </section>
+
+        <section class="section section--device">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">For all devices</p>
+              <h2 class="section__title">Unique design</h2>
+            </header>
+            <div class="device">
+              <img
+                class="device__item"
+                src="@img/devices/ipad.png"
+                alt="ipad image"
+              />
+              <img
+                class="device__item device__item--iphone"
+                src="@img/devices/iphone.png"
+                alt="iphone image"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- /.Section Device ================================================================== -->
+
+        <section class="section section--service">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">Service</p>
+              <h2 class="section__title">what we do</h2>
+              <p class="section__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                nisi ut aliquip ex ea commodo consequat.
               </p>
+            </header>
+            <div class="wedo">
+              <img
+                class="wedo__item"
+                src="@img/wedo/wedo-img.jpg"
+                alt="wedo image"
+              />
+              <ul class="wedo__accordion">
+                <li class="wedo__accordion-item active">
+                  <div class="wedo__accordion-header">
+                    <svg
+                      class="wedo__accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="32"
+                      height="32"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M21 6h-2V5H5v14h14v-1h2v2a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v2zM6 6h2v3H6V6zm9 10a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm0 2a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-4a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>photography</span>
+                  </div>
+                  <p class="wedo__accordion-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </li>
+                <li class="wedo__accordion-item">
+                  <div class="wedo__accordion-header">
+                    <svg
+                      class="wedo__accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="32"
+                      height="32"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M9.973 18h4.054c.132-1.202.745-2.194 1.74-3.277.113-.122.832-.867.917-.973a6 6 0 1 0-9.37-.002c.086.107.807.853.918.974.996 1.084 1.609 2.076 1.741 3.278zM14 20h-4v1h4v-1zm-8.246-5a8 8 0 1 1 12.49.002C17.624 15.774 16 17 16 18.5V21a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2v-2.5C8 17 6.375 15.774 5.754 15zM13 10.004h2.5l-4.5 6v-4H8.5L13 6v4.005z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>creativity</span>
+                  </div>
+                  <p class="wedo__accordion-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </li>
+
+                <li class="wedo__accordion-item">
+                  <div class="wedo__accordion-header">
+                    <svg
+                      class="wedo__accordion-icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="32"
+                      height="32"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M5 5v3h14V5H5zM4 3h16a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm2 9h6a1 1 0 0 1 1 1v3h1v6h-4v-6h1v-2H5a1 1 0 0 1-1-1v-2h2v1zm11.732 1.732l1.768-1.768 1.768 1.768a2.5 2.5 0 1 1-3.536 0z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>web design</span>
+                  </div>
+                  <p class="wedo__accordion-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <!-- /.Wedo ================================================================ -->
+          </div>
+
+          <article class="feedback feedback--wedo">
+            <h2 class="visually-hidden">Feedback</h2>
+            <div class="container">
+              <div class="feedback__slider swiper">
+                <div class="feedback__slider-wrapper swiper-wrapper">
+                  <figure class="feedback__slide swiper-slide">
+                    <img
+                      class="feedback__avatar"
+                      src="@img/feedback/author-avatar-1.jpg"
+                      alt="feedback avatar"
+                    />
+                    <blockquote class="feedback__content">
+                      <p class="feedback__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation.”
+                      </p>
+                      <figcaption class="feedback__author">
+                        Brian Stanford
+                      </figcaption>
+                    </blockquote>
+                  </figure>
+                  <figure class="feedback__slide swiper-slide">
+                    <img
+                      class="feedback__avatar"
+                      src="@img/feedback/author-avatar-2.jpg"
+                      alt="feedback avatar"
+                    />
+                    <blockquote class="feedback__content">
+                      <p class="feedback__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation.”
+                      </p>
+                      <figcaption class="feedback__author">
+                        Brian Stanford
+                      </figcaption>
+                    </blockquote>
+                  </figure>
+                </div>
+                <div class="feedback__button swiper-button-prev"></div>
+                <div class="feedback__button swiper-button-next"></div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <!-- /.Section--service ================================================================== -->
+
+        <section class="section">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">Who we are</p>
+              <h2 class="section__title">Meet our team</h2>
+              <p class="section__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </header>
+
+            <ul class="card">
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img
+                      src="@img/card/whoweare/employee-1.jpg"
+                      alt="employee 1"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <ul class="card__social">
+                      <li class="card__social-item">
+                        <a href="#" aria-label="facebook"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="twitter"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="pinterest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="instagram"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="employee">
+                  <p class="employee-name">Emily Wang</p>
+                  <p class="employee-position">Graphic Design</p>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img
+                      src="@img/card/whoweare/employee-2.jpg"
+                      alt="employee 2"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <ul class="card__social">
+                      <li class="card__social-item">
+                        <a href="#" aria-label="facebook"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="twitter"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="pinterest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="instagram"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="employee">
+                  <p class="employee-name">John Watson</p>
+                  <p class="employee-position">Developer</p>
+                </div>
+              </li>
+              <li class="card__item">
+                <div class="card__wrapper">
+                  <div class="card__img">
+                    <img
+                      src="@img/card/whoweare/employee-3.jpg"
+                      alt="employee 2"
+                    />
+                  </div>
+                  <div class="card__text">
+                    <ul class="card__social">
+                      <li class="card__social-item">
+                        <a href="#" aria-label="facebook"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="twitter"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="pinterest"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                      <li class="card__social-item">
+                        <a href="#" aria-label="instagram"
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24"
+                            width="24"
+                            height="24"
+                          >
+                            <path fill="none" d="M0 0h24v24H0z" />
+                            <path
+                              class="card__social-item-path"
+                              d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
+                              fill="rgba(243,129,129,1)"
+                            /></svg
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="employee">
+                  <p class="employee-name">Chris Parker</p>
+                  <p class="employee-position">Branding/UX design</p>
+                </div>
+              </li>
+            </ul>
+            <!-- /.Card ================================================================ -->
+          </div>
+
+          <section class="team-footer">
+            <h2 class="visually-hidden">Sponsors</h2>
+            <div class="container">
+              <ul class="team-footer__wrapper">
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-1.png" alt="sponsor image 1" />
+                </li>
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-2.png" alt="sponsor image 2" />
+                </li>
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-3.png" alt="sponsor image 3" />
+                </li>
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-4.png" alt="sponsor image 4" />
+                </li>
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-5.png" alt="sponsor image 5" />
+                </li>
+                <li class="sponsor__item">
+                  <img src="@img/sponsor/sponsor-6.png" alt="sponsor image 6" />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+
+        <section class="section">
+          <header class="section__header">
+            <p class="section__suptitle">What we do</p>
+            <h2 class="section__title">some of our work</h2>
+            <p class="section__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </header>
+
+          <ul class="work">
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-1.jpg"
+                alt="work photo 1"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-2.jpg"
+                alt="work photo 2"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-3.jpg"
+                alt="work photo 3"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-4.jpg"
+                alt="work photo 4"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-5.jpg"
+                alt="work photo 5"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-6.jpg"
+                alt="work photo 6"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
+            </li>
+            <li class="work__item">
+              <img
+                class="work__photo"
+                src="@img/work/work-7.jpg"
+                alt="work photo 7"
+              />
+              <div class="work__info">
+                <div class="work__title">creatively designed</div>
+                <div class="work__text">Lorem ipsum dolor sit</div>
+              </div>
             </li>
           </ul>
-        </div>
-        <!-- ===== /.Wedo ===== -->
-      </div>
-      <!-- ===== /.Container ===== -->
+          <!-- /.Work ================================================================== -->
 
-      <article class="feedback feedback--wedo">
-        <h2 class="visually-hidden">Feedback</h2>
-        <div class="container">
-          <figure class="feedback__wrapper">
-            <img
-              class="feedback__avatar"
-              src="@img/feedback/author-avatar-1.jpg"
-              alt="feedback avatar"
+          <article class="feedback feedback--work">
+            <h2 class="visually-hidden">Feedback</h2>
+            <div class="container">
+              <figure class="feedback__wrapper">
+                <img
+                  class="feedback__avatar"
+                  src="@img/feedback/author-avatar-2.jpg"
+                  alt="feedback avatar"
+                />
+                <blockquote class="feedback__content">
+                  <p class="feedback__text">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                  </p>
+                  <figcaption class="feedback__author">Felix Cooper</figcaption>
+                </blockquote>
+              </figure>
+            </div>
+          </article>
+          <!-- /.Feedback-work ================================================================== -->
+        </section>
+
+        <section class="section section--clients">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">Happy Clients</p>
+              <h2 class="section__title">What people say</h2>
+            </header>
+            <div class="client">
+              <article class="client__item">
+                <img src="@img/clients/client-1.jpg" alt="client photo 1" />
+                <div class="client__info">
+                  <h4 class="client__name">Jordan Mayers</h4>
+                  <p class="client__position">Graphic Design</p>
+                  <p class="client__feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim.
+                  </p>
+                </div>
+              </article>
+              <article class="client__item">
+                <img src="@img/clients/client-2.jpg" alt="client photo 2" />
+                <div class="client__info">
+                  <h4 class="client__name">Julia Liu</h4>
+                  <p class="client__position">Graphic Design</p>
+                  <p class="client__feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim.
+                  </p>
+                </div>
+              </article>
+              <article class="client__item">
+                <img src="@img/clients/client-3.jpg" alt="client photo 3" />
+                <div class="client__info">
+                  <h4 class="client__name">Steven Neumann</h4>
+                  <p class="client__position">Graphic Design</p>
+                  <p class="client__feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim.
+                  </p>
+                </div>
+              </article>
+              <article class="client__item">
+                <img src="@img/clients/client-4.jpg" alt="client photo 4" />
+                <div class="client__info">
+                  <h4 class="client__name">Robert Jackson</h4>
+                  <p class="client__position">Graphic Design</p>
+                  <p class="client__feedback">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+        <!-- /.Section--clients ==================================================================== -->
+
+        <section class="section">
+          <div class="container">
+            <header class="section__header">
+              <p class="section__suptitle">Our stories</p>
+              <h2 class="section__title">Latest blog</h2>
+            </header>
+            <div class="blog">
+              <article class="blog__item">
+                <div class="blog__wrapper">
+                  <a href="#"
+                    ><img src="@img/blog/Blog-1.jpg" alt="blog image 1"
+                  /></a>
+                  <div class="blog__date">
+                    15
+                    <div class="blog__date--month">Jan</div>
+                  </div>
+                </div>
+                <h4 class="blog__title">
+                  <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p class="blog__content">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+                <div class="blog__statistics">
+                  <div class="blog__views">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>361</span>
+                  </div>
+                  <div class="blog__comments">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>76</span>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <div class="blog__wrapper">
+                  <a href="#"
+                    ><img src="@img/blog/Blog-2.jpg" alt="blog image 2"
+                  /></a>
+                  <div class="blog__date">
+                    14
+                    <div class="blog__date--month">Jan</div>
+                  </div>
+                </div>
+                <h4 class="blog__title">
+                  <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p class="blog__content">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+                <div class="blog__statistics">
+                  <div class="blog__views">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>678</span>
+                  </div>
+                  <div class="blog__comments">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>25</span>
+                  </div>
+                </div>
+              </article>
+              <article class="blog__item">
+                <div class="blog__wrapper">
+                  <a href="#"
+                    ><img src="@img/blog/Blog-3.jpg" alt="blog image 3"
+                  /></a>
+                  <div class="blog__date">
+                    12
+                    <div class="blog__date--month">Jan</div>
+                  </div>
+                </div>
+                <h4 class="blog__title">
+                  <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
+                </h4>
+                <p class="blog__content">
+                  Consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua.
+                </p>
+                <div class="blog__statistics">
+                  <div class="blog__views">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>542</span>
+                  </div>
+                  <div class="blog__comments">
+                    <svg
+                      class="blog__icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="18"
+                      height="18"
+                    >
+                      <path fill="none" d="M0 0h24v24H0z" />
+                      <path
+                        d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
+                        fill="rgba(149,225,211,1)"
+                      />
+                    </svg>
+                    <span>61</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- /.Blog ================================================================ -->
+          </div>
+        </section>
+
+        <section class="section section--map">
+          <h2 class="visually-hidden">Map</h2>
+          <svg
+            class="map__pin"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path fill="none" d="M0 0h24v24H0z" />
+            <path
+              d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
+              fill="rgba(243,129,129,1)"
             />
-            <blockquote class="feedback__content">
-              <p class="feedback__text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.”
-              </p>
-              <figcaption class="feedback__author">Brian Stanford</figcaption>
-            </blockquote>
-          </figure>
-        </div>
-        <!-- ===== /.Container ===== -->
-      </article>
-      <!-- ===== /.Feedback ===== -->
-    </section>
-    <!-- ===== /.Section ===== -->
+          </svg>
+          <div class="map__link">
+            <a href="https://goo.gl/maps/U6v7ZuxjH3iDkx8S6" target="_blank"
+              >open map</a
+            >
+          </div>
+        </section>
+        <!-- /.Section ================================================================== -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <script src="app.js"></script>
+        <footer class="main-footer">
+          <div class="container">
+            <div class="main-footer__wrapper">
+              <div class="main-footer__column">
+                <h2 class="main-footer__logo">Horizon</h2>
+                <p class="main-footer__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                  laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class="main-footer__followers"><span>15k</span> followers</p>
+                <div class="main-footer__socials">
+                  <p class="main-footer__text">Follow Us:</p>
+                  <ul class="footer-socials__wrapper">
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="facebook icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="twitter icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="instagram icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M12 2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2zm0 5a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm6.5-.25a1.25 1.25 0 0 0-2.5 0 1.25 1.25 0 0 0 2.5 0zM12 9a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="pinterest icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="youtube icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M21.543 6.498C22 8.28 22 12 22 12s0 3.72-.457 5.502c-.254.985-.997 1.76-1.938 2.022C17.896 20 12 20 12 20s-5.893 0-7.605-.476c-.945-.266-1.687-1.04-1.938-2.022C2 15.72 2 12 2 12s0-3.72.457-5.502c.254-.985.997-1.76 1.938-2.022C6.107 4 12 4 12 4s5.896 0 7.605.476c.945.266 1.687 1.04 1.938 2.022zM10 15.5l6-3.5-6-3.5v7z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                    <li class="footer-socials__item">
+                      <a href="#" aria-label="tumblr icon" target="_blank"
+                        ><svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 24 24"
+                          width="18"
+                          height="18"
+                        >
+                          <path fill="none" d="M0 0h24v24H0z" />
+                          <path
+                            d="M6.27 7.63A5.76 5.76 0 0 0 10.815 2h3.03v5.152h3.637v3.636h-3.636v5.454c0 .515.197 1.207.909 1.667.474.307 1.484.458 3.03.455V22h-4.242a4.545 4.545 0 0 1-4.546-4.545v-6.667H6.27V7.63z"
+                            fill="rgba(149,225,211,1)"
+                          /></svg
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <form class="subscribe" action="/" method="post">
+                  <input
+                    class="subscribe__input"
+                    type="email"
+                    name="name"
+                    placeholder="Your Email..."
+                  />
+                  <button class="subscribe__button" type="submit">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+              <!-- /.Main-footer__column #1 ============================================================== -->
 
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">Who we are</p>
-          <h2 class="section__title">Meet our team</h2>
-          <p class="section__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-        </header>
+              <div class="main-footer__column">
+                <h2 class="main-footer__title">Blogs</h2>
+                <div class="footer-blog">
+                  <article class="footer-blog__item">
+                    <a href="#"
+                      ><img
+                        src="@img/footer/footer-blog-1.jpg"
+                        alt="footer blog"
+                    /></a>
+                    <div class="footer-blog__content">
+                      <h3 class="footer-blog__title">
+                        <a href="#"
+                          >Lorem ipsum dolor sit amet, consectetur adipiscing</a
+                        >
+                      </h3>
+                      <p class="footer-blog__date">Jan 9, 2016</p>
+                    </div>
+                  </article>
+                  <article class="footer-blog__item">
+                    <a href="#"
+                      ><img
+                        src="@img/footer/footer-blog-2.jpg"
+                        alt="footer blog"
+                    /></a>
+                    <div class="footer-blog__content">
+                      <h3 class="footer-blog__title">
+                        <a href="#"
+                          >Consectetur adipiscing elit, sed do eiusmod tempor</a
+                        >
+                      </h3>
+                      <p class="footer-blog__date">Jan 9, 2016</p>
+                    </div>
+                  </article>
+                  <article class="footer-blog__item">
+                    <a href="#"
+                      ><img
+                        src="@img/footer/footer-blog-3.jpg"
+                        alt="footer blog"
+                    /></a>
+                    <div class="footer-blog__content">
+                      <h3 class="footer-blog__title">
+                        <a href="#"
+                          >sed do eiusmod tempor incididunt ut labore</a
+                        >
+                      </h3>
+                      <p class="footer-blog__date">Jan 9, 2016</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+              <!-- /.Main-footer__column #2 ============================================================== -->
 
-        <ul class="card">
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/whoweare/employee-1.jpg" alt="employee 1" />
+              <div class="main-footer__column">
+                <h2 class="main-footer__title">Instagram</h2>
+                <div class="footer-gallery">
+                  <ul class="footer-gallery__wrapper">
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-1.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-2.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-3.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-4.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-5.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-6.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-7.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-8.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                    <li class="footer-gallery__item">
+                      <a href="#" target="_blank"
+                        ><img
+                          src="@img/instagram-gallery/insta-photo-9.jpg"
+                          alt="instagram photo"
+                      /></a>
+                    </li>
+                  </ul>
+                  <div class="footer-gallery__view-more">
+                    <a href="#" target="_blank">View more photos</a>
+                  </div>
+                </div>
               </div>
-              <div class="card__text">
-                <ul class="card__social">
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="facebook"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="twitter"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="pinterest"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="instagram"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                </ul>
-              </div>
+              <!-- /.Main-footer__column #3 ============================================================== -->
             </div>
-            <div class="employee">
-              <p class="employee-name">Emily Wang</p>
-              <p class="employee-position">Graphic Design</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/whoweare/employee-2.jpg" alt="employee 2" />
-              </div>
-              <div class="card__text">
-                <ul class="card__social">
-                  <li class="card__social-item">
-                    <a href="#" aria-label="facebook"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li class="card__social-item">
-                    <a href="#" aria-label="twitter"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li class="card__social-item">
-                    <a href="#" aria-label="pinterest"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li class="card__social-item">
-                    <a href="#" aria-label="instagram"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="employee">
-              <p class="employee-name">John Watson</p>
-              <p class="employee-position">Developer</p>
-            </div>
-          </li>
-          <li class="card__item">
-            <div class="card__wrapper">
-              <div class="card__img">
-                <img src="@img/card/whoweare/employee-3.jpg" alt="employee 2" />
-              </div>
-              <div class="card__text">
-                <ul class="card__social">
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="facebook"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="twitter"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M22.162 5.656a8.384 8.384 0 0 1-2.402.658A4.196 4.196 0 0 0 21.6 4c-.82.488-1.719.83-2.656 1.015a4.182 4.182 0 0 0-7.126 3.814 11.874 11.874 0 0 1-8.62-4.37 4.168 4.168 0 0 0-.566 2.103c0 1.45.738 2.731 1.86 3.481a4.168 4.168 0 0 1-1.894-.523v.052a4.185 4.185 0 0 0 3.355 4.101 4.21 4.21 0 0 1-1.89.072A4.185 4.185 0 0 0 7.97 16.65a8.394 8.394 0 0 1-6.191 1.732 11.83 11.83 0 0 0 6.41 1.88c7.693 0 11.9-6.373 11.9-11.9 0-.18-.005-.362-.013-.54a8.496 8.496 0 0 0 2.087-2.165z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="pinterest"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M13.37 2.094A10.003 10.003 0 0 0 8.002 21.17a7.757 7.757 0 0 1 .163-2.293c.185-.839 1.296-5.463 1.296-5.463a3.739 3.739 0 0 1-.324-1.577c0-1.485.857-2.593 1.923-2.593a1.334 1.334 0 0 1 1.342 1.508c0 .9-.578 2.262-.88 3.54a1.544 1.544 0 0 0 1.575 1.923c1.898 0 3.17-2.431 3.17-5.301 0-2.2-1.457-3.848-4.143-3.848a4.746 4.746 0 0 0-4.93 4.794 2.96 2.96 0 0 0 .648 1.97.48.48 0 0 1 .162.554c-.046.184-.162.623-.208.784a.354.354 0 0 1-.51.254c-1.384-.554-2.036-2.077-2.036-3.816 0-2.847 2.384-6.255 7.154-6.255 3.796 0 6.32 2.777 6.32 5.747 0 3.909-2.177 6.848-5.394 6.848a2.861 2.861 0 0 1-2.454-1.246s-.578 2.316-.692 2.754a8.026 8.026 0 0 1-1.019 2.131c.923.28 1.882.42 2.846.416a9.988 9.988 0 0 0 9.996-10.003 10.002 10.002 0 0 0-8.635-9.903z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                  <li>
-                    <a class="card__social-item" href="#" aria-label="instagram"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="24"
-                        height="24"
-                      >
-                        <path fill="none" d="M0 0h24v24H0z" />
-                        <path
-                          class="card__social-item-path"
-                          d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-2a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm6.5-.25a1.25 1.25 0 0 1-2.5 0 1.25 1.25 0 0 1 2.5 0zM12 4c-2.474 0-2.878.007-4.029.058-.784.037-1.31.142-1.798.332-.434.168-.747.369-1.08.703a2.89 2.89 0 0 0-.704 1.08c-.19.49-.295 1.015-.331 1.798C4.006 9.075 4 9.461 4 12c0 2.474.007 2.878.058 4.029.037.783.142 1.31.331 1.797.17.435.37.748.702 1.08.337.336.65.537 1.08.703.494.191 1.02.297 1.8.333C9.075 19.994 9.461 20 12 20c2.474 0 2.878-.007 4.029-.058.782-.037 1.309-.142 1.797-.331.433-.169.748-.37 1.08-.702.337-.337.538-.65.704-1.08.19-.493.296-1.02.332-1.8.052-1.104.058-1.49.058-4.029 0-2.474-.007-2.878-.058-4.029-.037-.782-.142-1.31-.332-1.798a2.911 2.911 0 0 0-.703-1.08 2.884 2.884 0 0 0-1.08-.704c-.49-.19-1.016-.295-1.798-.331C14.925 4.006 14.539 4 12 4zm0-2c2.717 0 3.056.01 4.122.06 1.065.05 1.79.217 2.428.465.66.254 1.216.598 1.772 1.153a4.908 4.908 0 0 1 1.153 1.772c.247.637.415 1.363.465 2.428.047 1.066.06 1.405.06 4.122 0 2.717-.01 3.056-.06 4.122-.05 1.065-.218 1.79-.465 2.428a4.883 4.883 0 0 1-1.153 1.772 4.915 4.915 0 0 1-1.772 1.153c-.637.247-1.363.415-2.428.465-1.066.047-1.405.06-4.122.06-2.717 0-3.056-.01-4.122-.06-1.065-.05-1.79-.218-2.428-.465a4.89 4.89 0 0 1-1.772-1.153 4.904 4.904 0 0 1-1.153-1.772c-.248-.637-.415-1.363-.465-2.428C2.013 15.056 2 14.717 2 12c0-2.717.01-3.056.06-4.122.05-1.066.217-1.79.465-2.428a4.88 4.88 0 0 1 1.153-1.772A4.897 4.897 0 0 1 5.45 2.525c.638-.248 1.362-.415 2.428-.465C8.944 2.013 9.283 2 12 2z"
-                          fill="rgba(243,129,129,1)"
-                        /></svg
-                    ></a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="employee">
-              <p class="employee-name">Chris Parker</p>
-              <p class="employee-position">Branding/UX design</p>
-            </div>
-          </li>
-        </ul>
-        <!-- ===== /.Card ===== -->
+            <!-- /.Main-footer__wrapper ================================================================ -->
+            <p class="copyright">© 2022 Horizon</p>
+          </div>
+          <!-- /.Container ================================================================== -->
+        </footer>
+        <!-- /.Footer ================================================================== -->
       </div>
-      <!-- ===== /.Container ===== -->
-
-      <section class="team-footer">
-        <h2 class="visually-hidden">Sponsors</h2>
-        <div class="container">
-          <ul class="team-footer__wrapper">
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-1.png" alt="sponsor image 1" />
-            </li>
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-2.png" alt="sponsor image 2" />
-            </li>
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-3.png" alt="sponsor image 3" />
-            </li>
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-4.png" alt="sponsor image 4" />
-            </li>
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-5.png" alt="sponsor image 5" />
-            </li>
-            <li class="sponsor__item">
-              <img src="@img/sponsor/sponsor-6.png" alt="sponsor image 6" />
-            </li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    <!-- ===== /.Section ===== -->
-
-    <section class="section">
-      <header class="section__header">
-        <p class="section__suptitle">What we do</p>
-        <h2 class="section__title">some of our work</h2>
-        <p class="section__text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
-      </header>
-
-      <ul class="work">
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-1.jpg"
-            alt="work photo 1"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-2.jpg"
-            alt="work photo 2"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-3.jpg"
-            alt="work photo 3"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-4.jpg"
-            alt="work photo 4"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-5.jpg"
-            alt="work photo 5"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-6.jpg"
-            alt="work photo 6"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-        <li class="work__item">
-          <img
-            class="work__photo"
-            src="@img/work/work-7.jpg"
-            alt="work photo 7"
-          />
-          <div class="work__info">
-            <div class="work__title">creatively designed</div>
-            <div class="work__text">Lorem ipsum dolor sit</div>
-          </div>
-        </li>
-      </ul>
-      <!-- ===== /.work ===== -->
-
-      <article class="feedback feedback--work">
-        <h2 class="visually-hidden">Feedback</h2>
-        <div class="container">
-          <figure class="feedback__wrapper">
-            <img
-              class="feedback__avatar"
-              src="@img/feedback/author-avatar-2.jpg"
-              alt="feedback avatar"
-            />
-            <blockquote class="feedback__content">
-              <p class="feedback__text">
-                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation.”
-              </p>
-              <figcaption class="feedback__author">Felix Cooper</figcaption>
-            </blockquote>
-          </figure>
-        </div>
-      </article>
-      <!-- ===== /.feedback-work ===== -->
-    </section>
-    <!-- ===== /.section ===== -->
-
-    <section class="section section--clients">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">Happy Clients</p>
-          <h2 class="section__title">What people say</h2>
-        </header>
-        <div class="client">
-          <article class="client__item">
-            <img src="@img/clients/client-1.jpg" alt="client photo 1" />
-            <div class="client__info">
-              <h4 class="client__name">Jordan Mayers</h4>
-              <p class="client__position">Graphic Design</p>
-              <p class="client__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim.
-              </p>
-            </div>
-          </article>
-          <article class="client__item">
-            <img src="@img/clients/client-2.jpg" alt="client photo 2" />
-            <div class="client__info">
-              <h4 class="client__name">Julia Liu</h4>
-              <p class="client__position">Graphic Design</p>
-              <p class="client__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim.
-              </p>
-            </div>
-          </article>
-          <article class="client__item">
-            <img src="@img/clients/client-3.jpg" alt="client photo 3" />
-            <div class="client__info">
-              <h4 class="client__name">Steven Neumann</h4>
-              <p class="client__position">Graphic Design</p>
-              <p class="client__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim.
-              </p>
-            </div>
-          </article>
-          <article class="client__item">
-            <img src="@img/clients/client-4.jpg" alt="client photo 4" />
-            <div class="client__info">
-              <h4 class="client__name">Robert Jackson</h4>
-              <p class="client__position">Graphic Design</p>
-              <p class="client__feedback">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim.
-              </p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <!-- ===== /.Container ===== -->
-    </section>
-    <!-- ===== /.Section ===== -->
-
-    <section class="section">
-      <div class="container">
-        <header class="section__header">
-          <p class="section__suptitle">Our stories</p>
-          <h2 class="section__title">Latest blog</h2>
-        </header>
-        <div class="blog">
-          <article class="blog__item">
-            <div class="blog__wrapper">
-              <a href="#"
-                ><img src="@img/blog/Blog-1.jpg" alt="blog image 1"
-              /></a>
-              <div class="blog__date">
-                15
-                <div class="blog__date--month">Jan</div>
-              </div>
-            </div>
-            <h4 class="blog__title">
-              <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
-            </h4>
-            <p class="blog__content">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
-            </p>
-            <div class="blog__statistics">
-              <div class="blog__views">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>361</span>
-              </div>
-              <div class="blog__comments">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>76</span>
-              </div>
-            </div>
-          </article>
-          <article class="blog__item">
-            <div class="blog__wrapper">
-              <a href="#"
-                ><img src="@img/blog/Blog-2.jpg" alt="blog image 2"
-              /></a>
-              <div class="blog__date">
-                14
-                <div class="blog__date--month">Jan</div>
-              </div>
-            </div>
-            <h4 class="blog__title">
-              <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
-            </h4>
-            <p class="blog__content">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
-            </p>
-            <div class="blog__statistics">
-              <div class="blog__views">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>678</span>
-              </div>
-              <div class="blog__comments">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>25</span>
-              </div>
-            </div>
-          </article>
-          <article class="blog__item">
-            <div class="blog__wrapper">
-              <a href="#"
-                ><img src="@img/blog/Blog-3.jpg" alt="blog image 3"
-              /></a>
-              <div class="blog__date">
-                12
-                <div class="blog__date--month">Jan</div>
-              </div>
-            </div>
-            <h4 class="blog__title">
-              <a href="#" target="_blank">Lorem ipsum dolor sit amet</a>
-            </h4>
-            <p class="blog__content">
-              Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua.
-            </p>
-            <div class="blog__statistics">
-              <div class="blog__views">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M1.181 12C2.121 6.88 6.608 3 12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9zM12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-2a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>542</span>
-              </div>
-              <div class="blog__comments">
-                <svg
-                  class="blog__icon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="18"
-                  height="18"
-                >
-                  <path fill="none" d="M0 0h24v24H0z" />
-                  <path
-                    d="M2 8.994A5.99 5.99 0 0 1 8 3h8c3.313 0 6 2.695 6 5.994V21H8c-3.313 0-6-2.695-6-5.994V8.994zM14 11v2h2v-2h-2zm-6 0v2h2v-2H8z"
-                    fill="rgba(149,225,211,1)"
-                  />
-                </svg>
-                <span>61</span>
-              </div>
-            </div>
-          </article>
-        </div>
-        <!-- ===== /.Blog ===== -->
-      </div>
-      <!-- ===== /.Container ===== -->
-    </section>
-    <!-- ===== /.Section ===== -->
-
-    <section class="section section--map">
-      <h2 class="visually-hidden">Map</h2>
-      <svg
-        class="map__pin"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="24"
-        height="24"
-      >
-        <path fill="none" d="M0 0h24v24H0z" />
-        <path
-          d="M18.364 17.364L12 23.728l-6.364-6.364a9 9 0 1 1 12.728 0zM12 13a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"
-          fill="rgba(243,129,129,1)"
-        />
-      </svg>
-      <div class="map__link">
-        <a href="https://goo.gl/maps/U6v7ZuxjH3iDkx8S6" target="_blank"
-          >open map</a
-        >
-      </div>
-    </section>
-    <!-- ===== /.Section ===== -->
+      <!-- /.Main-wrapper ================================================================== -->
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="app.js"></script>
-    @@include('html/footer.html',{})
-  </div>
-</main>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
