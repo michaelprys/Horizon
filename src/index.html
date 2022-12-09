@@ -435,9 +435,9 @@
             <!-- /.Wedo ================================================================ -->
           </div>
 
-          <article class="feedback feedback--wedo">
+          <article class="feedback">
             <h2 class="visually-hidden">Feedback</h2>
-            <div class="container">
+            <div class="container container--overlay">
               <div class="feedback__slider swiper">
                 <div class="feedback__slider-wrapper swiper-wrapper">
                   <figure class="feedback__slide swiper-slide">
@@ -577,8 +577,8 @@
                   </div>
                 </div>
                 <div class="employee">
-                  <p class="employee-name">Emily Wang</p>
-                  <p class="employee-position">Graphic Design</p>
+                  <p class="employee__name">Emily Wang</p>
+                  <p class="employee__position">Graphic Design</p>
                 </div>
               </li>
               <li class="card__item">
@@ -659,8 +659,8 @@
                   </div>
                 </div>
                 <div class="employee">
-                  <p class="employee-name">John Watson</p>
-                  <p class="employee-position">Developer</p>
+                  <p class="employee__name">John Watson</p>
+                  <p class="employee__position">Developer</p>
                 </div>
               </li>
               <li class="card__item">
@@ -741,8 +741,8 @@
                   </div>
                 </div>
                 <div class="employee">
-                  <p class="employee-name">Chris Parker</p>
-                  <p class="employee-position">Branding/UX design</p>
+                  <p class="employee__name">Chris Parker</p>
+                  <p class="employee__position">Branding/UX design</p>
                 </div>
               </li>
             </ul>
@@ -872,21 +872,48 @@
           <article class="feedback feedback--work">
             <h2 class="visually-hidden">Feedback</h2>
             <div class="container">
-              <figure class="feedback__wrapper">
-                <img
-                  class="feedback__avatar"
-                  src="@img/feedback/author-avatar-2.jpg"
-                  alt="feedback avatar"
-                />
-                <blockquote class="feedback__content">
-                  <p class="feedback__text">
-                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                  </p>
-                  <figcaption class="feedback__author">Felix Cooper</figcaption>
-                </blockquote>
-              </figure>
+              <div class="feedback__slider swiper">
+                <div class="feedback__slider-wrapper swiper-wrapper">
+                  <figure class="feedback__slide swiper-slide">
+                    <img
+                      class="feedback__avatar"
+                      src="@img/feedback/author-avatar-2.jpg"
+                      alt="feedback avatar"
+                    />
+                    <blockquote class="feedback__content">
+                      <p class="feedback__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation.”
+                      </p>
+                      <figcaption class="feedback__author">
+                        Brian Stanford
+                      </figcaption>
+                    </blockquote>
+                  </figure>
+                  <figure class="feedback__slide swiper-slide">
+                    <img
+                      class="feedback__avatar"
+                      src="@img/feedback/author-avatar-1.jpg"
+                      alt="feedback avatar"
+                    />
+                    <blockquote class="feedback__content">
+                      <p class="feedback__text">
+                        “Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation.”
+                      </p>
+                      <figcaption class="feedback__author">
+                        Brian Stanford
+                      </figcaption>
+                    </blockquote>
+                  </figure>
+                </div>
+                <div class="feedback__button swiper-button-prev"></div>
+                <div class="feedback__button swiper-button-next"></div>
+              </div>
             </div>
           </article>
           <!-- /.Feedback-work ================================================================== -->
