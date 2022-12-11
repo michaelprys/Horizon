@@ -1,15 +1,15 @@
 @font-face{
-	font-family: KaushanScript;
-	font-display: swap;
-	src: url("../fonts/KaushanScript-Regular.woff2") format("woff2"), url("../fonts/KaushanScript-Regular.woff") format("woff");
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face{
 	font-family: Montserrat;
 	font-display: swap;
 	src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
 	font-weight: 700;
+	font-style: normal;
+}
+@font-face{
+	font-family: KaushanScript;
+	font-display: swap;
+	src: url("../fonts/KaushanScript-Regular.woff2") format("woff2"), url("../fonts/KaushanScript-Regular.woff") format("woff");
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face{
@@ -20,17 +20,17 @@
 	font-style: normal;
 }
 @font-face{
-	font-family: Roboto;
-	font-display: swap;
-	src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
-	font-weight: 300;
-	font-style: normal;
-}
-@font-face{
 	font-family: Montserrat;
 	font-display: swap;
 	src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face{
+	font-family: Roboto;
+	font-display: swap;
+	src: url("../fonts/Roboto-LightItalic.woff2") format("woff2"), url("../fonts/Roboto-LightItalic.woff") format("woff");
+	font-weight: 300;
 	font-style: normal;
 }
 @font-face{

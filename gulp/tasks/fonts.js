@@ -46,7 +46,7 @@ export const ttfToWoff = () => {
 
 // upload fonts to CSS
 export const fontsStyle = () => {
-  let fontsFile = `${app.path.srcFolder}/scss/base/font-face.scss`;
+  let fontsFile = `${app.path.srcFolder}/scss/settings/_font-face.scss`;
   // check if there are font files
   fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
     if (fontsFiles) {

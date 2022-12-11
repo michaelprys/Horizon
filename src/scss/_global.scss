@@ -1,0 +1,19 @@
+body {
+  background-color: #00eeff;
+  background-image: url("@img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #333333;
+  line-height: normal;
+  font-family: "Montserrat", sans-serif;
+  // height: 100vh;
+}
+
+.container {
+  max-width: 76.875rem;
+  padding-inline: 15px;
+  margin-inline: auto;
+}

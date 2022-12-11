@@ -11,7 +11,7 @@ global.app = {
 };
 
 // Tasks
-// import { copy } from "./gulp/tasks/copy.js"; // uncomment if is needed
+// import { copy } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
 import { html } from "./gulp/tasks/html.js";
 import { server } from "./gulp/tasks/server.js";
@@ -25,11 +25,11 @@ import { ftp } from "./gulp/tasks/ftp.js";
 
 // Watcher
 function watcher() {
-  // gulp.watch(path.watch.files, copy); // uncomment if is needed. Folder 'files' must be created.
-  gulp.watch(path.watch.html, html); // gulp.series(html,ftp)
-  gulp.watch(path.watch.scss, scss); // gulp.series(html,ftp)
-  gulp.watch(path.watch.js, js); // gulp.series(html,ftp)
-  gulp.watch(path.watch.images, images); // gulp.series(html,ftp)
+  // gulp.watch(path.watch.files, copy); // Folder 'files' must be created.
+  gulp.watch(path.watch.html, html);
+  gulp.watch(path.watch.scss, scss);
+  gulp.watch(path.watch.js, js);
+  gulp.watch(path.watch.images, images);
 }
 
 // SVG sprite
@@ -37,7 +37,7 @@ export { spriteSVG };
 
 // Fonts
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
-const mainTasks = gulp.series(fonts, gulp.parallel(images, html, scss, js)); // add 'copy' to parallel if is needed
+const mainTasks = gulp.series(fonts, gulp.parallel(images, html, scss, js));
 
 // Const
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
