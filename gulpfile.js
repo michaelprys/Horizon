@@ -25,7 +25,7 @@ import { ftp } from "./gulp/tasks/ftp.js";
 
 // Watcher
 function watcher() {
-  // gulp.watch(path.watch.files, copy); // Folder 'files' must be created.
+  // gulp.watch(path.watch.files, copy);
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
@@ -37,19 +37,26 @@ export { spriteSVG };
 
 // Fonts
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
+const watchTasks = gulp.parallel(images, html, scss, js, watcher, server);
 const mainTasks = gulp.series(fonts, gulp.parallel(images, html, scss, js));
 
 // Const
-const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
-const build = gulp.series(reset, mainTasks);
+const start = gulp.series(watchTasks);
+const prepare = gulp.series(fonts);
+const dev = gulp.series(reset, mainTasks);
+const build = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const deployZIP = gulp.series(reset, mainTasks, zip);
 const deployFTP = gulp.series(reset, mainTasks, ftp);
+const clear = gulp.series(reset);
 
 // Exports
+export { start };
+export { prepare };
 export { dev };
 export { build };
 export { deployZIP };
 export { deployFTP };
+export { clear };
 
 // Default
-gulp.task("default", dev);
+gulp.task("default", start);

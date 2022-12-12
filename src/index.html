@@ -1,9 +1,9 @@
-@include('partials/head.html')
+<!DOCTYPE html>
+<html lang="en">
+  @@include('./html/head.html',{ "title":"Horizon" })
   <body>
     <main>
-      @include('partials/header.html')
-      <!-- /.Main-header ================================================================== -->
-
+      @@include('./html/header.html')
       <div class="main-wrapper">
         <div class="intro">
           <div class="container">
@@ -1096,11 +1096,9 @@
             >
           </div>
         </section>
-        <!-- /.Section ================================================================== -->
       </div>
-      <!-- /.Main-wrapper ================================================================== -->
     </main>
-    @include('partials/footer.html')
+    @@include('./html/footer.html')
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
   </body>

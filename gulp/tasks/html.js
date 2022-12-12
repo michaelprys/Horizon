@@ -1,7 +1,7 @@
 import fileInclude from "gulp-file-include"; // Concatenates html parts
 import webpHtmlNosvg from "gulp-webp-html-nosvg"; // Converts images to webp
 import versionNumber from "gulp-version-number"; // Prevents browser cache
-import removeEmptyLines from "gulp-remove-empty-lines"; // Removes empty lines and comments
+import htmlMin from "gulp-htmlmin"; // Minify html
 
 export const html = () => {
   return app.gulp
@@ -14,11 +14,6 @@ export const html = () => {
         })
       )
     )
-    .pipe(
-      removeEmptyLines({
-        removeComments: true,
-      })
-    )
     .pipe(fileInclude())
     .pipe(app.plugins.replace(/@img\//g, "img/"))
     .pipe(app.plugins.if(app.isBuild, webpHtmlNosvg()))
@@ -30,11 +25,20 @@ export const html = () => {
           append: {
             key: "-v",
             cover: 0,
-            to: ["css", "js"],
+            to: ["css", "js", "img"],
           },
           output: {
             file: "gulp/version.json",
           },
+        })
+      )
+    )
+    .pipe(
+      app.plugins.if(
+        app.isBuild,
+        htmlMin({
+          collapseWhitespace: true,
+          removeComments: true,
         })
       )
     )
