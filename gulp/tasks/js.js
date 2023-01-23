@@ -15,7 +15,24 @@ export const js = () => {
       webpack({
         mode: app.isBuild ? "production" : "development",
         output: {
+          // entry: ["@babel/polyfill", path.resolve(__dirname, "src", "app.js")],
+          clean: true,
           filename: "app.min.js",
+          assetModuleFilename: "img/[name].[hash:6][ext]",
+        },
+        module: {
+          rules: [
+            {
+              test: /\.m?js$/,
+              exclude: /(node_modules|bower_components)/,
+              use: {
+                loader: "babel-loader",
+                options: {
+                  presets: [["@babel/preset-env", { targets: "defaults" }]],
+                },
+              },
+            },
+          ],
         },
       })
     )

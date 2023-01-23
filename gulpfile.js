@@ -42,7 +42,7 @@ const mainTasks = gulp.series(fonts, gulp.parallel(images, html, scss, js));
 
 // Const
 const start = gulp.series(watchTasks);
-const prepare = gulp.series(fonts);
+const prepare = gulp.series(reset, fonts);
 const dev = gulp.series(reset, mainTasks);
 const build = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
 const deployZIP = gulp.series(reset, mainTasks, zip);
