@@ -12,9 +12,37 @@
 
   /* Feedback
   -------------------------------------*/
+  .feedback__slide {
+    text-align: center;
+    flex-wrap: wrap;
+  }
 
   .feedback__text {
     font-size: 1.25rem;
+    padding-top: 1.4375rem;
+  }
+
+  .feedback__author {
+    padding-left: 0;
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      content: "";
+      display: block;
+      position: static;
+      left: 0;
+      width: 3.75rem;
+      height: 0.1875rem;
+      background-color: $peach;
+      margin-inline: auto;
+      margin-top: 15px;
+    }
+  }
+
+  .feedback__avatar {
+    margin-inline: auto;
   }
 
   /* Main Footer

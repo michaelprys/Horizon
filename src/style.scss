@@ -286,14 +286,16 @@
 }
 
 .card__social-item {
-  display: block;
-  padding: 15px;
-  border-right: 1px solid rgba(243, 129, 129, 0.438);
-  background-color: $yellow;
-  &:hover {
-    background-color: $peach;
-    .card__social-item-path {
-      fill: $white;
+  border-right: 1px solid rgba(194, 126, 126, 0.064);
+  & a {
+    display: block;
+    padding: 15px;
+    background-color: $yellow;
+    &:hover {
+      background-color: $peach;
+      .card__social-item-path {
+        fill: $white;
+      }
     }
   }
   &:last-child {
@@ -430,14 +432,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-  &.active .wedo__accordion-header {
-    &::after {
-      transform: translateY(-50%) rotate(90deg);
-    }
-  }
-  &.active .wedo__accordion-content {
-    display: block;
-  }
 }
 
 .wedo__accordion-header {
@@ -460,6 +454,12 @@
     cursor: pointer;
     color: $light-grey;
     right: 20px;
+  }
+  &.active {
+    &::after {
+      transform: translateY(-50%) rotate(90deg);
+      transition: transform 0.2s ease-in-out;
+    }
   }
 }
 
@@ -885,15 +885,15 @@
       text-decoration: underline;
       cursor: pointer;
     }
-    &:after {
-      content: "";
-      display: block;
-      width: 3.75rem;
-      height: 3px;
-      background-color: $peach;
-      margin-top: 1rem;
-      margin-inline: auto;
-    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 3.75rem;
+    height: 3px;
+    background-color: $peach;
+    margin-top: 1rem;
+    margin-inline: auto;
   }
 }
 
@@ -948,7 +948,8 @@
   font-weight: 400;
   line-height: $normal;
   color: $mild-grey;
-  padding-right: 18px;
+  padding-right: 1.125rem;
+  padding-top: 0.625rem;
 }
 
 .main-footer__followers {
@@ -958,6 +959,7 @@
     font-weight: 700;
     font-size: 1.125rem;
   }
+  padding-block: 15px;
 }
 
 .main-footer__socials {
@@ -965,7 +967,7 @@
   flex-wrap: wrap;
   align-items: center;
   font-size: 1.1875rem;
-  padding-bottom: 15px;
+  padding-block: 20px;
   color: $nephritis;
 }
 
